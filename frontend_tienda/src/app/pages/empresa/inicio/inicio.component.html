@@ -1,43 +1,43 @@
 <section class="empresa-landing">
   <mat-card class="landing-card">
     <div class="landing-hero">
-      <h1 class="landing-title">FashionStore</h1>
+      <h1 class="landing-title">Kreativ-Flow</h1>
       <p class="landing-subtitle">
-        Plataforma SaaS Omnicanal para Boutiques y Tiendas de Moda. Gestiona catálogo de prendas,
-        Vestidor Virtual 3D/AR, ventas POS e e-commerce, reportes por voz e Inteligencia Artificial.
+        Plataforma SaaS para tiendas de muebles en linea. Gestiona catalogos,
+        ventas, clientes y reportes con una experiencia moderna y escalable.
       </p>
       <div class="landing-actions">
-        <button mat-raised-button color="primary" routerLink="/login">
-          Iniciar Sesión
-        </button>
-        <button mat-stroked-button color="primary" routerLink="/empresa/registro">
+        <button mat-raised-button color="primary" routerLink="/empresa/registro">
           Registrar Empresa
         </button>
         <button mat-button (click)="abrirLogin()">
           Acceso Subdominio
+        </button>
+        <button mat-raised-button color="accent" (click)="abrirLogin()">
+          Iniciar Sesión
         </button>
       </div>
     </div>
   </mat-card>
 
   <mat-card class="landing-card">
-    <h2 class="landing-section-title">¿Por qué FashionStore?</h2>
+    <h2 class="landing-section-title">Por que Kreativ-Flow?</h2>
     <mat-divider></mat-divider>
     <div class="feature-grid">
       <mat-card class="feature-card">
-        <mat-icon>checkroom</mat-icon>
-        <h3 class="feature-title">Vestidor Virtual AR 3D</h3>
-        <p class="feature-text">Visualiza prendas, combina outfits y prueba modelos 3D en Realidad Aumentada.</p>
+        <mat-icon>storefront</mat-icon>
+        <h3 class="feature-title">Catalogo inteligente</h3>
+        <p class="feature-text">Muestra tus muebles con fichas completas, fotos y variantes.</p>
       </mat-card>
       <mat-card class="feature-card">
-        <mat-icon>psychology</mat-icon>
-        <h3 class="feature-title">Inteligencia Artificial Gemini</h3>
-        <p class="feature-text">Recomendador inteligente de moda, sugerencias de compra y reportes analíticos por voz.</p>
+        <mat-icon>insights</mat-icon>
+        <h3 class="feature-title">Analitica accionable</h3>
+        <p class="feature-text">Reportes dinamicos para ventas, stock y rendimiento.</p>
       </mat-card>
       <mat-card class="feature-card">
-        <mat-icon>store</mat-icon>
-        <h3 class="feature-title">Gestión Omnicanal</h3>
-        <p class="feature-text">Sincronización de sucursales, inventario en tiempo real, ventas POS y e-commerce.</p>
+        <mat-icon>verified_user</mat-icon>
+        <h3 class="feature-title">Seguridad total</h3>
+        <p class="feature-text">Roles y permisos para controlar cada acceso.</p>
       </mat-card>
     </div>
   </mat-card>
