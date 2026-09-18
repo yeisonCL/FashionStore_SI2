@@ -15,8 +15,8 @@ router = APIRouter(tags=["Empresa - Suscripciones y Planes"])
 MOCK_PLANES = [
     {
         "id": 1,
-        "nombre": "Plan Básico Moda",
-        "descripcion": "Ideal para boutique única. Incluye catálogo digital y gestión de inventario.",
+        "nombre": "Plan Emprendedor",
+        "descripcion": "Ideal para minimarkets, boutiques y tiendas que inician su gestión comercial.",
         "precio_mensual": 29.0,
         "precio_anual": 290.0,
         "limite_sucursales": 1,
@@ -34,8 +34,8 @@ MOCK_PLANES = [
     },
     {
         "id": 2,
-        "nombre": "Plan Pro AR Fashion",
-        "descripcion": "Para tiendas en crecimiento. Incluye Vestidor Virtual AR 3D y Sugerencias IA.",
+        "nombre": "Plan Pro Negocio",
+        "descripcion": "Perfecto para comercios en crecimiento con alto volumen de ventas, vestidor AR y control de stock.",
         "precio_mensual": 79.0,
         "precio_anual": 790.0,
         "limite_sucursales": 5,
@@ -53,8 +53,8 @@ MOCK_PLANES = [
     },
     {
         "id": 3,
-        "nombre": "Plan Enterprise Omnicanal",
-        "descripcion": "Solución multisucursal completa con IA Gemini, AR 3D sin límites y soporte 24/7.",
+        "nombre": "Plan Empresarial Elite",
+        "descripcion": "Solución integral multisucursal con analítica predictiva IA, IA en compras, reportes por voz y capacidad máxima.",
         "precio_mensual": 199.0,
         "precio_anual": 1990.0,
         "limite_sucursales": 99,
