@@ -1,0 +1,341 @@
+Si2 15-09-2026.m4a
+Transcribed by 
+TurboScribe
+. 
+Go Unlimited
+ to remove this message.
+El próximo martes, su documentación de Mario Bruno está demasiado mal. Está muy mal. Eso
+quiere decir que entonces, por más que usted me traiga un espectacular... ...que se llama
+software, igual no podría dar por saco.
+Toda una clase hemos recomendado... Toda una clase hemos recomendado cómo nosotros
+vamos a preparar el documento, ¿verdad? Estamos trabajando con el proceso unificado y con el
+VML. Entonces, las actividades las hemos identificado por cada uno de los flujos de trabajo. En
+cada flujo de trabajo hay que hacer.
+Les di también una parte de las pruebas. Y las pruebas ustedes tampoco las están haciendo
+como se pidió. Me las están haciendo como en sistema uno.
+Y el auxiliar me escribe y me dice que cada uno va a desarrollar... ...el lenguaje que ustedes
+quieran. Entonces, no están entendiendo, no vienen a clase o cuál es la situación. Habíamos
+quedado de que Backen es obligatorio.
+No es de que cada uno hace como sea, ¿entienden? Entonces, le dicen, en el examen cada uno
+va a utilizar la herramienta... ...porque así me han dicho los alumnos. O sea, no sé, le dije que a
+uno le habrán dicho... ...deben ser los que nos van a clase. Porque lo hemos recalcado aquí
+varias veces... ...de que en los exámenes no es libre la herramienta, jóvenes.
+No sé si es que nos han convenido. Realmente son las personas que no vienen a clase.
+Entonces, ¿eso qué significa? Que tampoco pueden utilizar e-commerce que ya está hechito.
+O sea, se ha citado incluso en el mismo documento... ...qué es lo que ustedes no pueden usar.
+Entonces, ¿qué significa de que la herramienta no es negociable? De que yo estoy haciendo otra
+cosa o yo estoy haciendo diálogos. Habíamos quedado que para el Backen tienen que ser... ...de
+todo lo que es Python con Fast App.
+O sea, se dijo desde el comienzo. No hay de que yo lo estoy haciendo con tal cosa. No, en los
+exámenes es obligatoria la herramienta que se les da.
+Y ustedes saben también de que la parte de Chrome... ...es Angular, no es React. Entonces, no
+es elección. Porque la oficina me dice, pueden utilizar cualquiera... ...si han dicho los alumnos.
+Entonces, ¿qué significa de que no han leído ni el documento... ...no han venido ni a clase? Si
+está totalmente marcado. Hemos hablado varias veces de qué manera ustedes deben utilizar...
+...cómo lo deben hacer. Entonces, esa es una de las partes fundamentales.
+Y no se olviden de que en la parte móvil es la parte de flujo. Habíamos comentado también de
+que tal vez no es tan obligatorio... ...que hagan tenas o multitenas en el examen 1. ¿Entienden?
+Pueden manejar ustedes sucursales, pero hay limos. Ustedes dicen, esemicentral, depósito 1,
+depósito 2, depósito 3... ...de tal manera que ustedes puedan seleccionar ese conjunto... ...de
+depósitos para elaborar una venta.
+Pero les pedí de manera obligatoria que por lo menos... ...tengan una tienda presencial. Que
+tengan una sola tienda virtual y una tienda presencial. ¿Entienden? No necesariamente que
+tengan un conjunto de tiendas.
+Por lo menos para este examen, una tienda. Una tienda física y tienda virtual. Para que ustedes
+puedan trabajar bajo ese tipo de contextos.
+Porque lo primero que hay que ver es el contexto... ...en el que estamos trabajando. Entonces,
+eso debe estar primeramente determinado... ...trabajado en el documento, por favor. Esto no es
+programación, ustedes lo saben.
+Ustedes saben de que ustedes programan libre. Yo no sé si todos lo hacen y ya ustedes están
+pagando... ...para que se lo hagan. Si pagan, ¿para qué se les va a sacar el? Hay personas que
+se lo hacen y ustedes pagan.
+Entonces, si ustedes están trabajando es para que ustedes... ...les paguen, no para que ustedes
+intenten pagarlo a otros. Entonces, ¿eso es normal? Si cometemos problemas aquí, siendo
+estudiantes... ...imagínense el día de mañana. Si ustedes actúan honestamente siendo
+académicos... ...tiene un éxito total el día de mañana.
+Porque la idea no es nada más pasar una materia... ...y se acabó el problema, no es eso,
+jóvenes. Es el aprendizaje de ustedes. No se olviden que ustedes están en formación... ...para
+poder ser profesionales.
+Cada vez ustedes saben que la barra es más alta. Tenemos demasiada competencia y
+demasiadas características. Entonces, hay que aprovechar el aprendizaje... ...en el tiempo
+oportuno.
+Miren, se les ha dado oportunidad a los jóvenes... ...que no se registraron. Porque tampoco
+vienen a clase. Yo lo limité el día que había clase.
+El día que había clase, un martes. No vienen a clase, no vienen a la plataforma... ...y quieren
+más oportunidades. Se les ha dado.
+Básicamente, todo lo que ustedes tienen. Pero si llegan con un documento, ya no hay segunda
+oportunidad. Se los digo.
+Ya hay una oportunidad, pero las oportunidades no son forever. Ni oportunidades que se cortan
+y no hay más. Si ustedes llegan con una documentación incompleta... ...porque saben que hay
+documentos que son... ...llegado a análisis.
+No han hecho diseño, no han hecho implementación... ...no han hecho prueba. Esa
+documentación no es válida. Tienen la última, que es este domingo.
+La última oportunidad. Todas aquellas documentaciones que no fueron completadas... ...que lo
+dejaron a media, porque parece que ustedes... ...un día antes o una noche antes... ...para poder
+entregar en la plataforma... ...va a ser difícil avanzar. Un día o una noche antes no se puede
+hacer... ...lo que no se hizo en tanto tiempo.
+¿Por qué van a pedir post-delegación de que un día más? Si esto ha sido programado con
+tiempo. ¿Qué significa esto? Que ustedes no han programado su tiempo... ...como debe ser para
+las personas. Obviamente no solo para todos en general.
+Para las personas que piden tiempo... ...o para las personas que no les alcanza el tiempo.
+Significa que el día tiene 24 horas... ...y no están organizándose lo que debe ser. Y desde esa...
+...se sabe de que no lleva nada más esta materia.
+Ustedes llevan varias materias, tienen varias responsabilidades. Puede ser que trabajen. Es
+parte de la vida eso.
+Todos tenemos un conjunto de cosas... ...y todos tenemos problemas. Y es que alguna vez nos
+enfermamos. No porque yo me enfermo hoy día... ...significa que ya no voy a hacer
+absolutamente nada.
+Ya porque me enfermé, tengo mi licencia... ...que ya no pude hacer. Lo puede hacer tal vez otro
+día. Pero no implica... ...que porque se enfermó ya no se acabó.
+Entonces por favor... ...toda esta característica... ...tal vez lo que estamos hablando... ...que sea
+parte de que ustedes empiecen... ...a ver, no se olviden que... ...ya está acabando casi
+septiembre. Entonces ya empieza la recta final... ...de lo que es el séptimo. Ustedes saben que
+esto vuela rapidísimo.
+Entonces... ...acabamos básicamente con el examen... ...del día martes... ...con el Spring
+Número 2... ...que será el... ...el 6, 8 de octubre... ...porque ya tienen ustedes el cronograma. Hay
+un primer avance... ...del Spring Número 2... ...que me lo tienen que presentar hasta el
+miércoles... ...hasta las 7 de la noche... ...para ver qué han hecho. El día jueves se conectan 7
+en punto.
+Desde 7 menos 5... ...yo lo voy a abrir de manera virtual... ...porque saben que está el Hack
+Please... ...no hay, los centros cómodos... ...están totalmente... ...ocupados. Entonces no va a
+haber... ...pero sí vamos a tener clase... ...en línea. En línea... ...ni siquiera virtual, porque es
+virtual cualquier cosa... ...no, en línea. Por lo tanto, por favor, 7 en punto... ...comienza. Si
+alguien quiere entrar 7 y media o 7 y 20... ...ya no entra.
+7 en punto... ...por favor. ¿Eso qué significa? De que... ...todos los trabajos que se han...
+...revisado, o en todo caso... ...alguien enviado ustedes, se le va a decir... ...y los otros les vamos
+a decir después... ...pero significa... ...que todos ustedes van a hacer una actividad... ...que es lo
+que han hecho también. Porque es la única manera que yo pueda saber... ...de todo, porque son
+muchos, difícilmente... ...en una clase se va a poder hablar de todos los proyectos.
+Todo lo que estás aquí... ...clases de manera individual... ...por favor, cómo es posible de que no
+comprendan... ...de que uno solo por todo. Uno solo y cuando yo realizo el examen... ...ustedes
+se van afuera. ¿Acaso ustedes han salido hoy afuera para tomar esa decisión... ...de hacer una
+hojita nada más... ...por grupo? No.
+Por eso le estoy diciendo qué hizo usted... ...en el Sprint 0 y en el Sprint 1 y en el Sprint 2... ...no
+estoy diciendo qué hizo el grupo. O sea, qué hicieron ustedes... ...como lo que dijeran, ¿no? En
+el Sprint 0 me tocó ser... ...el Sprint Master. ¿Qué hizo como Sprint Master? ¿Qué aportó como
+Sprint Master... ...cuando le tocó ese rol? Y dice, en el Sprint 1... ...fue Product Owner.
+¿Qué hizo como Product Owner? Lo hubiera podido preguntar otro día, pero lo voy a decir en
+hojita. Y ahora me toca... ...ser Desarrollador y hasta ahora... ...hice la historia número 5, la
+historia número 7... ...y me tocó... ...en elorno... ...módulo 3. Eso es lo que yo... ...espero en la
+hojita que ustedes han escrito. Por ejemplo, cuando yo les digo... ...qué diferencia hay entre...
+...entre VML 2.0 y 1.x... ...porque todos los documentos... ...tienen 1.x... ...entonces no tienen la
+anotación... ...que yo les pedí.
+Les pedí 2 puntos... ...y más... ...arriba de 2.5.1 incluso les pedí. Pero los documentos están
+igualitos... ...que en 1.x... ...entonces no saben ni cuál es la diferencia. Y ahí entonces tienen...
+...como les digo... ...la última oportunidad... ...como vienen... ...para el examen parcial... ...si su
+documento está mal... ...definitivamente ya entran sobre la mitad... ...para dar el examen.
+¿Ya? Porque ya no pueden... ...aspirar a más notas... ...porque ni siquiera han cumplido con un
+documento... ...que ustedes lo tienen todo un mes. No es cuestión de un ratito... ...es poder
+hacer cada vez... ...el tipo de información. Lo que dicen en el documento... ...debe cuadrar con lo
+que ustedes están haciendo.
+Si yo pillo documento... ...igualito... ...prácticamente tienen uno. Porque a veces ni le borran
+absolutamente... ...ni lo personalizan. Entonces también filtraron documentación.
+¿Ya? ¿Tomen cuenta de eso, por favor? Vamos para el avance del EMPRINT 2... ...después de
+hablar del examen. En el EMPRINT 2... ...la mayoría de ustedes van a leer... ...los documentos
+que... ...las hechos características para que vayan avanzando. Tal vez... ...hasta el día 1000
+documentadores presenten... ...de repente... ...no han terminado todas, por eso dice avance,
+¿no? No significa que de las 8 características... ...ustedes piden avance.
+Puede ser que alguien diga... ...he trabajado con todo lo que es historia de... ...de lo que son los
+usuarios... ...y toda la historia de la bitácora... ...que lo tienen todo... ...entonces me imagino que
+lo deben tener... ...100% preguntado, porque es lo primero que han hecho. De la parte de...
+...solución universal... ...¿de repente lo están trabajando todavía? ¿Qué significa... ...solución
+universal? ¿Qué estamos haciendo exclusivamente... ...para una sola empresa? Todo lo que
+ustedes están desarrollando... ...ahora es para un rubro. Por ejemplo... ...si ustedes dijeran que
+yo estoy... ...trabajando para... ...los tipos de... ...de educación, por decir... ...de colegio... ...o la
+parte de salud, por decir... ...o dentólogo, tal vez... ...había oftalmología de la vista... ...significa
+de que... ...no solamente ustedes van a encontrar... ...un solo oftalmólogo en Santa Cruz... ...van
+a encontrar ustedes muchas clínicas... ...muchos consultorios... ...dedicados a este rubro.
+Entonces... ...lo primero que hace un oftalmólogo, a lo mejor... ...es hacerle... ...algunas
+características básicas... ...del paciente, como ver... ...su medición, tal vez... ...verle... ...qué tipo
+de letra... ...puede identificar de cerca, de lejos... ...y todo lo demás, que eso no hace a todos los
+pacientes. Pero hay pacientes... ...que vienen con otro... ...tipo de necesidad... ...es decir,
+necesita otro tipo de tratamiento... ...de repente necesita una cirugía... ...necesita tal cosa.
+Entonces, ¿qué significa... ...que ustedes... ...el software que están haciendo... ...debe ser válido
+tanto para un consultorio... ...para una clínica... ...para varios médicos... ...de repente que se han
+asociado... ...y abren un consultorio... ...y los médicos saben ustedes que tienen muchas...
+...especialidades, tienen una o muchas... ...especialidades. Entonces, dependiendo... ...qué
+especialidad nosotros... ...buscamos, es lo que hay.
+Entonces... ...si yo desarrollara esto... ...para un oftalmólogo... ...significa de que... ...este mismo
+software... ...bueno, se llama plataforma, no es cierto... ...le debe servir... ...para la cirugía... ...de
+los oftalmólogos... ...que están en diferentes tipos de escenarios... ...ya sea consultorio, ya sea
+clínico... ...es por eso que estamos manejando... ...el diseño del tipo... ...TENAL, imagino que
+habrán leído... ...que es un TENAL, si no lo han leído... ...tienen que hacerlo, porque este es...
+...el instrumento que debería tener... ...porque dice cosas... ...entonces, es así que dicen, miren...
+...solución universal, el sistema debe ser desarrollado... ...para permitir... ...ser colocado... ...en
+cualquier empresa, negocio... ...entonces, no es... ...no hay el pretexto aquí, por ejemplo... ...que
+diga... ...es que el dueño lo maneja así... ...no hay más que un dueño, no hay más que el
+portecario... ...como cuando hacían el sistema 1... ...no, aquí no... ...solución universal le sirve a
+cualquiera... ...lo mismo, si lo hiciera para colegio... ...debería servirle también a un colegio...
+...comunicado, particular o de colegio... ...cualquiera, ¿cuál es la diferencia? ...que de repente el
+fiscal no se lleva el módulo de pago... ...porque los fiscales no pagan... ...pero los particulares sí
+pagan... ...pero la parte académica, no importa si es fiscal... ...si es particular... ...hay un
+Ministerio de Educación... ...que le dice y regula... ...que todos los colegios... ...deben ser
+bimestrales... ...entonces el colegio no va a decir... ...nosotros decidimos que sea bimestral...
+...para que aproveche el mejor alumno... ...no puede decidir eso... ...el Ministerio de Educación...
+...regula y dice... ...ustedes van con los conocimientos... ...ser, saber, hacer y decidir y quitar
+uno... ...entonces es que quito uno... ...todos los colegios deben sujetarse bajo la misma regla...
+...no es de que yo sigo con los cuatro... ...no, si sigue con los cuatro está fuera... ...de la
+exigencia... ...y estandarización... ...que pide el Ministerio... ...entonces si yo hago colegio...
+...creo que tengo varios fondos... ...tengo el académico, tengo el de pago... ...tengo la
+educatividad, tengo todo... ...entonces que significa... ...que si este es un colegio fiscal... ...no
+tendrá el módulo de pago... ...pero si tiene toda la parte académica, la introducción... ...colegios
+particulares... ...de colegios fiscales... ...siempre le van a pedir... ...el Rudder... ...porque es el
+registro único que llena... ...todos los estudiantes... ...que eso lo maneja el CEDUCA...
+...entonces no estamos haciendo nada más... ...para una determinada empresa... ...entonces el
+que no demuestra... ...el que no es universal... ...no hay nada más que hacerle en su trabajo, por
+favor... ...por eso debe ser universal... ...y debe trabajar con todo lo que es... ...la estructura del
+CIPOSAS... ...el que es usuario de bitácora... ...ahí mismo no hay problema... ...porque lo han
+trabajado bien... ...han trabajado inclusive con... ...la autorización y autenticación... ...que le
+denominamos... ...¿no es cierto?... ...para que ustedes puedan visualizar... ...por perfiles, por
+grupo... ...por nivel... ...como ustedes quisieran... ...desde el comienzo... ...no han trabajado sin
+ningún tipo de dificultad... ...entonces no hay problema... ...yo creo que el avance lo tienen... ...el
+100%... ...inclusive la bitácora... ...tienen la captura del IP... ...de las acciones... ...que hace cada
+usuario... ...la hora y la fecha... ...tal vez la configuración... ...del servidor... ...no tomarlo si está
+en Canadá o en Europa... ...donde ustedes quieran... ...la configuración siempre es la nuestra...
+...entonces si alguien no configuró tal vez eso... ...pero en realidad la mayoría lo tenía...
+...entonces hasta ahí vamos... ...vamos con la parte número 4... ...facilidad de uso... ...sucede
+que el software... ...que se realiza... ...son para un conjunto... ...de negocios... ...y en cada
+negocio... ...hay un conjunto de personas... ...y todas las personas tienen diferentes perfiles...
+...para poder utilizar... ...entonces tal como ustedes... ...fíjense que cuando ingresan a cualquier
+software... ...ustedes empiezan a visualizar y mirar... ...toda la funcionalidad que se les
+presenta... ...en la mayoría de los casos... ...si ustedes lo miran por ejemplo... ...a los
+procesadores de texto... ...lo que es Office... ...ustedes pueden observar... ...que no importa
+cualquiera de las versiones que ustedes manejan... ...ellos tienen un conjunto de opciones... ...y
+las opciones... ...más usadas por los usuarios... ...lo colocan en una especie... ...de un toolbar...
+...de una barrita de herramientas... ...¿qué colocan ahí? ...lo más usado... ...por ejemplo, ¿qué es
+lo que más usan ustedes cuando están haciendo un texto? ...copiar, cortar, pegar... ...todas esas
+partes... ...en vez de que usted vaya y abra... ...una de las opciones... ...y ahí capture lo que
+quiere copiar... ...ustedes lo manejan... ...sin ningún tipo de problema... ...con las... ...con las
+herramientas que están ahí, inclusive... ...si nosotros le queremos dar mayor... ...facilidad al
+usuario... ...ustedes ven que si ustedes manejan bien la tecla... ...ustedes saben... ...cómo poder
+copiar, cómo poder cortar... ...sin ni siquiera ir a una barra de herramientas... ...¿por qué? porque
+en la barra... ...en el teclado... ...están configuradas las operaciones... ...más necesarias... ...y
+también, inclusive el mouse... ...no solamente se sirve para deslizar... ...también ustedes pueden
+utilizarlo... ...para que ustedes puedan tener... ...las funcionalidades más usadas... ...entonces,
+esa situación... ...o sea, cuando yo digo guardar... ...puedo ir a decirle, abrir el archivo... ...aquí lo
+guardo, puedo hacerlo ahí... ...lo puedo hacer por el teclado... ...tengo uno... ...entonces, ¿qué
+están haciendo ustedes... ...para poder darle... ...ese tipo de características? ...por ejemplo,
+cuando yo estoy dentro de un sofá... ...y busco algo... ...y no me acuerdo, hay una búsqueda...
+...que yo anoto el nombre y me sale... ...todos aquellos que están con el nombre... ...me va
+dando algún tipo de facilidad... ...para que yo pueda trabajar... ...dentro de este tipo de
+escenarios... ...y así como eso... ...porque hay infinidad de cosas... ...todas las mejoras... ...todo
+lo que yo le pueda brindar... ...como facilidad de uso... ...por eso se llama así... ...es para que el
+usuario pueda trabajar... ...en tiempo más utilizado... ...que no le demore tanto en hacer tres
+click... ...y decidir encontrar lo que busca... ...todo debería estar directamente... ...en sus manos
+para poder trabajar... ...sin ningún tipo de dificultad... ...por eso, fíjense incluso... ...hasta los
+mismos prototipos... ...los prototipos que se van haciendo... ...en el mismo formato... ...en la
+mayoría... ...porque así el cliente o el usuario... ...o el usuario nuevo que recién está
+ingresando... ...empieza a familiarizarse... ...y ve que todas las características tienen de
+repente... ...el mismo estilo... ...de poder ser presentado... ...entonces, eso es lo que ustedes
+deben buscar aquí... ...donde dice facilidad de uso... ...por eso dice... ...aprender a usar el
+sistema... ...usar el componente, estrategia del usuario... ...y todo lo que es la entrada y la
+salida... ...y todo... ...quiero que lo comprendan y cada uno traerá... ...lo mejor que ustedes lo
+vean... ...para cada rubro... ...que se está trabajando dentro de él... ...aquí donde dice reporte
+personalizado... ...es cierto que el reporte... ...es la parte más... ...importante de una empresa...
+...porque en realidad el reporte... ...me da la característica... ...de poder saber exactamente...
+...cómo anda mi negocio... ...cuando yo tengo un software... ...que está en un servidor en las
+nubes... ...el dueño puede estar en otro país... ...y va a seguir en línea lo que pasa con su
+negocio... ...entonces... ...es así como nosotros podemos emitir... ...aparte de que son varios
+formatos... ...hay algunos formatos diferentes... ...que puede ser EXE, HTML... ...IMEI, PDE,
+Portable... ...otro tipo de formatos que ustedes quieran agregarle... ...entonces me debe
+permitir... ...generar a varios tipos de formatos... ...pero también me debe... ...permitir de que yo
+pueda... ...buscar, hacer mi búsqueda... ...por comando de voz... ...que ya la mayoría también...
+...en el sistema uno hizo... ...entonces no es ninguna logra, ya saben... ...para poder trabajar...
+...con este tipo de recursos de la IA... ...y poder solicitar... ...este tipo de... ...de consulta que lo va
+a hacer... ...y lo va a emitir... ...obviamente... ...lo van a trabajar de una parte del móvil... ...de una
+parte del móvil... ...es lo que más nos gusta... ...es como el dueño que diga, a ver... ...cuáles son
+mis stocks mínimos... ...que yo voy a comprar... ...entonces le va a decir, el producto 1 tiene 5...
+...el producto 10 tiene 4... ...el producto 20 tiene 7... ...entonces yo sé que sea mi urgencia...
+...entonces yo le digo, elaborame un pedido... ...y me elabora el pedido... ...y de cada uno
+colocarle 100 unidades... ...entonces... ...yo estoy construyendo en vez de que yo esté
+escribiendo... ...esa es una de las... ...características importantes... ...en la cual ustedes...
+...deben ir buscando... ...o es como cuando ustedes... ...por ejemplo dicen, a ver... ...quiero ver,
+si cual es el oftalmólogo... ...quiero ver el reporte... ...del día viernes... ...cuánto... ...están
+disponibles, qué horas están disponibles... ...entonces debería salir un reporte... ...está a las 9 de
+la mañana... ...a las 11 de la mañana y a las 3 de la tarde... ...entonces en vez de que yo vaya y
+busque... ...y mire y tarde un montón de tiempo... ...me da esa facilidad... ...me da ese tipo de
+reporte... ...entonces yo empiezo... ...yo sé que hay el día viernes... ...entonces a las 11 de la
+mañana y ya voy a mi formulario... ...donde voy a alinar... ...yo tengo la información, a ver...
+...entonces, cada uno busca... ...cada uno debe buscar el ciclo... ...y el costismo es muy
+importante... ...que ustedes quieran... ...y obtener... ...ese tipo de información... ...entonces eso
+es lo que ustedes hacen aquí... ...en el reporte personalizado... ...entonces no solamente es...
+...que sea de manera textual... ...sino lo más urgente... ...porque sabemos que todos tienen
+apuros... ...y a veces... ...cuando nosotros escribimos no va... ...y cuando nosotros estamos de
+repente... ...quién sabe, no tenemos el tiempo para escribir... ...nada más queremos hablar...
+...porque ya es rápido... ...por más que tarde... ...pero ya estamos esperando... ...esperando
+respuesta... ...entonces esa es una de las situaciones... ...en la cual se empieza a visualizar...
+...otro de las características es... ...esto acá... ...y la restauración... ...pasa que... ...la información
+que nosotros escribimos... ...dentro de una base ATO... ...siempre hay un momento en el cual...
+...se hace una copia de seguridad... ...tal cual como cuando ustedes configuran... ...por ejemplo...
+...y cualquier información que ustedes quieran tenerlo de repente... ...en un dispositivo... ...o tal
+vez en un drive que está en la nube... ...ustedes dicen a las 3 de la mañana... ...que se copie
+esto de mi celular... ...y así pierde su celular y se recupera su información... ...una empresa... ...lo
+más válido es su información... ...puede haber un incendio... ...puede haber una catastrófica...
+...dentro de la empresa... ...pero si yo lo tengo dentro de un servidor de la nube... ...con
+protección... ...con seguridad... ...es por eso que las empresas pagan muchísimo... ...el servidor y
+todo eso... ...porque la información es lo más importante... ...así me roben la computadora...
+...pero no importa... ...podemos comprar otra computadora... ...pero no podemos comprar la
+información... ...la información ni toda la parte del mundo... ...la van a recuperar... ...entonces lo
+que más cuida es la persona y es... ...entonces la parte de backup... ...me lo van a hacer de dos
+formas... ...uno de manera manual... ...significa que ustedes... ...en ese momento dicen...
+...ahorita yo decido hacer una copia de seguridad y lo hago... ...otro de manera automática...
+...en realidad todo lo... ...las herramientas de programación... ...ya lo tienen... ...uno va a saber
+utilizarla... ...ni siquiera se programa ahora de cero... ...ahora todo está hecho... ...no es cuestión
+de saber utilizarla nada más... ...entonces ustedes programan automáticamente... ...y dicen...
+...todos los días a las una de la mañana... ...se va a hacer una copia de seguridad... ...pero aquí
+también hay que tener... ...un poquito de cuidado ¿no?... ...como ustedes tienen servicio libre...
+...le dan a veces también un contador... ...muy poquito... ...a veces ustedes se lo botan todo... ...y
+llegan aquí y ya no hay nada para... ...para limpiar... ...entonces eso también vean por favor... ...y
+dicen... ...sí, tenía cinco, pero ya lo hicimos, ya no podemos... ...o sea, no, siempre vean... ...ya,
+porque a veces... ...creen ustedes que va a copiar, copiar, copiar... ...y ya no, cuando uno paga...
+...sí, me permite hacer eso, yo estoy pagando... ...pero cuando no pagamos... ...les han de ir en
+la infección... ...entonces tienen que ver cuántas veces... ...para que eso se pueda visualizar...
+...entonces esa característica... ...de... ...la parte de acá...entonces... ...trabaja para eso, y aquí la
+restauración... ...por ejemplo... ...se acabó algo... ...se termina agosto... ...empezamos a empezar
+septiembre... ...yo cogero mi información, hago mi cierre del mes... ...y hago mi copia el segundo
+día... ...por algún motivo... ...el primero de septiembre o el dos de septiembre... ...ha tenido
+problema el... ...el sistema, o tal vez... ...hubo algún tipo de debido de información... ...entonces
+yo... ...empiezo nuevamente a trabajar y empiezo a recuperar... ...mi información... ...o de
+repente, por ejemplo... ...hemos trabajado con la gestión del 25... ...desde el primero de enero...
+...hasta el 31 de diciembre... ...y hemos hecho un cierre de gestión... ...y ahora digo, a ver...
+...hoy es septiembre, quiero saber... ...mi mercadería, en el mes de septiembre... ...cuál fue su
+comportamiento, qué producto vendíamos más... ...y qué producto ahora estamos vendiendo...
+...entonces la persona... ...lo único que hace es... ...recuperar su información de la gestión 20-
+25... ...ya no puede... ...modificar nada... ...no puede hacer absolutamente nada... ...pero puede
+mirar toda su información... ...puede sacar reportes, puede ver informaciones... ...todo puede
+mirar... ...pero entonces yo tengo toda... ...mi copia de seguridad por fecha... ...y lo puedo más
+esperar las veces que yo la necesite... ...porque no hay varias gestiones abiertas... ...entonces
+me voy a la gestión 20-25... ...20-24 o 20-20... ...o sea, todas las gestiones están ahí...
+...entonces para eso sirve, ¿no?... ...de que todo lo que usted recupera... ...en algún momento lo
+utiliza... ...y lo ve... ...entonces eso, por ejemplo, a ocasión tiene... ...una parte de seguridad y...
+...una parte de la restauración... ...todos ustedes... ...están trabajando con web y móvil... ...y tal
+vez... ...hacer énfasis un poquito como el modelo SaaS... ...como ustedes ven... ...el enfoque del
+software... ...como servicio SaaS... ...web y móvil... ...es obligatorio en realidad... ...tanto para el
+proyecto... ...como para el examen... ...¿qué significa de que... ...de que ustedes deberían rotar...
+...miren que sé... ...eso que he podido ver... ...en los jóvenes que se quedaron a defender ese
+día... ...de que hay grupos... ...que solamente uno está en móvil... ...y los cinco están en web...
+...¿y cuál es el motivo?... ...de que todavía no saben manejar la herramienta... ...entonces,
+siempre van a haber herramientas nuevas... ...si ustedes van a entrar a esta carrera... ...es
+porque toda la vida... ...van a manejar nuevas herramientas... ...no es de que no sabía y por eso
+no... ...entonces, no estemos en esta carrera... ...si no nos gusta hacer cada día... ...otras
+cosas... ...estar en esta carrera es porque todos los días... ...van a haber tecnología nueva...
+...esto, como les digo, no es una tecnología genial... ...como la demás carreras... ...por ejemplo,
+el derecho... ...¿cuándo se modifica uno de sus artículos que tienen?... ...tienen que hacer un
+congreso... ...tienen que hacer de todo para modificarlo... ...entonces, ellos lo aprenden y... ...de
+cada... ...lo tienen lo mismo, aquí no... ...aquí la tecnología crece de manera exponencial...
+...entonces, ¿eso qué significa?... ...de que el que no quiere aprender... ...entonces, no está...
+...dentro de la carrera que... ...significa de que si ustedes están aquí... ...es porque todos los
+días... ...hay que aprender en esto, porque si no... ...no habría... ...no habría dónde estar,
+sabemos de que... ...la idea cada vez viene con fuerza... ...entonces, ¿esto qué significa?... ...de
+que si ustedes no saben ni idea... ...no puede ser que la IA lo maneje a ustedes... ...ustedes
+tienen que saber... ...características de la IA para poder... ...utilizarla de la mejor manera
+posible... ...por ejemplo... ...los morenos de UML... ...me están presentando puro IA... ...¿qué
+hace la IA?... ...pone la base A... ...todos aquellos que tienen base A, ponen la IA... ...lo hacen,
+porque la IA... ...sólo le interesa colocar la base A... ...yo aquí les pido... ...que me visualicen...
+...la clase Interfa... ...la clase Control... ...y la clase Inicidad... ...entonces, si yo veo su documento
+de esa base A...
+This file is longer than 30 minutes.
+Go Unlimited
+ at 
+https://turboscribe.ai/
+ to transcribe files up to 10 hours long.

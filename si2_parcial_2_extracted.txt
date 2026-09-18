@@ -1,0 +1,3451 @@
+UNIVERSIDAD AUTONOMA GABRIEL RENE MORENO
+FACULTAD DE INGENIERÍA EN CIENCIAS DE LA COMPUTACIÓN Y TELECOMUNICACIONES
+PROYECTO:
+Plataforma 
+Omnicanal
+ de Comercio Electrónico con Realidad Aumentada e Inteligencia Artificial para la Gestión de Ventas, Reservas e Inventario de la Cadena de Tiendas de Ropa '
+FashionStore
+'
+Autores:                                                     Carrera:
+Choque 
+Leon
+ Yeison          
+   “
+Ingeniería en sistemas”
+             “Ingeniería 
+en ”
+ 
+Materia:
+ 
+Sistemas de Información 
+2
+                
+INF
+-
+ 
+4
+12
+ 
+SA
+Docente
+: 
+Ing. Angélica Garzón Cuéllar.
+SANTA CRUZ-BOLIVI
+A
+INDICE
+1. PERFIL
+4
+1.1 Introducción
+4
+Antecedentes
+5
+Justificación
+5
+1.2 Objetivos
+6
+Objetivo general
+6
+Objetivos Específicos
+6
+1.3 Descripción del Problema
+7
+1.3.1 Problemas Identificados
+8
+1.3.2 Formulación del problema
+9
+1.4 Alcance
+10
+1.4.1 Gestión de Usuarios, Seguridad y Auditoría (Bitácora)
+10
+1.4.2 Recepción Documental y Control Físico de Requisitos
+11
+1.4.3 Pasarela de Pagos y Matriculación Automatizada
+11
+1.4.4 Planificación Académica y Control de Grupos (Algoritmo CEIL)
+12
+1.4.5 Registro de Calificaciones y Evaluaciones por Asignatura
+12
+1.4.6 Procesamiento de Admisión, Reubicación y Reportes PDF
+13
+2. MARCO TEÓRICO
+14
+CAPÍTULO 1: EL MÉTODO ISHIKAWA
+14
+2.1. IDENTIFICAR PROBLEMA
+14
+2.1.1.2. Depurar Problemas
+15
+2.1.1.3. Lista de Problemas Finales
+15
+2.1.1.4. Propietario de los Problemas
+16
+2.1.1.5 Análisis Del Problema
+17
+2.1.1.6 Estimación Y Cuantificación De Problemas
+17
+2.1.1.7 Alternativa de Cambio
+18
+2.1.1.8. Conclusión y Recomendación
+20
+2.1.1.9 Diseñar El Diagrama De Ishikawa
+20
+Estructura de Modelos de Uso
+21
+3. MODELO DE NEGOCIO
+22
+3.1 
+DIAGRAMA
+ DE ACTIVIDAD
+22
+4. CAPITULO 2 FLUJO DE TRABAJO: CAPTURA DE REQUISITOS
+26
+4.1 Identificar actores y casos de uso
+26
+4.1.1 Lista de actores
+26
+4.1.2 Casos de uso propuestos
+27
+4.2 Priorizar casos de uso
+28
+CICLO
+ 1
+30
+CICLO 2
+30
+4.3 Detallar y prototipar casos de uso
+31
+4.3.1 PROTOTIPO
+47
+CICLO 1
+47
+CICLO 2
+51
+5. CAPITULO 3 Flujo De Trabajo: Análisis
+56
+5.1. Análisis De La Arquitectura
+56
+5.1.1 Identificar Paquetes
+56
+5.1.2 Relacionar Paquete Y Caso De Uso
+58
+5.1.3. Vista De Paquete
+61
+5.1.4. Analizar casos de usos “Diagrama De Comunicación”
+64
+CICLO 1
+64
+CICLO 2
+67
+5.1.5. Análisis de clases
+70
+CICLO 1
+70
+CICLO 2
+74
+5.1.6. Análisis De Paquete
+78
+6. Flujo De Trabajo: Diseño
+79
+6.1. Diseño De Arquitectura (Física y Lógica)
+79
+6.1.1 Diseño Arquitectura Física (Diagrama de Despliegue)
+79
+6.1.2. Diseño Lógico Arquitectura (Organizado por Capas)
+79
+6.2. Diseñar Casos de Uso (Diagrama de Secuencia)
+80
+CICLO 1
+80
+CICLO 2
+85
+6
+.3.1. Diseño De Datos Lógicos
+90
+6.3.2 Diseño De Datos Físico
+94
+Script
+100
+Diagrama relacional
+107
+Actualización de Tuplas (Población de datos
+108
+Consultas
+112
+7. FLUJO DE TRABAJO: IMPLEMENTACIÓN
+120
+7.1 Herramientas de desarrollo de la aplicación WEB
+120
+7.2 Implementación de la Arquitectura del Sistema
+121
+7.3 Implementación de la Arquitectura del Subsistemas
+122
+Conclusión
+125
+Recomendaciones
+125
+Bibliografía
+126
+Enlaces
+127
+ANEXOS
+127
+1. PERFIL
+1.1 Introducción
+En la actualidad, el sector del comercio minorista de moda ha experimentado una transformación acelerada hacia los canales digitales. Sin embargo, a pesar de la comodidad que ofrece el comercio electrónico tradicional, los consumidores se enfrentan a un desafío persistente al momento de comprar ropa en línea: la imposibilidad de probarse las prendas antes de adquirirlas. Esta incertidumbre sobre el entalle, cómo lucirá la ropa en su tipo de cuerpo o si el color será el adecuado, genera desconfianza en el cliente y resulta en altas tasas de devolución para las empresas, lo que impacta negativamente en la rentabilidad y la logística.
+Por otro lado, las tiendas de ropa con presencia física enfrentan sus propios retos operativos, principalmente la falta de una integración eficiente de su inventario entre múltiples sucursales y sus plataformas de venta digital. Con frecuencia, los clientes acuden a una tienda buscando una prenda, talla o color específico, solo para descubrir que no está disponible en esa ubicación, lo que se traduce en una mala experiencia de usuario y en la pérdida de ventas potenciales por no contar con un sistema centralizado que gestione reservas y disponibilidad en tiempo real.
+Para dar solución a estas problemáticas, el presente proyecto plantea el desarrollo de 
+"
+FashionStore
+"
+, una Plataforma Inteligente de Comercio Electrónico orientada a cadenas de tiendas de ropa. Esta solución tiene como propósito revolucionar la experiencia de compra al crear un puente perfecto entre el mundo físico y el digital, dotando tanto a los clientes como a los administradores de herramientas tecnológicas de vanguardia.
+El valor agregado y el núcleo innovador de 
+FashionStore
+ radican en la integración de dos tecnologías clave: la Realidad Aumentada (AR) y la Inteligencia Artificial (IA). A través de la aplicación móvil, los usuarios tendrán acceso a un "vestidor virtual" mediante AR, permitiéndoles simular de manera interactiva cómo les quedarían las prendas utilizando la cámara de su dispositivo. Asimismo, la plataforma integrará servicios de Inteligencia Artificial que actuarán como un asesor de moda personalizado, sugiriendo prendas, colecciones y accesorios basándose en las preferencias del usuario, su historial de compras, sus tallas y las temporadas actuales.
+Complementando estas innovaciones, el sistema administrará de manera integral el catálogo de prendas y el inventario distribuido en diversas sucursales. Los usuarios podrán realizar compras directas mediante pasarelas de pago digitales o, de forma alternativa, reservar prendas específicas desde la plataforma web o móvil para luego acudir a una sucursal física, probarse la ropa y concretar el pago en el punto de caja.
+El desarrollo de esta plataforma se guiará bajo el rigor de la metodología del Proceso Unificado de Desarrollo de Software (PUDS) y el lenguaje de modelado UML 2.5. Para su implementación, se utilizará una arquitectura moderna que incluye Python y 
+FastAPI
+ para el desarrollo de un 
+Backend
+ robusto, bases de datos relacionales con PostgreSQL, Angular para el portal web administrativo y de ventas, y 
+Flutter
+ con Dart para la creación de la aplicación móvil multiplataforma que soportará las capacidades de Realidad Aumentada.
+1.2
+ 
+Objetivo general
+Desarrollar una plataforma 
+omnicanal
+ de comercio electrónico con Realidad Aumentada e Inteligencia Artificial para la gestión de ventas, reservas e inventario de la cadena de tiendas de ropa '
+FashionStore
+'
+.
+ 
+1.3 
+Objetivos Específicos
+Para alcanzar el objetivo general, se establecen los siguientes objetivos específicos basados en las fases del ciclo de vida del software:
+Recolectar
+ la información y requerimientos mediante entrevistas al personal administrativo y clientes de la cadena de tiendas, para comprender el flujo de ventas actual, las deficiencias en el control de inventario distribuido y la necesidad de probar prendas en canales digitales, abarcando entornos web y móviles.
+Analizar
+ los procesos del negocio utilizando el Lenguaje Unificado de Modelado (UML) y la metodología PUDS, definiendo con claridad los requisitos funcionales y no funcionales para los módulos de usuarios, sucursales, catálogo, inventario, reservas, pagos y la integración de tecnologías AR e IA.
+Diseñar
+ la arquitectura lógica, las interfaces responsivas y el modelo de base de datos relacional (PostgreSQL), garantizando la integridad de la información de clientes e inventario, y asegurando una experiencia de usuario óptima y escalable tanto en web como en dispositivos móviles.
+Implementar
+ las funcionalidades de la plataforma construyendo el 
+backend
+ y 
+frontend
+ mediante el desarrollo de:
+Un 
+Backend
+ y API REST
+ en Python (
+FastAPI
+/Django) para centralizar la lógica de negocio.
+Una 
+aplicación web
+ administrativa (Angular) para gestionar sucursales, catálogo y reportes.
+Una 
+aplicación móvil
+ multiplataforma (
+Flutter
+ y Dart) para clientes en Android 
+e
+ iOS.
+Funcionalidades innovadoras
+ que incluyan un "vestidor virtual" con Realidad Aumentada (AR) y un motor de recomendaciones de moda basado en Inteligencia Artificial (IA).
+Probar
+ el funcionamiento integral de la plataforma mediante pruebas unitarias y de caja negra, validando el rendimiento del vestidor virtual (AR), la precisión de la IA y la correcta sincronización del inventario 
+omnicanal
+, asegurando un sistema libre de errores antes de su despliegue final.
+1.
+4 
+Descripción del Problema
+Para comprender la magnitud de las deficiencias operativas en el sector 
+retail
+ de moda y, específicamente, en las cadenas de tiendas de ropa, es fundamental analizar el modelo de negocio actual y el flujo de trabajo fragmentado que emplean entre sus sucursales y sus canales digitales. El proceso de comercialización de prendas de vestir no es un evento aislado, sino una experiencia que inicia con la atracción visual, pasa por la verificación de entalle y culmina en la compra (física o digital). Actualmente, las cadenas de ropa operan con una profunda desconexión entre su inventario físico distribuido y sus plataformas de venta online, lo que genera serias limitaciones que afectan tanto al personal administrativo como a los consumidores. A continuación, se describe detalladamente cada uno de estos procesos y las problemáticas inherentes a su gestión actual.
+Proceso 1: Búsqueda de Prendas y Experiencia de Prueba (Física y Digital)
+El ciclo de compra comienza cuando el cliente busca una prenda específica, ya sea por temporada, talla o estilo. En el modelo digital tradicional (e-
+commerce
+ estándar o redes sociales), el principal problema es la total incertidumbre del cliente respecto al entalle: no existe forma de saber cómo le quedará la prenda, si el color le favorece o si la talla es la correcta para su tipo de cuerpo. Esta falta de visualización genera desconfianza, carritos de compra abandonados y, en caso de concretarse la venta, una altísima tasa de devoluciones. Por otro lado, en la búsqueda física, el cliente debe recorrer la tienda buscando su talla entre los percheros, muchas veces sin éxito, generando una experiencia de compra frustrante y dependiente de la asistencia manual de un vendedor.
+Proceso 2: Gestión de Inventario Distribuido y Control de Stock
+Al tratarse de una cadena de tiendas con múltiples sucursales, el manejo del inventario representa uno de los mayores cuellos de botella. Actualmente, cada sucursal maneja su stock de forma aislada o mediante sistemas de punto de venta que no se sincronizan en tiempo real con una base de datos central ni con la tienda web. Esto genera que un cliente vea un producto disponible en internet, pero al llegar a la sucursal física, la prenda ya haya sido vendida. Asimismo, si un vendedor de la "Sucursal A" no tiene una camisa en talla M, no tiene una herramienta rápida y 
+confiable para saber si la "Sucursal B" la tiene en stock, perdiendo la oportunidad de retener la venta y derivar al cliente.
+Proceso 3: Gestión de Reservas y Conexión 
+Omnicanal
+En el comportamiento de compra moderno, muchos clientes prefieren ver el catálogo desde su teléfono móvil y luego acudir a la tienda solo a probarse la ropa y pagar (modelo web-
+to
+-store). Sin embargo, el proceso actual carece de un sistema formal de reservas. Si un cliente pide por WhatsApp que le "guarden" una prenda, el proceso es completamente empírico, dependiendo de un papel con el nombre del cliente pegado a la ropa. Esto genera desorden en la sucursal, prendas bloqueadas que no se venden si el cliente no asiste, y conflictos cuando otro vendedor comercializa por error la prenda reservada, evidenciando una total falta de trazabilidad y omnicanalidad.
+Proceso 4: Asesoramiento Personalizado y Recomendación de Moda
+La asesoría de imagen y la recomendación de prendas complementarias (venta cruzada) es vital en el rubro de la moda. En la actualidad, este proceso depende exclusivamente de la memoria, el estado de ánimo o la experiencia del vendedor de turno en la tienda física. En el entorno digital, este asesoramiento es directamente inexistente. El cliente navega por un catálogo plano sin recibir sugerencias basadas en su historial de compras previo, sus tallas frecuentes, sus preferencias de color o la temporada actual. La empresa está perdiendo un valioso volumen de ventas al no aprovechar los datos del cliente para ofrecer recomendaciones inteligentes y personalizadas de outfits completos.
+Proceso 5: Registro de Ventas, Cobros y Trazabilidad
+Finalmente, el cierre de la transacción presenta una dualidad problemática. Las ventas realizadas físicamente se registran en un sistema de caja (POS) tradicional, mientras que las pocas ventas digitales se procesan por transferencias manuales o plataformas desconectadas. Esta falta de integración unificada impide calcular con precisión métricas vitales del negocio: cuáles son las prendas con mayor rotación, qué sucursal es más rentable, qué colores se venden menos en invierno, o cuál es el valor del ciclo de vida de un cliente recurrente. La información financiera y de comportamiento de usuario queda dispersa, dificultando la toma de decisiones estratégicas por parte de la gerencia.
+1.4 Alcance
+La 
+Plataforma Inteligente de Comercio Electrónico para Tienda de Ropa (
+FashionStore
+)
+ abarcará las áreas funcionales necesarias para gestionar de manera integrada una cadena de tiendas de ropa 
+multiciudad
+. El sistema centralizará el control de sucursales, inventarios distribuidos por tallas y colores, catálogo de prendas, reservas físicas (
+web-
+to
+-store
+), pasarelas de pago, vestidores virtuales con Realidad 
+Aumentada (AR), recomendaciones impulsadas por Inteligencia Artificial (IA), puntos de venta en caja y reportes gerenciales. 
+A continuación, se detalla el núcleo operativo que el equipo implementará durante el desarrollo del proyecto en el semestre, estructurado en los siguientes módulos principales basados en los requerimientos del sistema:
+5.1 Módulo de Seguridad, Autenticación y Gestión de Usuarios
+RF01. Registro de Clientes:
+ Permite el registro de nuevos compradores en la plataforma web y móvil. 
+RF02. Gestión de Usuarios y Roles:
+ Administración de cuentas y control de accesos con permisos específicos según el rol del usuario (
+Administrador, Encargado de Sucursal, Cajero, Proveedor y Cliente
+). 
+Seguridad y Autenticación:
+ Mecanismos de inicio y cierre de sesión, encriptación de contraseñas y protección de datos sensibles de los usuarios. 
+5.2 Módulo de Gestión de Sucursales y Proveedores
+RF03. Gestión de Sucursales y Ciudades:
+ Administración de múltiples ciudades y sucursales físicas que conforman la cadena de tiendas de ropa. 
+RF06. Gestión de Proveedores:
+ Administración de los diferentes proveedores que abastecen de prendas a la cadena comercial. 
+Coordinación Operativa:
+ Interfaz para que el personal interno y los proveedores interactúen con el flujo logístico del negocio. 
+5.3 Módulo de Catálogo, Tallas, Colores, Temporadas y Colecciones
+RF04. Gestión de Productos de Ropa:
+ Registro, actualización y control integral de las prendas de vestir. 
+RF05. Gestión de Atributos de Moda:
+ Administración centralizada de tallas, colores, categorías y temporadas comerciales (ej. primavera-verano, otoño-invierno, temporada escolar). 
+RF23. Gestión de Temporadas y Colecciones:
+ Asociación de productos con colecciones específicas de la marca. 
+RF07. Consulta de Catálogo:
+ Interfaz para que los clientes exploren y filtren prendas desde la plataforma web y la aplicación móvil. 
+5.4 Módulo de Inventarios y Control de Stock por Sucursal
+RF08. Consulta de Disponibilidad:
+ Permite al cliente verificar en tiempo real qué prendas, tallas y colores se encuentran disponibles en cada sucursal específica. 
+RF21. Control de Existencias por Sucursal:
+ Consolidación y control riguroso del inventario físico y digital distribuido en todas las tiendas. 
+RF20 / RF22. Actualización y Movimientos de Inventario:
+ Registro histórico de entradas, salidas, recepciones de mercadería y actualización automática del stock tras ventas o reservas. 
+5.5 Módulo de Reservas (Web-
+to
+-Store) y Gestión en Sucursal
+RF09. Selección Múltiple para Reservas:
+ Capacidad para que el cliente elija múltiples prendas indicando la sucursal de preferencia y un horario aproximado de atención. 
+RF10 / RF11. Registro y Notificación de Reservas:
+ Creación de la reserva en el sistema y envío de notificaciones automáticas a la sucursal correspondiente para preparar las prendas. 
+RF12. Estado de Reservas:
+ Seguimiento y consulta del estado actual de las reservas realizadas. 
+Atención Física en Sucursal:
+ Funcionalidades para que el encargado confirme la recepción del cliente, quien se probará la ropa en los vestidores físicos. 
+5.6 Módulo de Ventas, Carrito y Pasarelas de Pago (Digital y POS)
+RF14. Carrito de Compras:
+ Funcionalidad para que el cliente agregue los productos seleccionados. 
+RF15 / RF16. Compras Digitales:
+ Ejecución de transacciones de compra directas desde la aplicación móvil o la plataforma web. 
+RF17 / RF18. Ventas Presenciales y Punto de Caja:
+ Registro de ventas presenciales por parte del cajero y procesamiento de pagos directos en el punto de caja físico de la sucursal. 
+RF19. Integración de Pasarela de Pago:
+ Conexión con un sistema de pagos electrónicos para procesar pagos digitales de forma segura. 
+5.7 Módulo de Innovación Tecnológica (Realidad Aumentada e Inteligencia Artificial)
+RF13. Vestidor Virtual (Realidad Aumentada):
+ Implementación en la aplicación móvil de tecnología de Realidad Aumentada (AR) para que el cliente visualice virtualmente cómo le queda una prenda utilizando la cámara de su dispositivo. 
+RF25. Inteligencia Artificial (IA):
+ Incorporación de un asistente virtual y motor de recomendaciones inteligente para sugerir productos basándose en el historial de navegación, compras previas, temporada, categoría, talla y disponibilidad. 
+5.8 Módulo de Reportes, 
+Dashboards
+ y Auditoría
+RF24. Reportes de Ventas e Inventario:
+ Generación de reportes detallados y 
+dashboards
+ ejecutivos para apoyar la toma de decisiones gerenciales. 
+Métricas Globales:
+ Visualización de indicadores empresariales sobre el rendimiento de las sucursales, productos con mayor rotación y estado general del negocio. 
+Parte I – Fundamentación Teórica
+a) E-
+commerce
+ (Comercio Electrónico)
+El comercio electrónico comprende la compra y venta de bienes y servicios a través de redes electrónicas, principalmente internet. Ha revolucionado los modelos de negocio tradicionales al ofrecer disponibilidad continua (24/7), eliminación de fronteras geográficas y optimización en la experiencia del usuario.
+a. Como Usuario (Funcionamiento y Experiencia):
+Amazon
+:
+ Referente mundial del B2C (Business-
+to
+-
+Consumer
+). Funciona mediante un catálogo masivo centralizado y de terceros (
+Marketplace
+), destacándose por su motor de recomendación predictivo 
+hiperpersonalizado
+, transacciones rápidas mediante el sistema 
+1-Click
+ y una robusta red logística global que garantiza entregas eficientes.
+Alibaba
+:
+ Gigante enfocado principalmente en el ecosistema B2B y B2C a gran escala. Conecta de manera directa a fabricantes y proveedores globales con compradores masivos, permitiendo la negociación directa de volúmenes, cotizaciones a medida y pasarelas de pago integradas (como 
+Alipay
+).
+Shopify
+:
+ Plataforma SaaS (Software as a 
+Service
+) enfocada en la facilidad de uso para emprendedores y marcas. Como usuario final, ofrece una experiencia de compra unificada y minimalista, con pasarelas integradas y un proceso de pago simplificado sin importar la tienda independiente que se visite.
+b. Como Desarrollador (Para qué sirve, beneficios y creación de tiendas online):
+Magento (Adobe Commerce):
+Para qué sirve:
+ Sistema robusto de comercio electrónico orientado a grandes empresas con catálogos masivos y alta complejidad operativa.
+Beneficios:
+ Arquitectura altamente escalable, control absoluto del código fuente, soporte 
+multi-tienda
+ y personalización avanzada.
+Cómo se usa:
+ Requiere despliegue en servidores dedicados o 
+cloud
+, desarrollo modular en PHP y configuración avanzada de bases de datos relacionales, ofreciendo flexibilidad total a cambio de una curva de aprendizaje técnica elevada.
+PrestaShop
+:
+Para qué sirve:
+ Plataforma de código abierto (
+open 
+source
+) diseñada para 
+PyMEs
+ que buscan crear tiendas online 
+autogestionables
+.
+Beneficios:
+ Interfaz de administración intuitiva, gran variedad de módulos oficiales y comunitarios, y optimización nativa para SEO.
+Cómo se usa:
+ Se instala mediante un paquete web en un servidor PHP/MySQL, permitiendo configurar catálogos, impuestos y métodos de pago a través de un panel de control gráfico sin requerir desarrollo desde cero.
+WooCommerce
+:
+Para qué sirve:
+ Plugin de comercio electrónico flexible para WordPress, convirtiendo cualquier sitio web informativo en una tienda virtual operativa.
+Beneficios:
+ Integración fluida con blogs y páginas corporativas, bajo costo de implementación inicial y miles de extensiones de pago o gratuitas.
+Cómo se usa:
+ Se instala directamente como un complemento dentro de un gestor de contenidos WordPress, configurando productos, pasarelas de pago y envíos mediante menús interactivos integrados.
+b) Pasarelas de Pago
+Las pasarelas de pago son servicios tecnológicos que validan y procesan de forma segura transacciones financieras digitales entre el comprador y el comercio, cifrando datos sensibles mediante estándares de seguridad internacionales (como PCI-DSS).
+a. Formas de pago online tradicionales:
+Tarjetas de Débito y Crédito:
+ Transacciones procesadas mediante redes internacionales (Visa, 
+Mastercard
+) utilizando protocolos de doble autenticación (como 3D 
+Secure
+) para verificar la titularidad.
+Códigos QR (Pagos interoperables):
+ Método de alta adopción en la región que permite realizar transferencias bancarias instantáneas escaneando un código QR generado por la plataforma desde la aplicación móvil de cualquier entidad financiera.
+Transferencias Bancarias:
+ Movimientos directos entre cuentas de origen y destino, validados de forma automatizada mediante pasarelas con confirmación de recepción de fondos.
+b. Libélula (Pasarela de pago local en Bolivia):
+Descripción y funcionamiento:
+ Es una de las plataformas multicanal pioneras en Bolivia que integra en una sola interfaz pasarela de pagos web, links de pago, facturación electrónica en línea avalada por el Servicio de Impuestos Nacionales y botones de pago de diversas entidades bancarias locales (como BNB, BCP, Bisa, etc.) y billeteras móviles como Tigo Money. Facilita a los comercios cobrar mediante QR Simple, tarjetas y transferencias con confirmación en tiempo real vía API REST.
+c. PayPal y 
+Stripe
+ (Opciones de pasarela de pago internacional):
+PayPal:
+ Billetera digital y pasarela global que permite realizar pagos y cobros internacionales vinculando tarjetas o cuentas bancarias, actuando como un intermediario que protege la información financiera directa del usuario.
+Stripe
+:
+ Pasarela de pago global altamente orientada a desarrolladores, reconocida por su API flexible, soporte 
+multidisdivisa
+ y su capacidad para procesar transacciones recurrentes o pagos con tarjeta de forma nativa e integrada dentro de cualquier aplicación web o móvil.
+c) Servicios de Entrega (
+Deliverys
+)
+a. Funcionamiento de los 
+Deliverys
+ (Ej. 
+Yaigo
+ / 
+Yummy
+):
+Operan como plataformas de última milla que conectan digitalmente a tres actores: el cliente, el comercio y el repartidor independiente (
+rider
+). El flujo inicia cuando un cliente solicita un pedido; el sistema asigna la orden al repartidor más cercano, quien 
+se dirige al establecimiento, retira la mercancía y realiza la entrega final validando la transacción mediante la app móvil.
+b. Cálculo de pagos para una entrega:
+El costo del servicio de entrega se determina mediante algoritmos que consideran múltiples factores:
+Distancia geográfica:
+ Kilómetros de recorrido entre la ubicación de origen (sucursal) y el destino final.
+Peso y dimensiones:
+ El tamaño y la fragilidad de la carga (por ejemplo, transportar una caja voluminosa de ropa versus un paquete ligero).
+Frecuencia y demanda (Tarifa dinámica):
+ Incremento de precios en horas pico, días festivos o condiciones climáticas adversas.
+Tipo de servicio:
+ Si se trata de un servicio exprés prioritario o un envío consolidado programado.
+d) PUDS (Proceso Unificado de Desarrollo de Software)
+El 
+Proceso Unificado de Desarrollo de Software
+ es un marco metodológico iterativo e incremental caracterizado por estar guiado por casos de uso, centrado en la arquitectura del software y enfocado en la mitigación continua de riesgos. Se divide en cuatro fases principales:
+Inicio:
+ Definición del alcance del proyecto, identificación de actores y viabilidad comercial.
+Elaboración:
+ Análisis detallado de los requerimientos, modelado de la arquitectura y diseño de los componentes clave.
+Construcción:
+ Desarrollo sistemático del código y construcción iterativa del producto de software.
+Transición:
+ Pruebas de integración, despliegue del sistema en entornos de producción y entrega final a los usuarios.
+e) UML (Lenguaje Unificado de Modelado)
+UML (
+Unified
+ 
+Modeling
+ 
+Language
+)
+ es el lenguaje estándar de modelado de sistemas de software orientado a objetos. Permite especificar, visualizar, construir y documentar los artefactos de un sistema mediante diagramas estáticos (como diagramas de clases y componentes) y diagramas dinámicos (como diagramas de casos de uso, secuencia y actividades), facilitando la comprensión y el diseño técnico de la plataforma propuesta.
+2. MARCO TEÓRICO
+CAPÍTULO 1: EL MÉTODO ISHIKAWA
+2.1. IDENTIFICAR PROBLEMA
+2.1.1. Lista de Problemas
+P1:
+ Inadecuado registro de postulantes y toma de datos de inscripción manual en ventanilla.
+P2:
+ Falta de un registro centralizado para realizar el seguimiento en tiempo real del estado de los requisitos (Saber si están: 
+Entregado, Pendiente u Observado
+).
+P3:
+ Inexistencia de un control automatizado para la planificación y asignación de alumnos a grupos respetando el límite de 70 estudiantes.
+P4:
+ Ausencia de un sistema de control que permita verificar qué requisitos físicos faltan sin tener que revisar manualmente los archivadores físicos.
+P5:
+ Dificultad para planificar la cantidad exacta de grupos a abrir por cada materia según el número cambiante de inscritos.
+P6:
+ Errores manuales en el registro y verificación de los datos de depósitos bancarios de matrícula, provocando retrasos en la habilitación.
+P7:
+ Desconocimiento exacto de las carreras de la FICCT con mayor demanda de cupos durante el periodo de inscripción.
+P8:
+ Deficiente control en el estado de los postulantes con solicitudes de prórroga temporal para la entrega de requisitos físicos.
+P9:
+ Falta de reportes diarios de postulantes habilitados, inhabilitados y observados de forma automatizada.
+P10:
+ Demora en la comunicación interna entre las ventanillas de recepción y la dirección académica para reportar incidentes en la planificación de grupos.
+P11:
+ Saturación y aglomeraciones críticas en el área de ventanillas debido a la necesidad de hacer filas presenciales para el llenado manual de datos.
+P12:
+ Registro de notas de los 3 exámenes parciales por parte de los profesores en cuadernos o archivos locales de Excel propensos a pérdida.
+P13:
+ Saturación reactiva de cupos en carreras de alta demanda en los días pico debido al procesamiento manual de las listas de admisión.
+P14:
+ Inadecuada ubicación física de las pizarras de anuncios y carteleras informativas de la facultad en relación al flujo de estudiantes.
+P15:
+ Falta de publicidad institucional y presencia en entornos digitales para difundir las convocatorias del CUP a colegios de provincias.
+P16:
+ Dificultad para planificar, actualizar y publicar las listas de asignación horaria de docentes de forma rápida y centralizada.
+P17:
+ Desconocimiento de la cantidad exacta de vacantes disponibles en tiempo real sin realizar una revisión visual planilla por planilla.
+P18:
+ Ausencia de un módulo centralizado para planificar y validar estrictamente las restricciones de contratación docente (Títulos de posgrado y máximo 4 grupos).
+P19:
+ Lentitud en la atención al postulante durante las fechas límite de inscripción (consecuencia de la carga manual de datos).
+P20:
+ Falta de un historial centralizado de postulantes de gestiones pasadas para el análisis de rendimiento académico histórico.
+P21:
+ Conciliación de transacciones financiera lenta y manual debido a la ausencia de una pasarela de pagos integrada con el sistema.
+2.1.1.2. Depurar Problemas
+Para el desarrollo del sistema web, se ejecuta el filtro metodológico para descartar aquellos problemas que pertenecen a la infraestructura física no modificable, la logística externa o que son consecuencias indirectas de fallas técnicas primarias.
+Se depura P14 (Inadecuada ubicación de las pizarras de anuncios):
+ Es un problema de distribución espacial y señalización presencial dentro de los módulos del campus.
+Se depura P15 (Falta de publicidad institucional):
+ Es una deficiencia que compete exclusivamente al departamento de relaciones públicas y marketing de la universidad.
+Se depura P19 (Lentitud en la atención):
+ Se descarta por ser una consecuencia operativa directa provocada por la falta de un sistema automatizado de control de datos.
+2.1.1.3. Lista de Problemas Finales
+P1:
+ Inadecuado registro de datos de postulantes y toma de información de inscripción manual en ventanilla académica.
+P2:
+ Falta de un control sistematizado del estado de los requisitos físicos presentados (Saber si entregó o tiene pendiente el C.I., Título, etc.).
+P3:
+ Inexistencia de un control automatizado para la planificación de grupos basado en el tope estricto de 70 alumnos por aula.
+P4:
+ Deficiente control en la planificación y validación de requisitos de contratación docente (Verificación de títulos de posgrado y límite de 1 a 4 grupos).
+P5:
+ Desconocimiento del estado exacto de cupos y vacantes disponibles por carrera durante el proceso de planificación de la admisión.
+P6:
+ Falta de reportes automáticos de rendimiento académico, postulantes habilitados, inhabilitados e indicadores del CUP.
+P7:
+ Vulnerabilidad en el control y centralización del registro de las notas de los 3 exámenes parciales de las asignaturas troncales.
+P8:
+ Dificultad para procesar de forma manual el algoritmo de admisión que cruza el promedio final ($\ge 60$) con las prioridades de Primera y Segunda Opción de carrera.
+P9:
+ Deficiente control en la actualización centralizada de datos maestros (Datos de postulantes, materias asignadas y cargas docentes).
+P10:
+ Aglomeración física y saturación en ventanillas ante la ausencia de un módulo de 
+pre-registro
+ web de datos para organizar el flujo del proceso.
+P11:
+ Retrasos e ineficiencia en la validación de matrículas debido a la falta de automatización mediante una pasarela de pagos integrada.
+2.1.1.4. Propietario de los Problemas
+PROBLEMA
+PROPIETARIO PRIMARIO
+APOYOS (CO-RESPONSABLES)
+P1.
+ Inadecuado registro de datos de postulantes en ventanilla.
+Operador de Ventanilla
+Administrador Académico, Postulante
+P2.
+ Falta de control sistematizado del estado de requisitos físicos.
+Operador de Ventanilla
+Administrador Académico
+P3.
+ Inexistencia de control automatizado para la capacidad de grupos (Máx. 70).
+Administrador Académico
+Operador de Ventanilla
+P4.
+ Deficiente control en validación de requisitos de contratación docente.
+Administrador Académico
+Docente
+P5.
+ Desconocimiento del estado exacto de cupos y vacantes por carrera.
+Administrador Académico
+Operador de Ventanilla
+P6.
+ Falta de reportes automáticos de rendimiento académico e indicadores.
+Administrador Académico
+—
+P7.
+ Vulnerabilidad en el control del registro de notas de los 3 parciales.
+Docente
+Administrador Académico
+P8.
+ Dificultad para procesar el algoritmo de admisión (1ra y 2da Opción).
+Administrador Académico
+Demandante
+P9.
+ Deficiente control en la actualización centralizada de datos maestros.
+Administrador Académico
+Operador de Ventanilla, Docente
+P10.
+ Aglomeración física por falta de 
+pre-registro
+ de datos en entorno web.
+Demandante
+Operador de Ventanilla, Administrador
+P11.
+ Retrasos e ineficiencia en la validación por falta de pasarela de pagos.
+Administrador Académico
+Operador de Ventanilla, Postulante
+2.1.1.5 Análisis Del Problema
+2.1.1.6 Estimación Y Cuantificación De Problemas
+Problema
+Impacto Cualitativo
+Indicador Cuantitativo
+P1. Registro manual
+Alta tasa de errores de transcripción en nombres y C.I.
+Tiempo (minutos) de registro manual vs. validación digital.
+P2. Control de requisitos
+Incertidumbre del estado físico (Pendiente/Observado) y revisiones redundantes.
+Cantidad de expedientes físicos revisados a mano por período.
+P3. Capacidad de grupos
+Hacinamiento en aulas y desequilibrio en la carga pedagógica.
+Número de aulas que superan el límite de 70 estudiantes.
+P4. Validación docente
+Riesgo legal por contratar docentes sin posgrado o con exceso de grupos.
+Cantidad de docentes observados con más de 4 grupos asignados.
+P5. Vacantes en tiempo real
+Planificación académica a ciegas durante el cierre de inscripciones.
+Días de retraso en consolidar las plazas libres por carrera.
+P6. Falta de reportes
+Bloqueo en la toma de decisiones estratégicas por parte de la dirección.
+Horas hombre empleadas para estructurar un reporte estadístico.
+P7. Registro de notas
+Vulnerabilidad a pérdidas y modificaciones no autorizadas en archivos Excel locales.
+Porcentaje de planillas con errores de transcripción o retrasos.
+P8. Algoritmo de admisión
+Alta complejidad operativa para cruzar promedios finales y opciones de carrera.
+Número de postulantes reubicados incorrectamente de carrera.
+P9. Datos maestros
+Desincronización de listas oficiales entre ventanillas y docentes.
+Cantidad de discrepancias informáticas detectada
+2.1.1.7 Alternativa de Cambio
+P1: Inadecuado registro de datos de postulantes e inscripción manual en ventanilla.
+Implementar un módulo de registro web de postulantes (desarrollado en PHP/Laravel) para centralizar la captura de datos personales y la selección de carreras desde el primer contacto del usuario con el sistema.
+P2: Falta de un control sistematizado del estado de los requisitos físicos presentados.
+Desarrollar una interfaz de control documental para los operadores de ventanilla, permitiendo auditar y actualizar digitalmente los estados (
+Entregado, Pendiente, Observado
+) del C.I., Título de Bachiller y demás documentos físicos obligatorios.
+P3: Inexistencia de un control automatizado para la planificación y capacidad de grupos.
+Programar un algoritmo en el 
+backend
+ conectado a PostgreSQL que calcule automáticamente la cantidad de grupos necesarios según el número de inscritos, bloqueando las inscripciones con un tope estricto de 70 estudiantes por aula para evitar el hacinamiento.
+P4: Deficiente control en la planificación y validación de requisitos de contratación docente.
+Diseñar un submódulo de gestión docente que valide de forma estricta las restricciones del negocio: verificar perfiles profesionales (Diplomados, Maestrías), controlar que no existan cruces de horarios y restringir la carga horaria a un máximo de 4 grupos por docente.
+P5: Desconocimiento del estado exacto de cupos y vacantes disponibles por carrera.
+Implementar un panel de control con actualización en tiempo real que muestre las vacantes disponibles para las carreras de la facultad (Sistemas, Informática, Redes y Robótica), facilitando la planificación antes del cierre del periodo de admisión.
+P6: Falta de reportes automáticos de rendimiento académico e indicadores del CUP.
+Estructurar un motor de reportería avanzada que genere automáticamente documentos en formato PDF (optimizados para dispositivos móviles) con consultas estructuradas y filtros dinámicos por gestión académica (ej. Semestre I-2025, II-2025, I-2026), materias y docentes.
+P7: Vulnerabilidad en el control y centralización del registro de las notas de los 3 parciales.
+Crear un portal docente seguro para el registro directo de calificaciones, parametrizado bajo el esquema oficial de evaluación de la facultad: Primer examen (30 
+pts
+), Segundo examen (30 
+pts
+) y Examen final (40 
+pts
+), eliminando los cuadernos y archivos Excel locales.
+P8: Dificultad para procesar manualmente el algoritmo de admisión (1ra y 2da Opción).
+Desarrollar un módulo de admisión automatizado que aplique rigurosamente las reglas del CUP: evaluar que el estudiante tenga una nota $\ge 60$ en cada una de las materias base (
+Computación, Matemática, Física e Inglés
+). Si el postulante aprueba pero su carrera elegida (ej. Robótica) superó el cupo de plazas, el sistema ordenará por mejores promedios y reubicará automáticamente al resto en su segunda opción de carrera.
+P9: Deficiente control en la actualización centralizada de datos maestros.
+Centralizar la persistencia de datos mediante un modelo relacional en PostgreSQL alojado en un servidor en la nube, asegurando que la dirección académica, los docentes y los operadores de ventanilla visualicen exactamente las mismas listas oficiales sincrónicas.
+P10: Aglomeración física y saturación en ventanillas por falta de 
+pre-registro
+ web.
+Implementar un sistema de 
+pre-registro
+ web de datos e identificación complementado con un módulo de asignación de turnos y filas digitales desde la página web, optimizando el flujo presencial en la facultad para que el postulante acuda únicamente a verificar sus requisitos físicos.
+P11: Retrasos e ineficiencia en la validación por falta de pasarela de pagos.
+Integrar de forma nativa una pasarela de pagos automatizada (
+Stripe
+, PayPal o Billeteras Digitales) para procesar el pago de matrícula del CUP en línea, logrando la conciliación financiera inmediata y la habilitación automática del postulante en el sistema.
+ 
+ 
+ 
+2.1.1.8. Conclusión y Recomendación
+En conclusión, la Facultad presenta problemas críticos en el proceso de admisión al Curso Preuniversitario debido al registro manual de postulantes, el seguimiento físico de requisitos documentales, la falta de integración con una pasarela de pagos y la ausencia de una planificación académica automatizada. Estas deficiencias ocasionan aglomeraciones en ventanilla, retrasos en la habilitación de postulantes, errores en la asignación de grupos, dificultades en el control de carga docente y vulnerabilidad en el registro de calificaciones.
+Asimismo, la falta de un sistema centralizado limita la generación de reportes confiables y dificulta la toma de decisiones por parte de la administración académica. La gestión manual de notas, cupos por carrera y reubicación de postulantes en segunda opción aumenta el riesgo de errores en el proceso final de admisión.
+Por tanto, se recomienda desarrollar una aplicación web que centralice la gestión del proceso CUP, permitiendo registrar postulantes, validar requisitos, procesar pagos en línea, calcular grupos según la capacidad máxima de 70 estudiantes, asignar docentes y horarios sin cruces, registrar calificaciones, determinar la admisión de los postulantes y generar reportes estadísticos en formato PDF. Esta solución permitirá mejorar la eficiencia del proceso, reducir errores humanos, optimizar la planificación académica y brindar información confiable para la toma de decisiones.
+2.1.1.9 Diseñar El Diagrama De Ishikawa
+Estructura de Modelos de Uso
+3. MODELO DE NEGOCIO
+3.1 
+DIAGRAMA
+ DE ACTIVIDAD
+4. CAPITULO 2 FLUJO DE TRABAJO: CAPTURA DE REQUISITOS
+4.1 Identificar actores y casos de uso
+4.1.1 Lista de actores
+Administrador
+Es el usuario con mayor nivel de permisos dentro del sistema. Tiene acceso completo a la gestión de usuarios, postulantes, docentes, materias, grupos, aulas, horarios, carreras, cupos, reportes y configuración general del sistema.
+Personal de admisión
+Es el usuario encargado de apoyar en el proceso de inscripción de postulantes. Puede registrar postulantes, verificar requisitos, revisar el estado de pagos y habilitar a los postulantes para participar en el Curso Preuniversitario.
+Postulante
+Es la persona interesada en ingresar a una carrera de la Facultad de Computación mediante el Curso Preuniversitario. Puede registrarse, seleccionar carrera de primera y segunda opción, consultar el estado de sus requisitos, realizar el pago y verificar su resultado de admisión.
+Docente
+Es el usuario encargado de impartir una materia dentro del Curso Preuniversitario. Puede consultar sus grupos asignados, revisar horarios y registrar calificaciones de los postulantes en las materias correspondientes.
+Coordinador académico
+Es el usuario encargado de supervisar la organización académica del Curso Preuniversitario. Puede revisar grupos, docentes, horarios, aulas, cupos por carrera y reportes académicos para apoyar la toma de decisiones.
+Pasarela de pago
+Es un servicio externo que procesa los pagos digitales realizados por los postulantes. Permite confirmar si una transacción fue aprobada o rechazada.
+4.1.2 Casos de uso propuestos
+CU1. Gestión de usuarios y autenticación
+ Permite registrar usuarios, iniciar sesión, cerrar sesión y asignar roles dentro del sistema.
+CU2. Registrar postulante
+ Permite registrar los datos personales del postulante y sus carreras de primera y segunda opción.
+CU3. Gestionar requisitos
+ Permite registrar, revisar y validar los requisitos entregados por cada postulante.
+CU4. Gestionar pagos
+ Permite registrar y confirmar el pago realizado por el postulante mediante pasarela digital.
+CU5. Gestionar carreras y cupos
+ Permite registrar carreras de la facultad y definir los cupos disponibles por gestión.
+CU6. Gestionar materias
+ Permite registrar y administrar las materias del Curso Preuniversitario, como Computación, Matemática, Física 
+y
+ Inglés.
+CU7. Gestionar docentes
+ Permite registrar docentes, especialidades, experiencia y disponibilidad horaria.
+CU8. Gestionar grupos
+ Permite crear grupos según la cantidad de postulantes habilitados y la capacidad máxima definida.
+CU9. Gestionar aulas
+ Permite registrar aulas disponibles, capacidad, ubicación y estado.
+CU10. Asignar horarios
+ Permite asignar horarios a grupos, docentes, materias y aulas, validando que no existan cruces.
+CU11. Registrar evaluaciones y notas
+ Permite registrar evaluaciones y calificaciones obtenidas por los postulantes en cada materia.
+CU12. Calcular admisión
+ Permite determinar si el postulante fue admitido o no, considerando nota mínima por materia, cupos disponibles y carrera seleccionada.
+CU13. Generar reportes
+ Permite generar reportes de postulantes inscritos, admitidos, no admitidos, pagos, grupos, docentes, materias, carreras y gestiones.
+CU14. Consultar resultado de admisión
+ Permite que el postulante consulte si fue admitido, no admitido o asignado a una carrera específica.
+CU15. Validar conflictos de horario
+ Permite verificar si existe cruce de horarios entre docentes, grupos o aulas antes de confirmar una asignación.
+CU16. Gestionar bitácora
+ Permite registrar las acciones realizadas por los usuarios dentro del sistema para fines de control y auditoría.
+4.2 Priorizar casos de uso
+Nº
+Caso de uso
+Estado
+Prioridad
+Riesgo
+Actores
+Ciclo
+CU1
+Gestión de usuarios y autenticación
+Incluido
+Crítico
+Crítico
+Administrador, Personal de admisión, Docente, Coordinador académico
+C1
+CU2
+Registrar postulante
+Incluido
+Crítico
+Crítico
+Postulante, Personal de admisión
+C1
+CU3
+Gestionar requisitos
+Incluido
+Crítico
+Significativo
+Personal de admisión, Administrador
+C1
+CU4
+Gestionar pagos
+Incluido
+Crítico
+Crítico
+Postulante, Pasarela de pago, Personal de admisión
+C
+2
+CU5
+Gestionar carreras y cupos
+Incluido
+Normal
+Significativo
+Administrador, Coordinador académico
+C
+2
+CU6
+Gestionar materias
+Incluido
+Normal
+Significativo
+Administrador, Coordinador académico
+C1
+CU7
+Gestionar docentes
+Incluido
+Normal
+Significativo
+Administrador, Coordinador académico
+C1
+CU8
+Gestionar grupos
+Incluido
+Crítico
+Crítico
+Administrador, Coordinador académico
+C1
+CU9
+Gestionar aulas
+Aprobado
+Normal
+Significativo
+Administrador, Coordinador académico
+C
+1
+CU10
+Asignar horarios
+Aprobado
+Crítico
+Crítico
+Administrador, Coordinador académico
+C2
+CU11
+Registrar evaluaciones y notas
+Aprobado
+Crítico
+Crítico
+Docente, Administrador
+C2
+CU12
+Calcular admisión
+Aprobado
+Crítico
+Crítico
+Administrador, Coordinador académico
+C2
+CU13
+Generar reportes
+Aprobado
+Normal
+Significativo
+Administrador, Coordinador académico, Personal de admisión
+C2
+CU14
+Consultar resultado de admisión
+Aprobado
+Normal
+Significativo
+Postulante
+C2
+CU15
+Validar conflictos de horario
+Aprobado
+Crítico
+Crítico
+Administrador, Coordinador académico
+C2
+CU16
+Gestionar bitácora
+Aprobado
+Normal
+Significativo
+Administrador
+C
+1
+CICLO
+ 1
+CU1. Gestión de usuarios y autenticación
+CU2. Registrar postulante
+CU3. Gestionar requisitos
+CU6. Gestionar materias
+CU7. Gestionar docentes
+CU8. Gestionar grupos
+CU9. Gestionar aulas
+CU16. Gestionar bitácora
+CICLO 2
+CU4. Gestionar pagos
+CU5. Gestionar carreras y cupos
+CU10. Asignar horarios
+CU11. Registrar evaluaciones y notas
+CU12. Calcular admisión
+CU13. Generar reportes
+CU14. Consultar resultado de admisión
+CU15. Validar conflictos de horario
+4.3 Detallar y prototipar casos de uso
+CICLO 1
+Campo
+Detalle
+Caso de uso
+Gestión de usuarios y autenticación
+Propósito
+Permitir el acceso seguro al sistema mediante inicio de sesión, cierre de sesión y administración de usuarios según roles.
+Resumen
+Permite registrar usuarios, iniciar sesión, cerrar sesión y controlar el acceso según el rol asignado.
+Actores
+Administrador, Personal de admisión, Docente, Coordinador académico, Postulante
+Actor iniciador
+Usuario del sistema
+Flujo del proceso
+1. El usuario ingresa a la pantalla de inicio de sesión. 
+2. Introduce su correo o usuario y contraseña. 
+3. El sistema valida las credenciales. 
+4. El sistema identifica el rol del usuario. 
+5. El sistema redirige al panel correspondiente según el rol.
+Precondición
+El usuario debe estar registrado en el sistema y contar con credenciales válidas.
+Postcondición
+El usuario accede al sistema con los permisos correspondientes.
+Excepción
+Credenciales incorrectas, usuario inactivo, campos vacíos o sesión expirada.
+Campo
+Detalle
+Caso de uso
+Registrar postulante
+Propósito
+Registrar los datos personales del postulante y sus carreras de primera y segunda opción.
+Resumen
+Permite crear el registro inicial del postulante dentro del proceso de admisión al Curso Preuniversitario.
+Actores
+Postulante, Personal de admisión
+Actor iniciador
+Postulante o Personal de admisión
+Flujo del proceso
+1. El actor ingresa al módulo de inscripción. 
+2. Registra los datos personales del postulante. 
+3. Selecciona la carrera de primera opción. 
+4. Selecciona la carrera de segunda opción.
+ 5. Selecciona la gestión académica. 
+6. El sistema valida los campos obligatorios. 
+7. El sistema verifica que el CI no esté duplicado. 
+8. El sistema guarda el registro del postulante.
+Precondición
+Debe existir una gestión académica activa y carreras disponibles.
+Postcondición
+El postulante queda registrado con estado inicial “Registrado”.
+Excepción
+CI duplicado, correo inválido, datos incompletos o gestión no activa.
+Campo
+Detalle
+Caso de uso
+Gestionar requisitos
+Propósito
+Registrar, revisar y validar los requisitos presentados por cada postulante.
+Resumen
+Permite controlar si el postulante cumple con la documentación requerida para continuar con el proceso de inscripción.
+Actores
+Personal de admisión, Administrador
+Actor iniciador
+Personal de admisión
+Flujo del proceso
+1. El actor ingresa al módulo de requisitos. 
+2. Busca al postulante registrado. 
+3. Visualiza los requisitos solicitados. 
+4. Revisa la documentación presentada.
+5. Marca cada requisito como cumplido, pendiente u observado. 
+6. El sistema guarda la verificación. 
+7. Si todos los requisitos están cumplidos, el sistema habilita al postulante para el pago.
+Precondición
+El postulante debe estar registrado en el sistema.
+Postcondición
+Los requisitos del postulante quedan registrados y actualizados.
+Excepción
+Postulante no encontrado, documentación incompleta o requisitos pendientes.
+Campo
+Detalle
+Caso de uso
+Gestionar materias
+Propósito
+Administrar las materias que forman parte del Curso Preuniversitario.
+Resumen
+Permite registrar, editar, eliminar y consultar las materias del CUP, como Computación, Matemática, Física e Inglés.
+Actores
+Administrador, Coordinador académico
+Actor iniciador
+Administrador o Coordinador académico
+Flujo del proceso
+1. El usuario inicia sesión.
+2. Accede al módulo de materias.
+3. Visualiza la lista de materias registradas.
+4. Selecciona una acción: registrar, editar, eliminar o consultar.
+5. Ingresa o modifica los datos de la materia.
+6. El sistema valida la información ingresada.
+7. Guarda los cambios en la base de datos.
+Precondición
+El usuario debe estar autenticado y contar con permisos de gestión académica.
+Postcondición
+La información de las materias queda actualizada en el sistema.
+Excepción
+Materia duplicada, campos incompletos o materia asociada a evaluaciones existentes.
+Campo
+Detalle
+Caso de uso
+Gestionar docentes
+Propósito
+Administrar la información de los docentes que dictarán clases en el Curso Preuniversitario.
+Resumen
+Permite registrar, editar, eliminar y consultar docentes, considerando su especialidad, grado académico, experiencia y estado.
+Actores
+Administrador, Coordinador académico
+Actor iniciador
+Administrador o Coordinador académico
+Flujo del proceso
+1. El usuario inicia sesión.
+2. Accede al módulo de docentes. 
+3. Visualiza la lista de docentes registrados. 
+4. Selecciona una acción: registrar, editar, eliminar o consultar. 
+5. Ingresa los datos personales y académicos del docente.
+6. El sistema valida los datos ingresados. 
+7. Verifica que el docente cumpla los requisitos establecidos.
+8. Guarda la información del docente.
+Precondición
+El usuario debe estar autenticado y contar con permisos de administración académica.
+Postcondición
+El docente queda registrado o actualizado y disponible para asignaciones académicas.
+Excepción
+Docente duplicado, datos incompletos o incumplimiento de requisitos mínimos.
+Campo
+Detalle
+Caso de uso
+Gestionar grupos
+Propósito
+Crear y administrar los grupos académicos del Curso Preuniversitario.
+Resumen
+Permite generar grupos según la cantidad de postulantes inscritos y la capacidad máxima permitida por grupo.
+Actores
+Administrador, Coordinador académico
+Actor iniciador
+Coordinador académico
+Flujo del proceso
+1. El usuario inicia sesión. 
+2. Accede al módulo de grupos.
+3. Selecciona la gestión académica. 
+4. El sistema consulta la cantidad de postulantes inscritos. 5. El sistema consulta la capacidad máxima permitida por grupo. 
+6. Calcula la cantidad de grupos necesarios. 
+7. El usuario confirma la creación de grupos. 
+8. El sistema asigna nombre, cupo máximo, turno y modalidad.
+9. Guarda los grupos generados.
+Precondición
+Debe existir una gestión académica activa y postulantes inscritos.
+Postcondición
+Los grupos quedan creados para la gestión académica seleccionada.
+Excepción
+No existen postulantes inscritos, capacidad inválida o grupos ya generados.
+Campo
+Detalle
+Caso de uso
+Gestionar aulas
+Propósito
+Administrar las aulas disponibles para el desarrollo de clases del Curso Preuniversitario.
+Resumen
+Permite registrar, editar, eliminar y consultar aulas, controlando su capacidad, tipo, ubicación y estado.
+Actores
+Administrador, Coordinador académico
+Actor iniciador
+Administrador o Coordinador académico
+Flujo del proceso
+1. El usuario inicia sesión. 
+2. Accede al módulo de aulas. 
+3. Visualiza las aulas registradas. 
+4. Selecciona una acción: registrar, editar, eliminar o consultar. 
+5. Ingresa los datos del aula. 
+6. El sistema valida la capacidad, tipo y ubicación. 
+7. Guarda los cambios realizados.
+Precondición
+El usuario debe estar autenticado y tener permisos de gestión académica.
+Postcondición
+Las aulas quedan registradas o actualizadas y disponibles para la asignación de horarios.
+Excepción
+Aula duplicada, capacidad inválida, campos vacíos o aula asociada a horarios existentes.
+Campo
+Detalle
+Caso de uso
+Gestionar bitácora
+Propósito
+Registrar y consultar las acciones realizadas por los usuarios dentro del sistema.
+Resumen
+Permite llevar un control de auditoría sobre las operaciones realizadas en los módulos del sistema.
+Actores
+Administrador
+Actor iniciador
+Sistema
+Flujo del proceso
+1. Un usuario realiza una acción dentro del sistema.
+2. El sistema identifica al usuario autenticado. 
+3. Captura el módulo donde se realizó la acción. 
+4. Registra la acción realizada, fecha, hora y descripción. 
+5. El administrador accede al módulo de bitácora. 
+6. Consulta los registros mediante filtros. 
+7. El sistema muestra el historial de acciones.
+Precondición
+El sistema debe estar en funcionamiento y los usuarios deben realizar acciones registrables.
+Postcondición
+La acción queda registrada en la bitácora del sistema.
+Excepción
+Error de conexión con la base de datos o falla al registrar la acción.
+CICLO 2
+Campo
+Detalle
+Caso de uso
+Gestionar pagos
+Propósito
+Procesar y registrar el pago de inscripción del postulante mediante una pasarela digital.
+Resumen
+Permite confirmar el pago del postulante y habilitarlo oficialmente como inscrito al Curso Preuniversitario.
+Actores
+Postulante, Pasarela de pago, Personal de admisión
+Actor iniciador
+Postulante
+Flujo del proceso
+1. El postulante ingresa al módulo de pagos. 
+2. El sistema genera la solicitud de pago. 
+3. El postulante selecciona el método de pago. 
+4. El sistema redirige a la pasarela de pago. 
+5. La pasarela procesa la transacción. 
+6. El sistema recibe el código de transacción. 
+7. El sistema valida el pago. 
+8. El sistema registra el pago como confirmado. 
+9. El sistema actualiza el estado del postulante a “Inscrito”.
+Precondición
+El postulante debe estar registrado y tener sus requisitos aprobados.
+Postcondición
+El pago queda registrado y el postulante queda habilitado para participar en el CUP.
+Excepción
+Pago rechazado, transacción cancelada, error de conexión con la pasarela o pago pendiente.
+Campo
+Detalle
+Caso de uso
+   
+Propósito
+Registrar las carreras ofertadas y definir los cupos disponibles por gestión académica.
+Resumen
+Permite administrar las carreras de la facultad y controlar la cantidad de postulantes que podrán ser admitidos en cada una.
+Actores
+Administrador, Coordinador académico
+Actor iniciador
+Administrador o Coordinador académico
+Flujo del proceso
+1. El actor ingresa al módulo de carreras. 
+2. Registra o actualiza una carrera. 
+3. Selecciona la gestión académica. 
+4. Define el cupo máximo para la carrera. 
+5. El sistema valida que los datos sean correctos. 
+6. El sistema guarda la información.
+Precondición
+El usuario debe estar autenticado y contar con permisos de administración académica.
+Postcondición
+Las carreras y cupos quedan disponibles para el proceso de admisión.
+Excepción
+Carrera duplicada, cupo inválido, campos vacíos o gestión no registrada.
+Campo
+Detalle
+Caso de uso
+Asignar horarios
+Propósito
+Asignar horarios a grupos, docentes, materias y aulas evitando cruces.
+Resumen
+Permite programar las clases del CUP mediante la selección de grupo, materia, docente, aula, día y hora, validando conflictos antes de guardar.
+Actores
+Administrador, Coordinador académico
+Actor iniciador
+Coordinador académico
+Flujo del proceso
+1. El usuario inicia sesión. 
+2. Accede al módulo de horarios. 
+3. Selecciona el grupo académico. 
+4. Selecciona la materia. 
+5. Selecciona el docente disponible. 
+6. Selecciona el aula disponible. 
+7. Define el día, hora de inicio y hora de fin. 
+8. El sistema valida la disponibilidad del docente. 
+9. El sistema valida la disponibilidad del aula. 
+10. El sistema valida el horario del grupo. 
+11. Si no existe conflicto, guarda la asignación.
+Precondición
+Deben existir grupos, docentes, materias y aulas registradas.
+Postcondición
+El horario queda asignado correctamente en el sistema.
+Excepción
+Cruce de horario, aula ocupada, docente no disponible, grupo sin cupo o datos incompletos.
+Campo
+Detalle
+Caso de uso
+Registrar evaluaciones y notas
+Propósito
+Registrar las evaluaciones y calificaciones obtenidas por los postulantes en cada materia, ya sea de forma individual o mediante carga masiva desde un archivo Excel.
+Resumen
+Permite definir evaluaciones por materia, registrar las notas de los postulantes y realizar carga masiva de calificaciones mediante un archivo Excel, para calcular el rendimiento académico de los postulantes.
+Actores
+Docente, Administrador
+Actor iniciador
+Docente
+Flujo del proceso
+1. El docente inicia sesión.
+2. Accede al módulo de evaluaciones y notas.
+3. Selecciona la gestión académica.
+4. Selecciona grupo y materia asignada.
+5. Selecciona la evaluación correspondiente.
+6. Visualiza la lista de postulantes del grupo.
+7. El docente elige el modo de registro de notas: manual o carga masiva.
+8. Si elige registro manual, registra la nota obtenida por cada postulante.
+9. Si elige carga masiva, selecciona y sube un archivo Excel con las calificaciones.
+10. El sistema valida el formato del archivo Excel, las columnas requeridas y los datos de cada postulante.
+11. El sistema valida que las notas estén dentro del rango permitido.
+12. Guarda las calificaciones válidas.
+13. Registra o muestra los errores encontrados en la carga masiva, si existen.
+14. Calcula la nota final por materia.
+Precondición
+El docente debe estar asignado a una materia y grupo dentro de una gestión académica. Para carga masiva, el archivo Excel debe contener las columnas requeridas y corresponder al grupo y evaluación seleccionados.
+Postcondición
+Las notas quedan registradas y disponibles para el cálculo de admisión. En caso de carga masiva, se informa la cantidad de registros correctos y los errores encontrados.
+Excepción
+Nota fuera de rango, postulante no pertenece al grupo, evaluación no registrada, docente no asignado, archivo Excel con formato inválido, columnas faltantes o datos inconsistentes.
+Campo
+Detalle
+Caso de uso
+Calcular admisión
+Propósito
+Determinar si el postulante fue admitido o no de acuerdo con sus notas, materias aprobadas y cupos por carrera.
+Resumen
+Permite calcular el resultado final del postulante, verificando aprobación por materia y asignación a carrera según cupos disponibles.
+Actores
+Administrador, Coordinador académico
+Actor iniciador
+Coordinador académico
+Flujo del proceso
+1. El usuario inicia sesión. 
+2. Accede al módulo de admisión. 
+3. Selecciona la gestión académica. 
+4. El sistema consulta las notas del postulante por materia. 
+5. Verifica que cada materia tenga nota mayor o igual a 60. 
+6. Calcula el promedio final. 
+7. Ordena a los postulantes aprobados según rendimiento. 
+8. Verifica cupos disponibles en la primera opción de carrera. 
+9. Si existe cupo, asigna la primera opción. 
+10. Si no existe cupo, verifica la segunda opción. 
+11. Registra el estado final de admisión.
+Precondición
+Todas las notas del postulante deben estar registradas y los cupos por carrera deben estar definidos.
+Postcondición
+El postulante queda registrado como admitido, no admitido o asignado a segunda opción.
+Excepción
+Notas incompletas, materia reprobada, cupos agotados o carrera no disponible.
+Campo
+Detalle
+Caso de uso
+Generar reportes
+Propósito
+Generar reportes académicos y administrativos para apoyar la toma de decisiones.
+Resumen
+Permite consultar, visualizar, descargar o imprimir reportes sobre postulantes, pagos, grupos, docentes, materias, carreras y resultados de admisión.
+Actores
+Administrador, Coordinador académico, Personal de admisión
+Actor iniciador
+Usuario autorizado
+Flujo del proceso
+1. El usuario inicia sesión. 
+2. Accede al módulo de reportes. 
+3. Selecciona el tipo de reporte. 
+4. Define filtros como gestión, grupo, docente, materia, carrera o fecha. 
+5. Selecciona el formato de exportación. 
+6. El sistema consulta la información solicitada. 
+7. Genera el reporte. 
+8. Muestra vista previa del reporte. 
+9. Permite descargar o imprimir el reporte.
+Precondición
+Deben existir datos registrados en el sistema.
+Postcondición
+El reporte queda generado en el formato seleccionado.
+Excepción
+No existen datos para los filtros seleccionados, error al generar archivo o formato no disponible.
+Campo
+Detalle
+Caso de uso
+Consultar resultado de admisión
+Propósito
+Permitir que el postulante consulte su resultado final del proceso de admisión.
+Resumen
+Permite al postulante visualizar si fue admitido, no admitido o asignado a una carrera específica.
+Actores
+Postulante
+Actor iniciador
+Postulante
+Flujo del proceso
+1. El postulante inicia sesión. 
+2. Accede al módulo de consulta de resultado. 
+3. Selecciona la gestión académica correspondiente. 
+4. El sistema busca el resultado asociado al postulante. 
+5. Muestra el estado de admisión. 
+6. Si fue admitido, muestra la carrera asignada. 
+7. Muestra observaciones en caso de no admisión.
+Precondición
+El proceso de admisión debe haber sido calculado y publicado.
+Postcondición
+El postulante visualiza su resultado de admisión.
+Campo
+Detalle
+Caso de uso
+Validar conflictos de horario
+Propósito
+Verificar si existen cruces de horario entre docentes, grupos o aulas antes de confirmar una asignación.
+Resumen
+Permite detectar conflictos de horario para evitar que un docente, aula o grupo sea asignado en la misma franja horaria.
+Actores
+Administrador, Coordinador académico
+Actor iniciador
+Coordinador académico o Sistema
+Flujo del proceso
+1. El usuario intenta registrar o modificar un horario. 
+2. El sistema consulta los horarios existentes. 
+3. Compara día, hora de inicio, hora de fin, docente, aula y grupo. 4. Verifica disponibilidad del docente. 
+5. Verifica disponibilidad del aula. 
+6. Verifica disponibilidad del grupo. 
+7. Si no existe cruce, permite guardar el horario. 
+8. Si existe cruce, muestra el conflicto detectado.
+Precondición
+Deben existir horarios registrados o una nueva asignación en proceso.
+Postcondición
+El sistema evita asignaciones con conflicto de horario.
+Excepción
+Datos incompletos, docente sin disponibilidad, aula no registrada o error en la validación.
+4.3.1 PROTOTIPO
+CICLO 1
+CU1. Gestión de usuarios y autenticación
+CU2. Registrar postulante
+CU3. Gestionar requisitos
+CU6. Gestionar materias
+CU7. Gestionar docentes
+CU8. Gestionar grupos
+CU9. Gestionar aulas
+CU16. Gestionar bitácora
+CICLO 2
+CU4. Gestionar pagos
+CU5. Gestionar carreras y cupos
+CU10. Asignar horarios
+CU11. Registrar evaluaciones y notas
+CU12. Calcular admisión
+CU13. Generar reportes
+CU14. Consultar resultado de admisión
+CU15. Validar conflictos de horario
+5. CAPITULO 3 Flujo De Trabajo: Análisis
+5.1. Análisis De La Arquitectura
+ 
+5.1.1 Identificar Paquetes
+5.1.2 Relacionar Paquete Y Caso De Uso
+5.1.3. Vista De Paquete
+5.1.4. Analizar casos de usos “Diagrama De Comunicación”
+ 
+CICLO 1
+CICLO 2
+5.1.5. Análisis de clases
+CICLO 1
+CICLO 2
+5.1.6. Análisis De Paquete
+6. Flujo De Trabajo: Diseño
+ 
+6.1. Diseño De Arquitectura (Física y Lógica)
+ 
+6.1.1 Diseño Arquitectura Física (Diagrama de Despliegue)
+6.1.2. Diseño Lógico Arquitectura (Organizado por Capas)
+6.2. Diseñar Casos de Uso (Diagrama de Secuencia)
+CICLO 1
+CICLO 2
+6.3 Diseño De Datos 
+(Lógico y Físico)
+    
+6
+.3.1. Diseño De Datos Lógicos
+Diagrama de clase
+Diagrama de clase
+ Actual
+Mapeo
+PERSONA
+PK
+ID
+CI
+NOMBRE
+SEXO
+TELEFONO
+ROL
+PK
+ID
+NOMBRE
+DESCRIPCION
+USUARIO
+PK
+FK
+FK
+ID
+ID_PERSONA
+ID_ROL
+EMAIL
+PASSWORD
+ESTADO
+POSTULANTE
+PK/FK
+ID_PERSONA
+FECHA_NAC
+DIRECCION
+COLEGIO
+DOCENTE
+PK/FK
+ID_PERSONA
+GRADO_ACADEMICO
+EXPERIENCIA_DOCENTE
+ADMINISTRATIVO
+PK/FK
+ID_PERSONA
+AREA
+CARGO
+ESTADO
+SUPER_ADMINISTRADOR
+PK/FK
+ID_PERSONA
+CARGO
+ESTADO
+CARRERA
+PK
+ID
+NOMBRE
+DESCRIPCION
+ESTADO
+GESTION_ACADEMICA
+PK
+FK
+ID
+ID_POSTULANTE
+NOMBRE
+AÑO
+PERIODO
+FECHA_INI
+FECHA_FIN
+ESTADO
+CUPO_CARRERA
+PK
+FK
+FK
+ID
+ID_CARRERA
+ID_GESTIONACADEMICA
+CUPO_MAX
+CUPO_DISP
+POSTULANTE_CARRERA
+PK/FK
+PK/FK
+ID_POSTULANTE
+ID_CARRERA
+PRIORIDAD
+ADMISION
+PK
+FK
+FK
+FK
+ID
+ID_POSTULANTE
+ID_GESTIONACADEMICA
+ID_CARRERA
+PROMEDIO_FIN
+ESTADO
+OBSERVACIÓN
+REQUISITO
+PK
+FK
+FK
+ID
+ID_ABMINISTRADOR
+ID_POSTULANTE
+NOMBRE
+DESCRIPCION
+ESTADO
+PAGO
+PK
+FK
+FK
+ID
+ID_POSTULANTE
+ID_COMPROBANTE
+MONTO
+METODO_PAGO
+CODIGO_TRANSACCION
+ESTADO
+FECHA
+COMPROBANTE
+PK
+ID
+NRO_COMPROBANTE
+FECHA_EMISION
+GRUPO
+PK
+FK
+ID
+ID_GESTIONACADEMICA
+NOMBRE
+CUPO_MAX
+CANT_ESTUDIANTE
+MODALIDAD
+TURNO
+ESTADO
+POSTULANTE_GRUPO
+PK/FK
+PK/FK
+ID_POSTULANTE
+ID_GRUPO
+FECHA_ASIGNACION
+AULA
+PK
+ID
+AULA_NRO
+CAPACIDAD
+TIPO_AULA
+HORARIO
+PK
+FK
+FK
+FK
+FK
+ID
+ID_GRUPO
+ID_DOCENTE
+ID_MATERIA
+ID_AULA
+DIA
+HORA_INI
+HORA_FIN
+MODALIDAD
+ESPECIALIDAD
+PK
+ID
+NOMBRE
+DOCENTE_ESPECIALIDAD
+PK/FK
+PK/FK
+ID_DOCENTE
+ID_ESPECIALIDAD
+MATERIA
+PK
+ID
+NOMBRE
+DESCRIPCION
+ESTADO
+DOCENTE_MATERIA
+PK/FK
+PK/FK
+ID_DOCENTE
+ID_MATERIA
+EVALUACION
+PK
+FK
+FK
+ID
+ID_MATERIA
+ID_GESTIONACADEMICA
+NOMBRE_EVA
+PUNTAJE_MAX
+FECHA
+NOTA
+PK
+FK
+FK
+ID
+ID_POSTULANTE
+ID_EVALUACION
+PUNTAJE_OBTENIDO
+ESTADO
+ASISTENCIA
+PK
+FK
+FK
+FK
+ID
+ID_POSTULANTE
+ID_DOCENTE
+ID_HORARIO
+FECHA
+OBSERVACION
+ESTADO
+REPORTE
+PK
+FK
+ID
+ID_USUARIO
+TIPO
+FECHA
+FILTRO_APLICADO
+FORMATO
+CONTENIDO
+BITACORA
+PK
+FK
+ID
+ID_USUARIO
+ACCION
+DESCRIPCION
+FECHA
+HORA
+IP_USUARIO
+CARGAMASIVA
+PK
+FK
+ID
+ID_USUARIO
+NOMBRE_ARCHIVO
+TIPO_ARCHIVO
+FECHA_CARGA
+CANT_REGISTRO
+REGISTRO_CORRECTO
+REGISTRO_ERROR
+6.3.2 Diseño De Datos Físico
+Clase
+Atributo
+Tipo de Dato
+Primary Key
+Foreign Key
+Not Null
+Descripción
+PERSONA
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador único de la persona
+CI
+VARCHAR(
+20)
+No
+No
+Sí
+Cédula de identidad
+NOMBRE
+VARCHAR(
+150)
+No
+No
+Sí
+Nombre completo
+SEXO
+VARCHAR(
+10)
+No
+No
+No
+Sexo de la persona
+TELEFONO
+VARCHAR(
+20)
+No
+No
+No
+Número de contacto
+DIRECCION
+VARCHAR(
+255)
+No
+No
+No
+Dirección de residencia
+FECHA_NAC
+DATE
+No
+No
+No
+Fecha de nacimiento
+ROL
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador del rol
+NOMBRE
+VARCHAR(
+50)
+No
+No
+Sí
+Nombre del rol
+DESCRIPCION
+VARCHAR(
+255)
+No
+No
+No
+Descripción del rol
+CARRERA
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador de la carrera
+NOMBRE
+VARCHAR(
+100)
+No
+No
+Sí
+Nombre de la carrera
+DESCRIPCION
+VARCHAR(
+255)
+No
+No
+No
+Descripción de la carrera
+ESTADO
+VARCHAR(
+20)
+No
+No
+No
+Activo/Inactivo
+COMPROBANTE
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador del comprobante
+NRO_COMPROBANTE
+VARCHAR(
+50)
+No
+No
+Sí
+Número de comprobante
+FECHA_EMISION
+DATE
+No
+No
+Sí
+Fecha de emisión
+AULA
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador del aula
+AULA_NRO
+VARCHAR(
+20)
+No
+No
+Sí
+Número de aula
+CAPACIDAD
+INTEGER
+No
+No
+Sí
+Capacidad máxima del aula
+TIPO_AULA
+VARCHAR(
+50)
+No
+No
+No
+Tipo de aula
+MATERIA
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador de materia
+NOMBRE
+VARCHAR(
+100)
+No
+No
+Sí
+Nombre de la materia
+DESCRIPCION
+VARCHAR(
+255)
+No
+No
+No
+Descripción de la materia
+ESTADO
+VARCHAR(
+20)
+No
+No
+No
+Activo/Inactivo
+ESPECIALIDAD
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador de especialidad
+NOMBRE
+VARCHAR(
+100)
+No
+No
+Sí
+Nombre de la especialidad
+USUARIO
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador de usuario
+ID_PERSONA
+INTEGER
+No
+PERSONA(ID)
+Sí
+Referencia a la persona
+ID_ROL
+INTEGER
+No
+ROL(ID)
+Sí
+Referencia al rol
+CORREO
+VARCHAR(
+100)
+No
+No
+Sí
+Correo electrónico
+CONTRASEÑA
+VARCHAR(
+255)
+No
+No
+Sí
+Contraseña cifrada
+ESTADO
+VARCHAR(
+20)
+No
+No
+No
+Activo/Inactivo
+DOCENTE
+ID_PERSONA
+INTEGER
+Sí
+PERSONA(ID)
+Sí
+Referencia a persona (docente)
+GRADO_ACADEMICO
+VARCHAR(
+100)
+No
+No
+No
+Grado académico
+EXPERIENCIA_DOCENTE
+INTEGER
+No
+No
+No
+Años de experiencia
+ADMINISTRATIVO
+ID_PERSONA
+INTEGER
+Sí
+PERSONA(ID)
+Sí
+Referencia a persona (administrativo)
+AREA
+VARCHAR(
+100)
+No
+No
+No
+Área de trabajo
+CARGO
+VARCHAR(
+100)
+No
+No
+No
+Cargo del administrativo
+ESTADO
+VARCHAR(
+20)
+No
+No
+No
+Activo/Inactivo
+SUPER_ADMINISTRADOR
+ID_PERSONA
+INTEGER
+Sí
+PERSONA(ID)
+Sí
+Referencia a persona (super administrador)
+CARGO
+VARCHAR(
+100)
+No
+No
+No
+Cargo
+ESTADO
+VARCHAR(
+20)
+No
+No
+No
+Activo/Inactivo
+POSTULANTE
+ID_PERSONA
+INTEGER
+Sí
+PERSONA(ID)
+Sí
+Referencia a persona (postulante)
+FECHA_NAC
+DATE
+No
+No
+No
+Fecha de nacimiento
+DIRECCION
+VARCHAR(
+255)
+No
+No
+No
+Dirección del postulante
+COLEGIO
+VARCHAR(
+150)
+No
+No
+No
+Colegio de procedencia
+POSTULANTE_CARRERA
+ID_POSTULANTE
+INTEGER
+Sí (compuesto)
+POSTULANTE
+(ID_PERSONA)
+Sí
+Referencia al postulante
+ID_CARRERA
+INTEGER
+Sí (compuesto)
+CARRERA(ID)
+Sí
+Referencia a la carrera
+PRIORIDAD
+INTEGER
+No
+No
+Sí
+1=Primera opción, 2=Segunda opción
+GESTION_ACADEMICA
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador de la gestión académica
+ID_POSTULANTE
+INTEGER
+No
+POSTULANTE
+(ID_PERSONA)
+No
+Postulante asociado (opcional)
+NOMBRE
+VARCHAR(
+100)
+No
+No
+Sí
+Nombre de la gestión
+AÑO
+INTEGER
+No
+No
+Sí
+Año académico
+PERIODO
+VARCHAR(
+20)
+No
+No
+Sí
+Semestre o periodo
+FECHA_INI
+DATE
+No
+No
+No
+Fecha de inicio
+FECHA_FIN
+DATE
+No
+No
+No
+Fecha de fin
+ESTADO
+VARCHAR(
+20)
+No
+No
+No
+Activo/Inactivo
+REQUISITO
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador del requisito
+ID_ADMINISTRATIVO
+INTEGER
+No
+ADMINISTRATIVO
+(ID_PERSONA)
+Sí
+Responsable del requisito
+ID_POSTULANTE
+INTEGER
+No
+POSTULANTE(ID_PERSONA)
+Sí
+Postulante asociado
+NOMBRE
+VARCHAR(
+100)
+No
+No
+Sí
+Nombre del requisito
+DESCRIPCION
+VARCHAR(
+255)
+No
+No
+No
+Detalles del requisito
+ESTADO
+VARCHAR(
+20)
+No
+No
+No
+Pendiente/Completado
+PAGO
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador de pago
+ID_POSTULANTE
+INTEGER
+No
+POSTULANTE(ID_PERSONA)
+Sí
+Postulante que realiza el pago
+ID_COMPROBANTE
+INTEGER
+No
+COMPROBANTE(ID)
+Sí
+Comprobante asociado
+MONTO
+NUMERIC(
+10,2)
+No
+No
+Sí
+Monto del pago
+METODO_PAGO
+VARCHAR(
+50)
+No
+No
+No
+Método de pago
+CODIGO_TRANSACCION
+VARCHAR(
+100)
+No
+No
+No
+Código de transacción
+ESTADO
+VARCHAR(
+20)
+No
+No
+No
+Procesado/Pendiente
+FECHA
+DATE
+No
+No
+Sí
+Fecha del pago
+DOCENTE_ESPECIALIDAD
+ID_DOCENTE
+INTEGER
+Sí (compuesto)
+DOCENTE(ID_PERSONA)
+Sí
+Referencia al docente
+ID_ESPECIALIDAD
+INTEGER
+Sí (compuesto)
+ESPECIALIDAD(ID)
+Sí
+Especialidad del docente
+DOCENTE_MATERIA
+ID_DOCENTE
+INTEGER
+Sí (compuesto)
+DOCENTE(ID_PERSONA)
+Sí
+Docente asignado
+ID_MATERIA
+INTEGER
+Sí (compuesto)
+MATERIA(ID)
+Sí
+Materia asignada
+REPORTE
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador del reporte
+ID_USUARIO
+INTEGER
+No
+USUARIO(ID)
+Sí
+Usuario que genera el reporte
+TIPO
+VARCHAR(
+50)
+No
+No
+No
+Tipo de reporte
+FECHA
+DATE
+No
+No
+No
+Fecha de emisión
+FILTRO_APLICADO
+VARCHAR(
+255)
+No
+No
+No
+Filtro aplicado
+FORMATO
+VARCHAR(
+20)
+No
+No
+No
+Formato del reporte
+CONTENIDO
+TEXT
+No
+No
+No
+Contenido del reporte
+BITACORA
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador de bitácora
+ID_USUARIO
+INTEGER
+No
+USUARIO(ID)
+Sí
+Usuario responsable
+ACCION
+VARCHAR(
+100)
+No
+No
+Sí
+Acción realizada
+DESCRIPCION
+TEXT
+No
+No
+No
+Detalles de la acción
+FECHA
+DATE
+No
+No
+No
+Fecha de acción
+HORA
+TIME
+No
+No
+No
+Hora de la acción
+IP_USUARIO
+VARCHAR(
+45)
+No
+No
+No
+IP del usuario
+CARGAMASIVA
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador de carga
+ID_USUARIO
+INTEGER
+No
+USUARIO(ID)
+Sí
+Usuario que realiza la carga
+NOMBRE_ARCHIVO
+VARCHAR(
+150)
+No
+No
+No
+Nombre del archivo cargado
+TIPO_ARCHIVO
+VARCHAR(
+20)
+No
+No
+No
+Tipo de archivo
+FECHA_CARGA
+DATE
+No
+No
+No
+Fecha de carga
+CANT_REGISTRO
+INTEGER
+No
+No
+No
+Cantidad total de registros
+REGISTRO_CORRECTO
+INTEGER
+No
+No
+No
+Cantidad correcta
+REGISTRO_ERROR
+INTEGER
+No
+No
+No
+Cantidad de errores
+CUPO_CARRERA
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador del cupo
+ID_CARRERA
+INTEGER
+No
+CARRERA(ID)
+Sí
+Carrera asociada
+ID_GESTIONACADEMICA
+INTEGER
+No
+GESTION_ACADEMICA(ID)
+Sí
+Gestión asociada
+CUPO_MAX
+INTEGER
+No
+No
+Sí
+Cupo máximo
+CUPO_DISP
+INTEGER
+No
+No
+Sí
+Cupo disponible
+GRUPO
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador de grupo
+ID_GESTIONACADEMICA
+INTEGER
+No
+GESTION_ACADEMICA(ID)
+Sí
+Gestión asociada
+NOMBRE
+VARCHAR(
+50)
+No
+No
+Sí
+Nombre del grupo
+CUPO_MAX
+INTEGER
+No
+No
+Sí
+Cupo máximo del grupo
+MODALIDAD
+VARCHAR(
+50)
+No
+No
+No
+Presencial o virtual
+TURNO
+VARCHAR(
+50)
+No
+No
+No
+Turno asignado
+ESTADO
+VARCHAR(
+20)
+No
+No
+No
+Activo/Inactivo
+EVALUACION
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador de evaluación
+ID_MATERIA
+INTEGER
+No
+MATERIA(ID)
+Sí
+Materia asociada
+ID_GESTIONACADEMICA
+INTEGER
+No
+GESTION_ACADEMICA(ID)
+Sí
+Gestión asociada
+NOMBRE_EVA
+VARCHAR(
+100)
+No
+No
+Sí
+Nombre de la evaluación
+PUNTAJE_MAX
+NUMERIC(
+5,2)
+No
+No
+Sí
+Puntaje máximo
+FECHA
+DATE
+No
+No
+No
+Fecha de la evaluación
+ADMISION
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador de admisión
+ID_POSTULANTE
+INTEGER
+No
+POSTULANTE(ID_PERSONA)
+Sí
+Postulante evaluado
+ID_GESTIONACADEMICA
+INTEGER
+No
+GESTION_ACADEMICA(ID)
+Sí
+Gestión asociada
+ID_CARRERA
+INTEGER
+No
+CARRERA(ID)
+Sí
+Carrera evaluada
+PROMEDIO_FIN
+NUMERIC(
+5,2)
+No
+No
+No
+Promedio final
+ESTADO
+VARCHAR(
+50)
+No
+No
+No
+Admitido/No admitido
+OBSERVACION
+TEXT
+No
+No
+No
+Observaciones
+POSTULANTE_GRUPO
+ID_POSTULANTE
+INTEGER
+Sí (compuesto)
+POSTULANTE(ID_PERSONA)
+Sí
+Postulante asignado
+ID_GRUPO
+INTEGER
+Sí (compuesto)
+GRUPO(ID)
+Sí
+Grupo asignado
+FECHA_ASIGNACION
+DATE
+No
+No
+No
+Fecha de asignación
+HORARIO
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador del horario
+ID_GRUPO
+INTEGER
+No
+GRUPO(ID)
+Sí
+Grupo asociado
+ID_DOCENTE
+INTEGER
+No
+DOCENTE(ID_PERSONA)
+Sí
+Docente asignado
+ID_MATERIA
+INTEGER
+No
+MATERIA(ID)
+Sí
+Materia impartida
+ID_AULA
+INTEGER
+No
+AULA(ID)
+Sí
+Aula asignada
+DIA
+VARCHAR(
+20)
+No
+No
+Sí
+Día de la clase
+HORA_INI
+TIME
+No
+No
+Sí
+Hora de inicio
+HORA_FIN
+TIME
+No
+No
+Sí
+Hora de fin
+MODALIDAD
+VARCHAR(
+50)
+No
+No
+No
+Presencial/Virtual
+NOTA
+ID
+SERIAL
+Sí
+No
+Sí
+Identificador de nota
+ID_POSTULANTE
+INTEGER
+No
+POSTULANTE(ID_PERSONA)
+Sí
+Referencia al postulante
+ 
+ID_EVALUACION
+INTEGER
+No
+EVALUACION(ID)
+Sí
+Referencia a la evaluación
+ 
+PUNTAJE_OBTENIDO
+NUMERIC(
+5,2)
+No
+No
+Sí
+Puntaje obtenido
+ 
+ESTADO
+VARCHAR(
+20)
+No
+No
+No
+Estado de la nota (Aprobado/
+ 
+Reprobado)
+Script
+-- =============================================================================
+-- NIVEL 1: TABLAS MAESTRAS (INDEPENDIENTES)
+-- =============================================================================
+CREATE TABLE PERSONA (
+    ID SERIAL PRIMARY KEY,
+    CI 
+VARCHAR(
+20) NOT NULL UNIQUE,
+    NOMBRE 
+VARCHAR(
+150) NOT NULL,
+    SEXO 
+VARCHAR(
+10),
+    TELEFONO 
+VARCHAR(
+20),
+    DIRECCION 
+VARCHAR(
+255),
+    FECHA_NAC DATE
+);
+CREATE TABLE ROL (
+    ID SERIAL PRIMARY KEY,
+    NOMBRE 
+VARCHAR(
+50) NOT NULL UNIQUE,
+    DESCRIPCION 
+VARCHAR(
+255)
+);
+CREATE TABLE CARRERA (
+    ID SERIAL PRIMARY KEY,
+    NOMBRE 
+VARCHAR(
+100) NOT NULL UNIQUE,
+    DESCRIPCION 
+VARCHAR(
+255),
+    ESTADO 
+VARCHAR(
+20) DEFAULT 'Activo'
+);
+CREATE TABLE COMPROBANTE (
+    ID SERIAL PRIMARY KEY,
+    NRO_COMPROBANTE 
+VARCHAR(
+50) NOT NULL UNIQUE,
+    FECHA_EMISION DATE NOT NULL
+);
+CREATE TABLE AULA (
+    ID SERIAL PRIMARY KEY,
+    AULA_NRO 
+VARCHAR(
+20) NOT NULL UNIQUE,
+    CAPACIDAD INTEGER NOT NULL,
+    TIPO_AULA 
+VARCHAR(
+50)
+);
+CREATE TABLE MATERIA (
+    ID SERIAL PRIMARY KEY,
+    NOMBRE 
+VARCHAR(
+100) NOT NULL UNIQUE,
+    DESCRIPCION 
+VARCHAR(
+255),
+    ESTADO 
+VARCHAR(
+20) DEFAULT 'Activo'
+);
+CREATE TABLE ESPECIALIDAD (
+    ID SERIAL PRIMARY KEY,
+    NOMBRE 
+VARCHAR(
+100) NOT NULL UNIQUE
+);
+-- =============================================================================
+-- NIVEL 2: HERENCIA DE PERSONA Y USUARIOS
+-- =============================================================================
+CREATE TABLE USUARIO (
+    ID SERIAL PRIMARY KEY,
+    ID_PERSONA INTEGER NOT NULL REFERENCES PERSONA(ID) ON DELETE CASCADE,
+    ID_ROL INTEGER NOT NULL REFERENCES ROL(ID),
+    CORREO 
+VARCHAR(
+100) NOT NULL UNIQUE,
+    CONTRASEÑA 
+VARCHAR(
+255) NOT NULL,
+    ESTADO 
+VARCHAR(
+20) DEFAULT 'Activo'
+);
+CREATE TABLE DOCENTE (
+    ID_PERSONA INTEGER PRIMARY KEY REFERENCES PERSONA(ID) ON DELETE CASCADE,
+    GRADO_ACADEMICO 
+VARCHAR(
+100),
+    EXPERIENCIA_DOCENTE INTEGER
+);
+CREATE TABLE ADMINISTRATIVO (
+    ID_PERSONA INTEGER PRIMARY KEY REFERENCES PERSONA(ID) ON DELETE CASCADE,
+    AREA 
+VARCHAR(
+100),
+    CARGO 
+VARCHAR(
+100),
+    ESTADO 
+VARCHAR(
+20) DEFAULT 'Activo'
+);
+CREATE TABLE SUPER_ADMINISTRADOR (
+    ID_PERSONA INTEGER PRIMARY KEY REFERENCES PERSONA(ID) ON DELETE CASCADE,
+    CARGO 
+VARCHAR(
+100),
+    ESTADO 
+VARCHAR(
+20) DEFAULT 'Activo'
+);
+CREATE TABLE POSTULANTE (
+    ID_PERSONA INTEGER PRIMARY KEY REFERENCES PERSONA(ID) ON DELETE CASCADE,
+    FECHA_NAC DATE,
+    DIRECCION 
+VARCHAR(
+255),
+    COLEGIO 
+VARCHAR(
+150)
+);
+-- =============================================================================
+-- NIVEL 3: ENTIDADES DEPENDIENTES DIRECTAS DEL POSTULANTE Y USUARIOS
+-- =============================================================================
+CREATE TABLE POSTULANTE_CARRERA (
+    ID_POSTULANTE INTEGER REFERENCES POSTULANTE(ID_PERSONA) ON DELETE CASCADE,
+    ID_CARRERA INTEGER REFERENCES CARRERA(ID) ON DELETE CASCADE,
+    PRIORIDAD INTEGER NOT NULL, -- 1 para Primera Opción, 2 para Segunda Opción
+    PRIMARY KEY (ID_POSTULANTE, ID_CARRERA)
+);
+-- Nota: Se mantiene el ID_POSTULANTE mapeado, configurado como opcional (NULL) 
+-- para evitar romper la lógica de gestión global si fuera un desfase del Excel.
+CREATE TABLE GESTION_ACADEMICA (
+    ID SERIAL PRIMARY KEY,
+    ID_POSTULANTE INTEGER REFERENCES POSTULANTE(ID_PERSONA) ON DELETE SET NULL,
+    NOMBRE 
+VARCHAR(
+100) NOT NULL,
+    AÑO INTEGER NOT NULL,
+    PERIODO 
+VARCHAR(
+20) NOT NULL,
+    FECHA_INI DATE,
+    FECHA_FIN DATE,
+    ESTADO 
+VARCHAR(
+20) DEFAULT 'Activo'
+);
+CREATE TABLE REQUISITO (
+    ID SERIAL PRIMARY KEY,
+    ID_ADMINISTRATIVO INTEGER NOT NULL REFERENCES ADMINISTRATIVO(ID_PERSONA),
+    ID_POSTULANTE INTEGER NOT NULL REFERENCES POSTULANTE(ID_PERSONA) ON DELETE CASCADE,
+    NOMBRE 
+VARCHAR(
+100) NOT NULL,
+    DESCRIPCION 
+VARCHAR(
+255),
+    ESTADO 
+VARCHAR(
+20) DEFAULT 'Pendiente'
+);
+CREATE TABLE PAGO (
+    ID SERIAL PRIMARY KEY,
+    ID_POSTULANTE INTEGER NOT NULL REFERENCES POSTULANTE(ID_PERSONA) ON DELETE CASCADE,
+    ID_COMPROBANTE INTEGER NOT NULL REFERENCES COMPROBANTE(ID),
+    MONTO 
+NUMERIC(
+10,2) NOT NULL,
+    METODO_PAGO 
+VARCHAR(
+50),
+    CODIGO_TRANSACCION 
+VARCHAR(
+100),
+    ESTADO 
+VARCHAR(
+20) DEFAULT 'Procesado',
+    FECHA DATE NOT NULL
+);
+CREATE TABLE DOCENTE_ESPECIALIDAD (
+    ID_DOCENTE INTEGER REFERENCES DOCENTE(ID_PERSONA) ON DELETE CASCADE,
+    ID_ESPECIALIDAD INTEGER REFERENCES ESPECIALIDAD(ID) ON DELETE CASCADE,
+    PRIMARY KEY (ID_DOCENTE, ID_ESPECIALIDAD)
+);
+CREATE TABLE DOCENTE_MATERIA (
+    ID_DOCENTE INTEGER REFERENCES DOCENTE(ID_PERSONA) ON DELETE CASCADE,
+    ID_MATERIA INTEGER REFERENCES MATERIA(ID) ON DELETE CASCADE,
+    PRIMARY KEY (ID_DOCENTE, ID_MATERIA)
+);
+CREATE TABLE REPORTE (
+    ID SERIAL PRIMARY KEY,
+    ID_USUARIO INTEGER NOT NULL REFERENCES USUARIO(ID),
+    TIPO 
+VARCHAR(
+50),
+    FECHA DATE DEFAULT CURRENT_DATE,
+    FILTRO_APLICADO 
+VARCHAR(
+255),
+    FORMATO 
+VARCHAR(
+20),
+    CONTENIDO TEXT
+);
+CREATE TABLE BITACORA (
+    ID SERIAL PRIMARY KEY,
+    ID_USUARIO INTEGER NOT NULL REFERENCES USUARIO(ID),
+    ACCION 
+VARCHAR(
+100) NOT NULL,
+    DESCRIPCION TEXT,
+    FECHA DATE DEFAULT CURRENT_DATE,
+    HORA TIME DEFAULT CURRENT_TIME,
+    IP_USUARIO 
+VARCHAR(
+45)
+);
+CREATE TABLE CARGAMASIVA (
+    ID SERIAL PRIMARY KEY,
+    ID_USUARIO INTEGER NOT NULL REFERENCES USUARIO(ID),
+    NOMBRE_ARCHIVO 
+VARCHAR(
+150),
+    TIPO_ARCHIVO 
+VARCHAR(
+20),
+    FECHA_CARGA DATE DEFAULT CURRENT_DATE,
+    CANT_REGISTRO INTEGER,
+    REGISTRO_CORRECTO INTEGER,
+    REGISTRO_ERROR INTEGER
+);
+-- =============================================================================
+-- NIVEL 4: PLANIFICACIÓN Y SEGUIMIENTO ACADÉMICO
+-- =============================================================================
+CREATE TABLE CUPO_CARRERA (
+    ID SERIAL PRIMARY KEY,
+    ID_CARRERA INTEGER NOT NULL REFERENCES CARRERA(ID) ON DELETE CASCADE,
+    ID_GESTIONACADEMICA INTEGER NOT NULL REFERENCES GESTION_ACADEMICA(ID) ON DELETE CASCADE,
+    CUPO_MAX INTEGER NOT NULL,
+    CUPO_DISP INTEGER NOT NULL
+);
+CREATE TABLE GRUPO (
+    ID SERIAL PRIMARY KEY,
+    ID_GESTIONACADEMICA INTEGER NOT NULL REFERENCES GESTION_ACADEMICA(ID) ON DELETE CASCADE,
+    NOMBRE 
+VARCHAR(
+50) NOT NULL,
+    CUPO_MAX INTEGER NOT NULL,
+    MODALIDAD 
+VARCHAR(
+50),
+    TURNO 
+VARCHAR(
+50),
+    ESTADO 
+VARCHAR(
+20) DEFAULT 'Activo'
+);
+CREATE TABLE EVALUACION (
+    ID SERIAL PRIMARY KEY,
+    ID_MATERIA INTEGER NOT NULL REFERENCES MATERIA(ID) ON DELETE CASCADE,
+    ID_GESTIONACADEMICA INTEGER NOT NULL REFERENCES GESTION_ACADEMICA(ID) ON DELETE CASCADE,
+    NOMBRE_EVA 
+VARCHAR(
+100) NOT NULL,
+    PUNTAJE_MAX 
+NUMERIC(
+5,2) NOT NULL,
+    FECHA DATE
+);
+CREATE TABLE ADMISION (
+    ID SERIAL PRIMARY KEY,
+    ID_POSTULANTE INTEGER NOT NULL REFERENCES POSTULANTE(ID_PERSONA) ON DELETE CASCADE,
+    ID_GESTIONACADEMICA INTEGER NOT NULL REFERENCES GESTION_ACADEMICA(ID) ON DELETE CASCADE,
+    ID_CARRERA INTEGER NOT NULL REFERENCES CARRERA(ID),
+    PROMEDIO_FIN 
+NUMERIC(
+5,2),
+    ESTADO 
+VARCHAR(
+50), -- Admitido, No Admitido
+    OBSERVACIÓN TEXT
+);
+-- =============================================================================
+-- NIVEL 5: ASIGNACIONES INTERMEDIAS Y NOTAS (LOGICA FUERTE DEL CICLO 1 Y 2)
+-- =============================================================================
+CREATE TABLE POSTULANTE_GRUPO (
+    ID_POSTULANTE INTEGER REFERENCES POSTULANTE(ID_PERSONA) ON DELETE CASCADE,
+    ID_GRUPO INTEGER REFERENCES GRUPO(ID) ON DELETE CASCADE,
+    FECHA_ASIGNACION DATE DEFAULT CURRENT_DATE,
+    PRIMARY KEY (ID_POSTULANTE, ID_GRUPO)
+);
+CREATE TABLE HORARIO (
+    ID SERIAL PRIMARY KEY,
+    ID_GRUPO INTEGER NOT NULL REFERENCES GRUPO(ID) ON DELETE CASCADE,
+    ID_DOCENTE INTEGER NOT NULL REFERENCES DOCENTE(ID_PERSONA),
+    ID_MATERIA INTEGER NOT NULL REFERENCES MATERIA(ID),
+    ID_AULA INTEGER NOT NULL REFERENCES AULA(ID),
+    DIA 
+VARCHAR(
+20) NOT NULL,
+    HORA_INI TIME NOT NULL,
+    HORA_FIN TIME NOT NULL,
+    MODALIDAD 
+VARCHAR(
+50)
+);
+CREATE TABLE NOTA (
+    ID SERIAL PRIMARY KEY,
+    ID_POSTULANTE INTEGER NOT NULL REFERENCES POSTULANTE(ID_PERSONA) ON DELETE CASCADE,
+    ID_EVALUACION INTEGER NOT NULL REFERENCES EVALUACION(ID) ON DELETE CASCADE,
+    PUNTAJE_OBTENIDO 
+NUMERIC(
+5,2) NOT NULL,
+    ESTADO 
+VARCHAR(
+20)
+);
+CREATE TABLE ASISTENCIA (
+    ID SERIAL PRIMARY KEY,
+    ID_POSTULANTE INTEGER NOT NULL REFERENCES POSTULANTE(ID_PERSONA) ON DELETE CASCADE,
+    ID_DOCENTE INTEGER NOT NULL REFERENCES DOCENTE(ID_PERSONA),
+    ID_HORARIO INTEGER NOT NULL REFERENCES HORARIO(ID) ON DELETE CASCADE,
+    FECHA DATE NOT NULL,
+    OBSERVACION 
+VARCHAR(
+255),
+    ESTADO 
+VARCHAR(
+20) -- Presente, Falta, Licencia
+);
+Diagrama relacional
+Actualización de Tuplas (Población de datos
+-- INSERT PERSONA
+INSERT INTO PERSONA (CI, NOMBRE, SEXO, TELEFONO, DIRECCION, FECHA_NAC) VALUES
+('CI001','Juan Pérez','M','71234501','Calle 1','2003-01-15'),
+('CI002','María Gómez','F','71234502','Calle 2','2002-02-12'),
+('CI003','Pedro Ramírez','M','71234503','Calle 3','2003-03-20'),
+('CI004','Ana Torres','F','71234504','Calle 4','2002-04-05'),
+('CI005','Luis Sánchez','M','71234505','Calle 5','2003-05-18'),
+('CI006','Carla Díaz','F','71234506','Calle 6','2002-06-30'),
+('CI007','Diego Fernández','M','71234507','Calle 7','2003-07-25'),
+('CI008','Sofía Morales','F','71234508','Calle 8','2002-08-10'),
+('CI009','Andrés Herrera','M','71234509','Calle 9','2003-09-05'),
+('CI010','Valentina Ruiz','F','71234510','Calle 10','2002-10-12'),
+('CI011','Jorge Castillo','M','71234511','Calle 11','2003-11-14'),
+('CI012','Isabel Soto','F','71234512','Calle 12','2002-12-22'),
+('CI013','Raúl Medina','M','71234513','Calle 13','2003-01-01'),
+('CI014','Paula Vega','F','71234514','Calle 14','2002-02-16'),
+('CI015','Fernando Rojas','M','71234515','Calle 15','2003-03-09'),
+('CI016','Laura Castro','F','71234516','Calle 16','2002-04-21'),
+('CI017','Héctor Molina','M','71234517','Calle 17','2003-05-30'),
+('CI018','Daniela Paredes','F','71234518','Calle 18','2002-06-11'),
+('CI019','Sebastián Ortiz','M','71234519','Calle 19','2003-07-08'),
+('CI020','Camila Rivas','F','71234520','Calle 20','2002-08-03'),
+('CI021','Martín Peña','M','71234521','Calle 21','2003-09-22'),
+('CI022','Gabriela Luna','F','71234522','Calle 22','2002-10-18'),
+('CI023','Ricardo Flores','M','71234523','Calle 23','2003-11-25'),
+('CI024','Natalia Silva','F','71234524','Calle 24','2002-12-12'),
+('CI025','Emilio Castro','M','71234525','Calle 25','2003-01-22'),
+('CI026','Carolina Márquez','F','71234526','Calle 26','2002-02-20'),
+('CI027','Tomás Aguirre','M','71234527','Calle 27','2003-03-28'),
+('CI028','Elena Bravo','F','71234528','Calle 28','2002-04-14'),
+('CI029','Gustavo Navarro','M','71234529','Calle 29','2003-05-18'),
+('CI030','Mariana Espinoza','F','71234530','Calle 30','2002-06-22'),
+('CI031','Alfonso Vega','M','71234531','Calle 31','2003-07-20'),
+('CI032','Renata Herrera','F','71234532','Calle 32','2002-08-25'),
+('CI033','Víctor Campos','M','71234533','Calle 33','2003-09-05'),
+('CI034','Daniela León','F','71234534','Calle 34','2002-10-28'),
+('CI035','Javier Salazar','M','71234535','Calle 35','2003-11-11'),
+('CI036','Fernanda Ortiz','F','71234536','Calle 36','2002-12-30'),
+('CI037','Pablo Aguayo','M','71234537','Calle 37','2003-01-25'),
+('CI038','Ana Beltrán','F','71234538','Calle 38','2002-02-20'),
+('CI039','Diego Marín','M','71234539','Calle 39','2003-03-18'),
+('CI040','Paola Rojas','F','71234540','Calle 40','2002-04-09');
+ 
+-- INSERT POSTULANTE
+INSERT INTO POSTULANTE (ID_PERSONA, FECHA_NAC, DIRECCION, COLEGIO) VALUES
+(1,'2003-01-15','Calle 1','Colegio A'),
+(2,'2002-02-12','Calle 2','Colegio B'),
+-- continuar hasta 40
+(40,'2002-04-09','Calle 40','Colegio T');
+-- INSERT GESTION_ACADEMICA
+INSERT INTO GESTION_ACADEMICA (ID_POSTULANTE, NOMBRE, AÑO, PERIODO, FECHA_INI, FECHA_FIN, ESTADO) VALUES
+(1,'Gestión 1-2026',2026,'I','2026-01-15','2026-06-15','Activo'),
+(21,'Gestión 2-2026',2026,'II','2026-07-01','2026-12-15','Activo');
+ 
+-- INSERT POSTULANTE_CARRERA
+INSERT INTO POSTULANTE_CARRERA (ID_POSTULANTE, ID_CARRERA, PRIORIDAD) VALUES
+(1,1,1
+),(
+2,1,1),(21,2,1),(22,2,1), -- continuar para los 40 postulantes
+;
+-- INSERT PAGO
+INSERT INTO PAGO (ID_POSTULANTE, ID_COMPROBANTE, MONTO, METODO_PAGO, CODIGO_TRANSACCION, ESTADO, FECHA) VALUES
+(1,1,100.00,'Tarjeta','TXN001','Procesado','2026-01-16'),
+(21,2,100.00,'Efectivo','TXN002','Procesado','2026-07-02');
+-- INSERT GRUPO
+INSERT INTO GRUPO (ID_GESTIONACADEMICA, NOMBRE, CUPO_MAX, MODALIDAD, TURNO, ESTADO) VALUES
+(1,'Grupo A',20,'Presencial','Mañana','Activo'),
+(2,'Grupo B',20,'Presencial','Tarde','Activo');
+ 
+-- INSERT POSTULANTE_GRUPO
+INSERT INTO POSTULANTE_GRUPO (ID_POSTULANTE, ID_GRUPO, FECHA_ASIGNACION) VALUES
+(1,1,'2026-01-17'),
+(21,2,'2026-07-02');
+-- INSERT GESTION_ACADEMICA
+ INSERT INTO GESTION_ACADEMICA (ID_POSTULANTE, NOMBRE, AÑO, PERIODO, FECHA_INI, FECHA_FIN, ESTADO) VALUES
+ (1,'Gestión 1-2026',2026,'I','2026-01-15','2026-06-15','Activo'),
+ (41,Gestión 2-2026',2026,'II','2026-07-01','2026-12-15','Activo');
+ 
+-- INSERT POSTULANTE_CARRERA
+ INSERT INTO POSTULANTE_CARRERA (ID_POSTULANTE, ID_CARRERA, PRIORIDAD) VALUES
+ (1,1,1),(2,1,1),(41,2,1),(42,2,1);
+ -- ...continúa para los 80 postulantes
+ 
+-- INSERT PAGO
+ INSERT INTO PAGO (ID_POSTULANTE, ID_COMPROBANTE, MONTO, METODO_PAGO, CODIGO_TRANSACCION, ESTADO, FECHA) VALUES
+ (1,1,100.00,'Tarjeta','TXN001','Procesado','2026-01-16'),
+ (41,2,100.00,'Efectivo','TXN002','Procesado','2026-07-02');
+ 
+-- INSERT GRUPO
+ INSERT INTO GRUPO (ID_GESTIONACADEMICA, NOMBRE, CUPO_MAX, MODALIDAD, TURNO, ESTADO) VALUES
+ (1,'Grupo A',40,'Presencial','Mañana','Activo'),
+(2,'Grupo B',40,'Presencial','Tarde','Activo');
+ 
+-- INSERT POSTULANTE_GRUPO
+ INSERT INTO POSTULANTE_GRUPO (ID_POSTULANTE, ID_GRUPO, 
+FECHA_ASIGNACION) VALUES
+ (1,1,'2026-01-17'),
+ (41,2,'2026-07-02');
+ 
+-- =========================
+ --  UPDATE
+ -- =========================
+ UPDATE PERSONA SET DIRECCION='Calle Nueva 101' WHERE CI='CI001';
+ UPDATE PERSONA SET TELEFONO='71234999' WHERE CI='CI022';
+ UPDATE POSTULANTE SET COLEGIO='Colegio Modificado' WHERE ID_PERSONA=3;
+ UPDATE GESTION_ACADEMICA SET ESTADO='Inactivo' WHERE NOMBRE='Gestión 1-2026';
+ UPDATE PAGO SET MONTO=150.00 WHERE ID_POSTULANTE=1;
+ UPDATE GRUPO SET CUPO_MAX=45 WHERE NOMBRE='Grupo A';
+ UPDATE POSTULANTE_GRUPO SET FECHA_ASIGNACION='2026-01-18' WHERE ID_POSTULANTE=2;
+ UPDATE POSTULANTE_CARRERA SET PRIORIDAD=2 WHERE ID_POSTULANTE=5;
+ UPDATE PERSONA SET DIRECCION='Calle Extra' WHERE CI='CI050';
+ UPDATE POSTULANTE SET COLEGIO='Colegio Nuevo' WHERE ID_PERSONA=55;
+ 
+-- =========================
+ --  DELETE
+ -- =========================
+ DELETE FROM POSTULANTE WHERE ID_PERSONA=10;
+ DELETE FROM POSTULANTE_CARRERA WHERE ID_POSTULANTE=15;
+ DELETE FROM GESTION_ACADEMICA WHERE NOMBRE='Gestión 2-2026';
+ DELETE FROM PAGO WHERE ID_POSTULANTE=8;
+ DELETE FROM POSTULANTE_GRUPO WHERE ID_POSTULANTE=20;
+ DELETE FROM PERSONA WHERE CI='CI030';
+ DELETE FROM POSTULANTE WHERE ID_PERSONA=35;
+ DELETE FROM PAGO WHERE ID_POSTULANTE=45;
+Consultas
+Simples:
+-- 1. Listar todos los postulantes
+SELECT * FROM postulante;
+ 
+-- 2. Listar todos los grupos
+SELECT * FROM grupo;
+ 
+-- 3. Listar docentes activos
+SELECT * FROM docente WHERE estado='Activo';
+ 
+-- 4. Consultar postulantes con requisitos completos
+SELECT * FROM postulante WHERE requisitos_completos = 1;
+ 
+-- 5. Listar postulantes por carrera
+SELECT * FROM postulante WHERE id_carrera = 1;
+-- 6. Consultar postulantes por turno
+SELECT * FROM postulante WHERE turno = 'Mañana';
+ 
+-- 7. Listar postulantes admitidos
+SELECT * FROM postulante WHERE estado_inscripcion = 'Admitido';
+ 
+Dobles :
+-- 8. Postulantes con grupo asignado
+SELECT 
+p.nombre
+, g.nombre_grupo 
+FROM postulante p
+JOIN grupo g ON p.id_grupo = g.id;
+ 
+-- 9. Postulantes con pagos realizados
+SELECT 
+p.nombre
+, pa.monto 
+FROM postulante p
+JOIN pago pa ON p.id = pa.id_postulante;
+ 
+-- 10. Grupos con docentes asignados
+SELECT 
+g.nombre
+_grupo, d.nombre_docente
+FROM grupo g
+JOIN docente_grupo dg ON g.id = dg.id_grupo
+JOIN docente d ON dg.id_docente = d.id;
+ 
+Múltiples :
+-- 11. Postulantes con grupo, docente y pagos
+SELECT 
+p.nombre
+, g.nombre_grupo, d.nombre_docente, pa.monto
+FROM postulante p
+JOIN grupo g ON p.id_grupo = g.id
+JOIN docente_grupo dg ON g.id = dg.id_grupo
+JOIN docente d ON dg.id_docente = d.id
+JOIN pago pa ON p.id = pa.id_postulante;
+ 
+-- 12. Reporte completo de notas por grupo y materia
+SELECT 
+p.nombre
+, g.nombre_grupo, m.nombre_materia, n.puntaje_obtenido
+FROM postulante p
+JOIN grupo g ON p.id_grupo = g.id
+JOIN materia m ON g.id_materia = m.id
+JOIN nota n ON n.id_postulante = p.id;
+ 
+ 
+Subconsultas:
+-- 13. Postulantes con pago mayor al promedio
+SELECT nombre 
+FROM postulante 
+WHERE id IN (SELECT id_postulante 
+FROM pago 
+WHERE monto > (SELECT 
+AVG(
+monto) FROM pago));
+ 
+-- 14. Grupos con menos de 5 postulantes
+SELECT nombre_grupo 
+FROM grupo 
+WHERE id IN (SELECT id_grupo 
+                              FROM postulante 
+                             GROUP BY id_grupo
+                             HAVING 
+COUNT(
+*) < 5);
+ 
+-- 15. Postulantes con nota menor a 50
+SELECT * 
+FROM postulante p
+JOIN nota n ON p.id = n.id_postulante 
+WHERE 
+n.puntaje
+_obtenido < 50;
+ 
+-- 16. Contar postulantes por carrera
+SELECT id_carrera, 
+COUNT(
+*) 
+FROM postulante 
+GROUP BY id_carrera;
+ 
+-- 17. Listar postulantes pendientes de pago
+SELECT * 
+FROM postulante 
+WHERE pago_
+estado !
+= 'Completo';
+ 
+-- 18. Contar alumnos por turno
+SELECT turno, 
+COUNT(
+*) 
+FROM postulante 
+GROUP BY turno;
+ 
+-- 19. Promedio notas por grupo
+SELECT id_grupo, 
+AVG(
+puntaje_obtenido) 
+FROM nota 
+GROUP BY id_grupo;
+ 
+-- 20. Listar alumnos que cambiaron de grupo
+SELECT * 
+FROM historial_grupo 
+WHERE fecha_cambio >= '2026-01-01';
+ 
+-- 21. Listar postulantes por docente
+SELECT 
+p.nombre
+, d.nombre_docente
+FROM postulante p
+JOIN docente_grupo dg ON p.id_grupo = dg.id_grupo
+JOIN docente d ON dg.id_docente = d.id;
+-- 22. Contar pagos por método
+SELECT metodo_pago, 
+COUNT(
+*) 
+FROM pago 
+GROUP BY metodo_pago;
+ 
+-- 23. Consultar materias por grupo
+SELECT 
+g.nombre
+_grupo, m.nombre_materia
+FROM grupo g JOIN materia m ON g.id_materia = m.id;
+ 
+-- 24. Postulantes por fecha de inscripción
+SELECT * 
+FROM postulante 
+WHERE fecha_registro = '2026-01-15';
+ 
+-- 25. Listar postulantes que no entregaron documentos
+SELECT * 
+FROM postulante 
+WHERE requisito_entregado = 0;
+ 
+-- 26. Postulantes con preinscripción web
+SELECT * 
+FROM postulante 
+WHERE preinscripcion_web = 1;
+ 
+-- 27. Listar grupos llenos
+SELECT * 
+FROM grupo 
+WHERE cupo_actual >= cupo_max;
+ 
+-- 28. Notas pendientes por materia
+SELECT * 
+FROM nota 
+WHERE puntaje_obtenido IS NULL;
+-- 29. Postulantes que solicitaron reubicación
+SELECT * 
+FROM postulante 
+WHERE reubicacion = 1;
+-- 30. Postulantes con todos los requisitos completos
+SELECT * 
+FROM postulante 
+WHERE requisitos_completos = 1; 
+Procedimientos Almacenados
+-- Registrar un nuevo postulante
+CREATE PROCEDURE 
+RegistrarPostulante(
+IN nombre VARCHAR(100), IN ci VARCHAR(20))
+BEGIN
+   INSERT INTO 
+postulante(
+nombre, ci, fecha_registro) VALUES(nombre, ci, NOW());
+END;
+-- Registrar pago de postulante
+CREATE PROCEDURE 
+RegistrarPago(
+IN id_postulante INT, IN monto DECIMAL)
+BEGIN
+   INSERT INTO 
+pago(
+postulante_id, monto, fecha) VALUES(id_postulante, monto, NOW());
+END;
+-- Validar requisitos de postulante
+CREATE PROCEDURE 
+ValidarRequisitos(
+IN id_postulante INT)
+BEGIN
+   UPDATE postulante SET requisitos_completos = 1
+   WHERE id = id_postulante AND documentos_entregados = 1;
+END;
+Triggers (Disparadores)
+-- Actualizar cupo del grupo al insertar un postulante
+CREATE TRIGGER ActualizarCupo AFTER INSERT ON postulante
+FOR EACH ROW
+BEGIN
+   UPDATE grupo SET cupo_actual = cupo_actual + 1 WHERE id = NEW.id_grupo;
+END;
+-- Actualizar estado de pago
+CREATE TRIGGER ActualizarEstadoPago AFTER INSERT ON pago
+FOR EACH ROW
+BEGIN
+   UPDATE postulante SET pago_estado = 'Completo' WHERE id = NEW.id_postulante;
+END;
+-- Actualizar promedio de notas al modificar notas
+CREATE TRIGGER ActualizarPromedio AFTER UPDATE ON nota
+FOR EACH ROW
+BEGIN
+   UPDATE grupo SET promedio_grupo = (
+      SELECT 
+AVG(
+puntaje_obtenido) FROM nota WHERE id_grupo = NEW.id_grupo
+   ) WHERE id = NEW.id_grupo;
+END;
+7. FLUJO DE TRABAJO: IMPLEMENTACIÓN
+7.1 Herramientas de desarrollo de la aplicación WEB
+1. Herramientas de Diseño y Modelado
+StarUML
+ 
+Herramienta UML para representar gráficamente la estructura y procesos del sistema.
+Ventajas: 
+Facilita la creación de diagramas de clases, casos de uso, secuencia y otros. 
+Desventajas: 
+Puede ser innecesario si se usa metodología ágil con poca documentación.
+ 
+Diagrams.net (Draw.io)
+ 
+Aplicación online para crear diagramas de flujo, diagramas de procesos, y prototipos de interfaces.
+Ventajas: Gratuito, 
+flexible y colaborativo. Compatible con exportación a múltiples formatos
+. 
+Desventajas: 
+Menos especializado en wireframes de UI comparado con Figma o Moqups.
+ 
+2. Control de Versiones
+Git + GitHub
+ Gestión de código fuente y colaboración entre desarrolladores.
+Ventajas
+: 
+Historial de cambios, revertir errores, uso de ramas para funcionalidades. 
+Repositorios remotos, control de acceso, issues y pull requests. 
+Permite implementar metodologías ágiles (Git Flow). 
+Desventajas
+: 
+Curva de aprendizaje inicial. 
+Requiere conexión a internet para sincronización. 
+ 
+3. Entorno de Desarrollo
+Laragon / XAMPP
+ 
+Servidores locales con Apache, PHP y PostgreSQL para pruebas y desarrollo.
+Ventajas: 
+I
+nstalación rápida y sencilla. 
+Permite levantar rápidamente un entorno completo para pruebas locales. 
+Laragon ofrece entorno portable y gestión de múltiples versiones de PHP. 
+Desventajas: 
+Conflictos de puertos si existen otros servicios corriendo. 
+Configuración diferente según Windows o Linux; en Linux se recomienda LAMP nativo para producción.
+Composer
+ Gestor de dependencias para Laravel.
+Ventajas
+: Instalación y actualización de librerías PHP necesarias. 
+Desventajas
+: Requiere configuración del PATH en Windows. 
+ 
+4. Tecnologías de Desarrollo Web
+Frontend
+HTML5, CSS3, JavaScript, 
+React
+ 
+Ventajas
+: Interfaces modernas, interactivas y dinámicas. 
+Desventajas
+: Curva de aprendizaje si no se domina React. 
+CSS Frameworks
+Bootstrap / TailwindCSS para diseño responsivo. 
+Backend
+PHP (Laravel)
+: APIs REST, validación de reglas de negocio, seguridad. 
+Ventajas
+: Funcionalidades integradas como autenticación, rutas, Eloquent ORM. 
+Desventajas
+: Curva de aprendizaje si no hay experiencia previa. 
+ 
+5. Generación de Documentos PDF
+DomPDF
+ Generación de reportes, comprobantes y constancias en PDF desde plantillas HTML.
+Ventajas
+: Integración sencilla con Laravel. 
+Desventajas
+: Limitaciones en documentos muy complejos. 
+ 
+6. Base de Datos
+PostgreSQL
+ Sistema relacional ampliamente compatible con Laravel.
+Ventajas
+: Robusto, escalable y suficiente para tu proyecto. 
+Desventajas
+: Requiere buena planificación de índices y relaciones para grandes volúmenes de datos. 
+ 
+7. Despliegue
+En la nube
+: AWS, Azure o Google Cloud.
+Ventajas
+: Escalabilidad, disponibilidad y seguridad. 
+Desventajas
+: Configuración de servidores y costos según uso. 
+Sistemas Operativos
+Linux (Debian) recomendado para servidores de producción. 
+Windows 10/11 útil para desarrollo local.
+7.2 Implementación de la Arquitectura del Sistema
+7.3 Implementación de la Arquitectura del Subsistemas
+ 
+Conclusión
+El desarrollo del sistema de información para la 
+gestión de admisión de estudiantes del proyecto CUP
+ ha consolidado una plataforma integral que centraliza todos los procesos académicos y administrativos, incluyendo la inscripción de postulantes, validación de requisitos, pagos en línea, asignación de grupos, planificación de horarios, registro de notas y generación de reportes.
+La implementación de 
+StarUML y diagrams.net
+ permitió representar de manera clara la arquitectura y los flujos del sistema, facilitando el desarrollo del 
+backend en Laravel
+ y el 
+frontend con React
+.
+La base de datos 
+PostgreSQL
+ fue diseñada para mantener la integridad y consistencia de la información, contemplando entidades principales como 
+Postulante
+, 
+Carrera
+, 
+Grupo
+, 
+Pago
+, 
+Nota
+ y 
+Asistencia
+. La población inicial con dos gestiones y 40 postulantes cada una permitió pruebas efectivas antes del despliegue en la nube.
+El sistema cumple con todas las funcionalidades críticas, como validación de requisitos, pagos, asignación automática de grupos según disponibilidad y preferencias, registro de calificaciones y generación de reportes en PDF.
+Conclusión final:
+ La integración de tecnologías modernas y buenas prácticas de desarrollo produce un sistema confiable, escalable y adaptable a futuras gestiones académicas, cumpliendo con los objetivos planteados para el proyecto CUP.
+Recomendaciones
+Capacitación del personal
+Entrenamiento integral en el uso del sistema y control de accesos. 
+Actualización periódica mediante cursos y tutoriales. 
+Manuales y documentación accesible para consultas rápidas. 
+Monitoreo y mantenimiento
+Supervisión continua del sistema y base de datos. 
+Mantenimiento preventivo, actualización de software y limpieza de datos. 
+Alertas y notificaciones ante problemas potenciales. 
+Seguridad de datos
+Contraseñas seguras y autenticación multifactorial. 
+Copias de seguridad regulares y pruebas de restauración. 
+Cifrado de datos en tránsito y en reposo. 
+Optimización del sistema
+Auditorías periódicas de rendimiento. 
+Recogida de feedback para mejorar usabilidad y funcionalidad. 
+Plan de contingencia
+Procedimientos ante fallos críticos del sistema. 
+Simulacros regulares de recuperación y emergencia. 
+Bibliografía
+Libros
+Jacobson, I., Booch, G., Rumbaugh, J. (2006). 
+El Lenguaje Unificado de Modelado
+. Madrid: Addison-Wesley. 
+Jacobson, I., Booch, G., Rumbaugh, J. (2000). 
+El Proceso Unificado de Desarrollo de Software
+. Madrid: Addison-Wesley. 
+Páginas Web
+https://es.react.dev/
+ 
+https://laravel.com/
+ 
+https://www.postgresql.org/
+ 
+https://app.diagrams.net/
+ 
+https://github.com/
+ 
+https://www.apachefriends.org/es/index.html
+ 
+https://laragon.org/
+ 
+https://getcomposer.org/
+ 
+https://tailwindcss.com/
+ 
+https://app.diagrams.net/
+StarUML
+Enlaces
+Frontend
+https://github.com/DiogoMars777/admision_cup_backend.git
+Backend
+https://github.com/DiogoMars777/admision_cup_frontend.git
+ANEXOS

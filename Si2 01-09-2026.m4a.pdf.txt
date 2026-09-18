@@ -1,0 +1,327 @@
+
+--- Page 1 ---
+Si2 01-09-2026.m4a
+Transcribed by 
+TurboScribe
+. 
+Go Unlimited
+ to remove this message.
+...que van a tener los modelos dentro de cada una de las fases, ¿verdad? De lo que va a ser el
+proyecto, de lo que va a ser el parcial. No se olviden que estamos, básicamente, trabajando con
+dos características, ¿ya? En el parcial estamos trabajando con PUT y UMR. Esto es para el
+primer examen parcial.
+Sin embargo, en la parte del proyecto, estamos con SCAM, pero estamos igual con PUT y UMR.
+Entonces, esto es para el proyecto. Entonces, eso no tiene que ver con lineamiento, ¿ya?
+Tampoco hagan diadrama que sea 1.2 y que habíamos pedido 2.5 más.
+Eso significa que en estas versiones, cada uno de los modelos está totalmente identificado con
+sus características de cada uno de estos artefactos. Por ejemplo, si comenzamos desde la
+definición de UML, es la misma. O sea, visualizamos significa que tenemos vista en todos los
+ámbitos del desarrollo del software.
+Visualizamos el área de los datos, visualizamos la parte de arquitectura, visualizamos la etapa
+donde ustedes empiezan a hacer las capturas de los requisitos, visualizamos la etapa de los
+procesos, visualizamos la lógica de negocio. O sea, la vista se encuentra en todos los
+escenarios que ustedes puedan identificar cada una de ellas. Entonces, como visualizaciones,
+UML presenta un conjunto de modelos.
+Estos modelos son diadramas que forman las características que deben representar lo que
+nosotros queremos trabajar dentro de un área. Entonces, es así que esta parte de visualización,
+UML, desde que se creó con sus versiones 0, 1.x, 2.o, hacia arriba, las vistas se encuentran
+dentro de las características. Cuando decimos especificar, para poder desarrollar hay
+especificaciones.
+Esas especificaciones, en primera instancia, tal vez son algo escrito como un perfil, donde
+nosotros empezamos a decir qué características debe tener cada una de las distintas
+funcionalidades que nosotros queremos trabajar dentro de un área. Esas especificaciones
+pueden estar hechas en dos sectores. Uno se llama requisito funcional y otro se llama requisito
+no funcional.
+Entonces, los requisitos funcionales son los que nosotros queremos que trabaje el software. Sin
+embargo, los requisitos no funcionales es cómo nosotros queremos que se proteja, que tenga la
+seguridad, que se pueda trabajar dentro de ámbitos adecuados. Tal es así que fíjense que
+cuando ustedes empiezan a trabajar con administración de usuarios y fíjense cuando hacen un
+inicio de sesión, cuando ustedes recién están comenzando a colocar el nombre del usuario y la
+contraseña, ya buscamos protección.
+--- Page 2 ---
+Ya decimos que nuestra contraseña debe estar cifrada, no debe almacenarse en una tabla en la
+base de datos, debería tener un conjunto de características, como por ejemplo, que es cierto que
+tiene ocho caracteres, pero están mezclados, que tienen número, tienen minúscula, tienen
+mayúscula, tienen caracteres especiales, o sea, ya desde ahí. Entonces, eso significa que
+estamos haciendo los requisitos no funcionales, se llama eso. Entonces, todo lo que trabajamos
+en la etapa de la autenticación y en la etapa de la autorización, que son autorización y
+autenticación, para poder trabajar con la mitad, por ahí todo lo demás.
+Es así, fíjense, que cuando ustedes van detallando cada uno de ellos, sabemos exactamente lo
+que nosotros queremos representar. Por eso cuando aquí dice documentar, lo que estamos
+haciendo es el documento. Entonces, el documento de ustedes hasta este momento está dentro
+de la característica de la parte inicial del proyecto.
+Es por eso que hemos hecho un esprincero. En este esprincero se han visto las características
+necesarias, prioridades, quién es primero y quién después, por qué. Porque sucede que estamos
+trabajando con este marco de trabajo.
+Entonces, en ese momento cuando ustedes han hecho el esprincero, no solamente han usado
+modelos OML, han utilizado las estrategias del desarrollo del software. Dentro de la disciplina de
+desarrollo del software, al margen que yo esté ligado a un paradigma de desarrollo del software,
+siempre va a pasar por requisito, análisis, diseño, implementación y prueba. Eso en el ámbito de
+desarrollo.
+Cuando ya lanzamos versiones, ya se llama mantenimiento del software, cuando ya tenemos
+versiones operativas trabajando en un lugar. Pero mientras está en construcción, seguimos
+trabajando bajo la estrategia del desarrollo. Es así que ustedes van a poder también notar que
+este documento, dependiendo de lo que ustedes trabajen, con qué paradigma de desarrollo del
+software se empieza a documentar.
+Y luego dice construir los artefactos del sistema. Dentro de una construcción, si bien es cierto,
+los modelos a nosotros nos ayudan muchísimo. Por ejemplo, cuando ustedes quieren hacer una
+base de datos, ustedes no se sientan y hacen por hacerlo.
+Lo primero que han hecho, lógicamente han pensado cómo quedará. Pues se parece, ustedes
+toman un diagrama de clase y empiezan a ver exactamente qué se llama la clase, qué atributos
+tiene la clase, qué tipo de relación va a tener, qué tipo de multiplicidad es la más apropiada y
+adecuada para que podamos saber exactamente cuál es el modelo que nosotros queremos
+hacer. Lo mismo cuando hacemos los casos de uso, trabajando con el proceso unificado, que
+dentro del proceso unificado, con las características, que también dice qué debe ser el primero
+dirigido por caso de uso.
+Entonces aquí estamos obligados básicamente a que cada uno de los requisitos que escribimos
+--- Page 3 ---
+alguna vez en un documento, sea parte de lo que viene a ser un caso de uso. Entonces, es así
+que cuando ustedes lo están trabajando, identificamos captura de requisito. Entonces captura de
+requisito, como ya el proceso unificado es una metodología robusta, ahí viene el conjunto de
+actividades.
+Entonces estas actividades, ustedes han podido ver que en cualquier libro que tomen del
+proceso unificado, lo primero que le dice, identifique quiénes son sus casos de uso, identifique
+quiénes son sus actores. Entonces, a medida que nosotros hemos recolectado en un perfil el
+conjunto de funcionalidades, por ejemplo en el disparcial, se le ha dado un conjunto de
+funcionalidades mínimas. Ustedes habrán podido ver, tiene un conjunto de modulos, pero no
+estoy pidiendo que hagan un conjunto de características de todo.
+Por eso le definí una lista de requisitos funcionales mínimas. Cada grupo personaliza qué más le
+quiere incluir. Cada grupo puede decir, esto le voy a aumentar, esto va a ser.
+Por eso es que se le ha explicado cuál es el ámbito, el alcance, la frontera que tiene, para que
+ustedes en función a los que van trabajando, van delimitando el alcance. Y para que también
+ustedes no se imaginen, o tampoco dirían, a ver cuánto lo hago, qué tan grande va a ser, o qué
+tan chico va a ser mi proyecto, le hice una lista, le elaboré una lista de requisitos funcionales,
+para que ustedes tengan, como se dice, una referencia genérica entre todo el grupo. Sobre eso
+ustedes personalizan.
+Entonces dicen ustedes, todo esto que son requisitos mínimos, que va a ser parte de mi
+documento, yo le agrego esto más. Entonces ahí vemos que cada uno ha colocado alguna
+característica más. La misma situación hemos trabajado ya con el esprincero.
+Es por eso que estamos en el punto de partida. Estamos iniciando un proyecto con lo que es un
+marco de trabajo ágil, y por otro lado estamos haciendo un examen parcial con el proceso
+unificado. Entonces tenemos que tener las directrices y los lineamientos bien esclarecidos, para
+que ustedes puedan trabajar sin múltiples dificultades.
+Entonces, fíjense, ahorita ustedes están trabajando ya en el examen parcial. Ya se les dijo cuál
+es el tamaño, qué características se tienen, porque estamos trabajando con hueles. Pero aquí,
+en el proceso unificado, no se olviden de sus tres características.
+Dividido por grado de uso, central de arquitectura y... ¿Qué se llama la última? ¿Qué se llama la
+última? Cuidado, no puede ser. Más bien el sistema 1. ¿Qué se llama la última? El 1. ¿Qué
+huele? La lluvia infectó. A ver, ahí atrás.
+¿Qué se llama la tercera característica del proceso unificado? ¿Está aquí? Interactivo.
+Interactivo e incremental. ¿Cómo saben? Nada más que nos quieren decir.
+Interactivo e incremental. Son iteración. Y fíjense, hemos hecho tres fechas, ¿no es cierto?
+--- Page 4 ---
+Entonces para que ustedes lo vean, tres fechas.
+Entonces la primera, iterativo e incremental, debe verse completito. No es de que en la primera
+solo me mandan perfil. Si me mandan perfil, no han hecho absolutamente nada.
+Iterativo e incremental. ¿Qué significa iterativo e incremental? De que al menos, cuando
+hacemos el uso del proceso unificado, iterativo e incremental significa que debo entregar un
+producto a finalizar. Porque ustedes, en ese caso de uso, ¿qué es lo que han hecho? Priorizar
+cuál es lo más urgente que yo necesito desarrollar.
+Entonces ustedes dirían, necesito el caso de uso 1, el caso de uso 7, el caso de uso 15, el caso
+de uso 23, no sé cuántos casos de uso tienen. Todo eso es mi primera iteración, que van a decir
+acá, ¿no? Entonces, ¿qué le van a hacer? Van a hacer todo lo que implica el proceso unificado.
+¿Qué implica? El cartel del requisito, ¿qué hacen? Los casos de uso.
+¿Cuántos puntos son en la parte del cartel del requisito? Cinco. ¿Cuáles son los cinco?
+Identificar el caso de uso, ¿por qué más? Y actores. Segundo, revisar el caso de uso.
+Tercero, detalle del caso de uso. Cuarto, prototipo. Y el último, estructurar los modelos del caso
+de uso.
+Entonces, no quiero ver documentación incompleta para este sábado que toca presentar el
+primer documento del primer examen parcial. Entonces, esto es lo que ustedes han visto en
+sistema 1. Ahora, luego van a pasar al segundo flujo de trabajo que se llama análisis. ¿Cuántos
+puntos hay aquí? A ver, acuérdense.
+¿Cuántos puntos son en análisis? ¿Y el primero que se llama? ¿Qué se llama? Identificar
+paquete. Ya, ¿pero qué se llama eso? Identificar paquete. ¿Pero qué se llama el nombrecito de
+la actividad? ¿Sí? Diseño de la cultura.
+No, es el diseño de ahí. Es nuestro diseño. Termina el análisis todavía.
+¿Qué se llama? A ver. ¿Cuál es? En vez de diseño, ¿qué cosa sería? Análisis. Estoy en el flujo
+de trabajo.
+A ver, vamos a ir numerándolo. Ya, porque yo sé que me lo van a presentar a media y no
+queremos devolvernos lo este. Vamos a empezar por esto primero.
+¿Qué es lo que contiene? Significa que después de haber hecho el perfil que le pedí poquito
+para el primer examen parcial, ¿no es cierto? Es que no se lo he definido. Yo le dije nada más
+los puntos. Pero luego, ustedes miren, y aquí se acuerdan cuando a la hora que lo van a hacer lo
+presentan a media.
+Entonces, ¿qué significa que cuando ustedes digan? Esto es para el proceso unificado con UML
+--- Page 5 ---
+en realidad. Ya trabajando con su flujo de trabajo, que significa el primero, captura de requisito.
+Ahí lo vamos a anotar para hacer un repaso genérico del anterior semestre.
+¿Qué es lo que será considerado aquí? Entonces, ustedes en el 1.1 identifican los casos de uso
+y actores. Entonces, no se olviden que ahí hacen una lista de todos los posibles actores que
+deben interactuar. O sea, yo no voy a definir un actor que no va a interactuar en un caso de uso.
+Todo en algún momento sí o sí interactúa. Y los casos de uso son las tareas donde se lo van
+especificando. El 1.2, ¿qué será? Priorización de casos de uso.
+Ya no se olviden que en esta priorización existen diferentes maneras para que ustedes lo
+puedan trabajar. Significa que hemos trabajado con altos, medios y bajos. Empezamos a
+especificar cada caso de uso, qué característica de esfuerzo tiene.
+Normalmente cuando son transacciones, significa una venta, una compra, una inscripción, una
+devolución, un carrito, lo que usted quiera. No es lo mismo que yo pueda registrar un cliente, que
+pueda registrar un proveedor, que pueda registrar un vendedor. Porque ahí no necesito, de
+repente, más que una tablita.
+Cuando ustedes van a la base ATO, ustedes dicen, a ver, registrar una tupla aquí en esta tablita
+de la base ATO. Y se acabó. Entonces, ¿eso qué significa? Que nosotros estamos trabajando
+con casos de uso base, se llama.
+Casos de uso base, básico. Porque no necesito de mucha información, no estoy haciendo una
+integración. Solamente estoy preparando, más bien, para que luego las transacciones las
+utilicen.
+Entonces, eso habría que un poquito definirlo. Entonces, a veces, si yo digo, bueno, a ver, yo
+quiero hacer una venta. Entonces, ¿qué es lo que debería preparar? Primeramente, debería
+registrar al cliente, registrarlo al vendedor, si es que fuera de manera presencial.
+Registrarlo, que se llama, al cliente, al vendedor. Y de repente al almacenero, si lo embala, los
+productos. Porque todo modelo de negocio, dependiendo cómo se lo trabaje, se involucran
+actores.
+Entonces, si yo digo venta, es verdad que ya tengo el vendedor, tengo el cliente, ya puedo hacer
+este tipo de proceso. Pero me olvidé de lo más importante. Porque no hago nada, yo como
+persona, si no tengo productos que vender.
+Entonces, lo primero que debía hacer en mi primera iteración es trabajar con el inventario. Es
+que si en el inventario yo no lo hice, ¿qué le voy a vender? Si lo hubiera registrado al cliente, yo
+lo hubiera registrado al vendedor. No tengo el producto para vender.
+Entonces, como no tengo el producto, entonces el siguiente caso de uso en que yo debo trabajar
+--- Page 6 ---
+son los productos. No se olviden jóvenes que cuando hablamos de productos, hay que hablar de
+productos en todo el ámbito de un producto. O sea, un producto puede tener marca, puede tener
+un modelo, puede tener lote, puede tener familia, cuya es la herida, dependiendo.
+En el caso nuestro, que es ropa. Hemos dicho que es una tienda de ropa. Entonces, todas las
+personas tienen la misma talla, ¿entienden? Todas las personas tienen diferentes tallas.
+Entonces, yo tengo que saber cómo lo voy a clasificar en mi inventario. No solamente voy a
+decir, a ver, este registre, este producto, talla. Y aparte de eso, marca.
+Y aparte de eso, los colores son demasiado importantes, un atributo importantísimo. Porque hay
+gente que no le gusta ponerse, se ve un color blanco o negro de repente toda su vida, ¿no? No
+se pone de colores fuertes, ¿entienden? Y hay otra persona que no le gusta para nada esos
+colores de preferencia. Obviamente, cada uno sabe cómo se va a vestir, ¿no es cierto?
+Entonces, ¿qué sucede? Que a veces hay personas que no les gusta tener dos colores en una
+sola prenda o en un solo color.
+A otro le gusta florear o jacuar. Hay de todo. ¿Se dan cuenta entonces? Entonces, ¿qué
+tratamiento yo le voy a dar a mi inventario? Porque lo que no quiero ver yo es que ustedes nada
+más registren el producto y se acabó.
+Entonces, hay marca, talla, modelo, colores. Y no se olviden que los colores son multivaluados.
+Tienen más de un valor.
+Porque a veces las coleras tienen tres o cuatro colores, o las blusas, o las camisas, o lo que
+ustedes quieran. Hay camisas que son blancas, pero las mañas le ponen, o los pollos le ponen
+negro. ¿Lo ven? Entonces, esas características con ustedes lo van a almacenar.
+Entonces, ¿qué están haciendo ustedes para almacenar ese producto? Una vez que yo hice mi
+tratamiento de mi inventario, ya tengo mi inventario, ya tengo el cliente, ya tengo la venta. Recién
+puedo hacer una transacción. ¿Qué significa entonces hacer una transacción? Que el cliente va
+a poder mirar el catálogo digital, porque eso es lo que apuntamos.
+A que el cliente va a poder ver en la web o en su móvil el catálogo digital. Porque ustedes tienen
+que seleccionar y decir cuál de estas funcionalidades lo van a hacer en la parte móvil y cuál en la
+parte web. Déjenme decirles, jóvenes, que no es nada más agarrar y programar.
+Si ustedes no tienen un documento adecuado, no llegan a la defensa. ¿Entienden? Es por eso
+que esta clase la estoy dando así. Porque no estoy yo revisando, ¿cómo ustedes saben
+programar? ¿Entienden? Aquí estamos revisando la integración de una formación que ustedes
+tienen en el ámbito de la programación, de ser analista, de ser diseñador, para ser ingeniero de
+software.
+La idea es ser un ingeniero de software. Mirar todos los escenarios. No solamente ocuparme de
+--- Page 7 ---
+la programación o decirle a la IA, ¿saben qué? Háganmelo esto, ya está mi proyecto.
+Si su documento no cuadra con lo que ustedes hicieron, simplemente tienen uno en la defensa.
+¿Por qué? Porque sucede que no le estamos calificando a la IA, estamos calificándolo a
+ustedes. Porque ¿saben qué hacen ustedes con los modelos de VML? Potinho se los hace a la
+IA.
+Y ustedes no hacen absolutamente nada. Pueden tenerlo como herramienta a la IA, pero
+ustedes personalizan. Ustedes quieren que lo representen.
+No es como la IA lo dice. Peor a veces ustedes utilizan PROM que no le dan adecuadamente lo
+que quieren que le den. Entonces la IA lo que sea le va a emitir, ¿entienden? Entonces he visto
+modelos que no tienen nada que ver con su programación.
+Y siempre, a la hora de la defensa, cuadramos el código con los modelos de VML. Si no cuadra,
+no hay nada más que hacer. ¿Entienden? Y a veces es lo peor.
+Ustedes en mi cuenta se dan de que su modelo está mal hecho. ¿Entienden? Entonces, ¿qué
+significa eso? Que su código tampoco va a poder ir tan bien. Entonces, miren.
+Hayan elegido para la primera iteración los casos de uso que ustedes lo van a desarrollar. No es
+que me van a entregar, a ver, ¿qué es el primero? Solo un perfil. Y es funcional.
+En las tres presentaciones me presentan su QR porque yo tengo que ver qué tipo de código
+ustedes ya tienen en la luna. Qué tipo de código tienen. No solamente el perfil.
+Entonces, una vez que han priorizado los casos de uso, que son toditos los casos de uso que
+ustedes dicen, bajo, medio, alto, o si quieren estado, prioridad, riesgo, donde hemos colocado
+aprobado. A veces pone aprobado. Se pone un estado propuesto.
+O de repente un estado donde se pueda hacer un tipo de transaccional. ¿Ya? Pero si quieren
+alto, medio, bajo, que es lo más práctico para poder hacerlo. Entonces, ustedes hacen esto que
+dice, detallar caso de uso.
+Cuando usted dice detallar caso de uso, no hacen el código. Hacen lo que va a pertenecer a mi
+primera iteración. Entonces, imagínense que ustedes tengan, no sé, treinta casos de uso.
+Por decir, treinta. Los treinta casos de uso que ustedes consideran que va a tener su trabajo del
+parcial. Dicen, a ver, en esta primera iteración voy a hacer siete.
+Siete casos de uso. Entonces, los siete deberían elaborar la tablita, las tablas de detalle, y deben
+diseñar su caso de uso. Entonces, con ese diseño de caso de uso nosotros sabemos que
+interviene el actor uno.
+--- Page 8 ---
+Con el caso de uso está el actor dos con su caso de uso. Existen algunos casos de uso que
+necesariamente tienen estereotipos. ¿Se acuerdan cuántos estereotipos tienen los casos de
+uso? ¿Cuántos estereotipos tienen los casos de uso? ¿Cuántos? ¿Tres? ¿O dos? ¿Cuántos
+estereotipos tienen los casos de uso? ¿O no saben qué es el estereotipo? ¿No saben? Cuando
+un caso de uso se comunica con otro caso de uso, ¿qué le llaman eso a ustedes? Cuando
+relacionan dos casos de uso.
+Relacionan el caso de uso, relacionan con el caso de uso. Dos. Al relacionar esos dos casos de
+uso, yo lo puedo hacer por precondición.
+¿Qué es la precondición? Incluir, utilizar, incluir, como quieran llamarlo. Cuando se crea UMN en
+la versión 0 hasta la 1.3, se empezaba a decir use, utilizar, uses. No sé si alguna vez han visto.
+Decía uses, de un caso de uso uno a un caso de uso dos, uses. Pero a partir de la versión 1.5 ya
+se puso incluir, incluir, incluir. Entonces, del caso de uso uno hacia el caso de uso dos tengo un
+incluir.
+¿Qué significa cuando hacemos este diseño? Significa que el caso de uso uno utiliza de forma
+obligatoria el trabajo que hizo el caso de uso dos. Si este caso de uso dos no hizo su trabajo,
+lamentablemente el caso de uso uno no puede hacer su trabajo. El ejemplito que yo le doy
+siempre es cuando ustedes registran materia.
+Significa que cuando ustedes ven un cupo de hielo, por ejemplo, ustedes hacen puesto su
+inscripción, pero llegan y le dicen, ¿saben qué? En este grupo ya no hay cupo. Entonces, ¿qué
+significa eso? Ustedes deben decidir en ese momento si tienen un plan B o un plan C. ¿Qué es
+lo que deben decidir en ese instante? ¿O inscriben lo que sigue acerca y lo dejan pendiente para
+poder adicionar después? ¿Entienden? ¿O la opción tienen para elegir otro grupo en ese
+momento porque ya en el grupo que ustedes habían elegido está bien? Entonces, eso implica
+incluir. Yo no puedo registrar la materia que ya tiene cupo.
+Yo no puedo vender un producto si mi existencia dice cero. Mi existencia dice cero y alguien me
+quiere comprarme cinco. No me va a permitir registrar.
+Me va a salir un mensajecito que diga, insuficientes, top, cero. Yo veo en pantalla, no tengo para
+vender, se agotó. O cuando usted elige su carrito, no le debe permitir arrastrar un ítem que tiene
+cero.
+Debe deshabilitarse automáticamente. Todos los productos que yo no tengo en existencia no me
+deben permitir cargar al carrito. Pero si ustedes no lo controlan, lo va a cargar y le va a dejar un
+stop negativo.
+Y eso no puede ser. No puedo yo tener un negativo porque no está dentro de la expectativa que
+nosotros hacemos. Entonces, todos los ceros no me permite al carrito.
+--- Page 9 ---
+Todo lo que me va a dar como mensaje me dirá, insuficientes, top, no tengo. Así de simple. Por
+eso es que aquí es muy importante definir los casos de uso.
+Es demasiado importante. Entonces, ustedes van a decir lo siguiente. A ver, este caso de uso sí
+necesita un incluso.
+Porque obligatoriamente, cuando yo quiero cargar estos productos a mi carrito, sí o sí debe
+haber existencia para que yo lo pueda vender. En algunas ocasiones, incluso la gente hace una
+especie de cotización cuánto cuesta. Incluso para dar una cotización, fíjense, yo debo tener
+productos alimentarios.
+Fíjense que estamos viviendo en una época muy vulnerable en la parte de la economía. Donde
+es inestable cada día. O sea, cada día la gente que vende, lo vende en un precio que ellos
+consideran hasta ese momento porque lo compraron así.
+Pero sucede que no saben qué sucede al día siguiente. A veces esas mercaderías no se
+compran a nivel local o a nivel de repente nacional. De repente son ropas que traen de Brasil, de
+Argentina, de otro lugar.
+Entonces a veces las compras no se hacen en la manera boliviana. Se hacen en dólar. Fíjense
+el dólar cómo ha subido en un ratito.
+¿No es cierto? Han visto que ahorita sobrepasa de 12. Imagínense que la gente justo hoy día le
+toque comprar. Y no le vende al público en dólar.
+Le va a vender en boliviano. Entonces lo que costaba 90 bolivianos de repente. No sé, una
+camisa.
+Ahora ya no puedo venderlo en 90. O sea, yo coticé de verdad que era en 90 bolivianos. Pero
+hace una semana atrás.
+Pero ahora ya cuesta 120 bolivianos. O sea, la gente dice, ¿pero por qué sube tanto si recién
+costaba así? Porque las mercaderías que ellos compran cambian. Eso ellos lo manejan
+manualmente.
+Pero cuando yo tengo un software. Automáticamente en función al costo. El precio se debe
+actualizar.
+Acuérdense ustedes que yo le hablo de dos costos siempre. Le hablo de un costo promedio. Y le
+hablo de un costo unitario.
+Y hay que tomarlo en cuenta eso muchísimo. ¿Qué significa un costo unitario? Hoy esta mesa.
+O mejor digo, la anterior semana esta mesa me costó 10.
+--- Page 10 ---
+Pero ahora cuando compré la misma mesa. Ya me cuesta 13. Yo esta mesa la estaba vendiendo
+en 14 bolivianos con factura.
+Tengo que facturar y entregar al impuesto interno el 16% por cada mesa que yo vendo. Es así.
+Cada vez que usted vende una mesa con impuesto interno.
+Pague el 16% y el 25% de utilidad cuando termine el año. O sea, no puedo yo venderla igualito y
+luego sacar la factura. Por eso es el típico caso que la gente dice, ¿Cómo sin factura? ¿No es
+cierto? Y la gente dice, sin factura.
+Bueno, si es sin factura, ¿Cuánto me descuenta? Si usted se lleva sin factura le descuento hasta
+el 10%. Usted me está engañando el 3%. Porque en realidad, 13% paga la mesa.
+This file is longer than 30 minutes.
+Go Unlimited
+ at 
+https://turboscribe.ai/
+ to transcribe files up to 10 hours long.

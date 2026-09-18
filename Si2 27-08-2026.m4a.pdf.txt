@@ -1,0 +1,278 @@
+
+--- Page 1 ---
+Si2 27-08-2026.m4a
+Transcribed by 
+TurboScribe
+. 
+Go Unlimited
+ to remove this message.
+Vamos a hablar un poquito del examen que se dio el día martes, ya lo hemos organizado con un
+grupo. Hoy vamos a mirar hasta donde es el límite o el alcance que ustedes deben desarrollarlo.
+Ya saben las herramientas que se va a usar.
+Lo que quedaba nada más es tal vez establecer un conjunto de características. Ya, les hice un
+enunciado. Como ustedes pueden ver, el caso de estudio es una fracaso inteligente.
+De comercio electrónico, está dedicado a las tiendas de ropa. Ustedes deciden si quieren hacer
+ropa de niño, ropa de sexo, ropa sólo para hombres, sólo para mujeres. Para los ejemplos y para
+todo lo que ustedes deben introducir como información.
+La novedad es que sí o sí debe tener vestidor virtual. Lo que sí o sí debe incorporarse es un
+vestidor virtual a través de realidad aumentada. Entonces, aquí hay una pequeña reseña
+histórica acerca de toda la tienda que hacen.
+Vamos a suponer que es una cadena de tiendas. ¿Por qué es una cadena de tiendas? Porque
+esto es una plataforma. No es de que nada más es una aplicación para una sola tienda, es una
+plataforma.
+Entonces, una reconocida cadena de tiendas de ropa, cualquier tipo de ropa como ustedes
+quisieran, desea desarrollar una plataforma. Le colocan un nombre, por ejemplo, él te dice
+Fashion Info. En cambio de negocio no hay ningún problema, él no es sólo para iniciarlo.
+¿Qué le debe permitir hacer funcionar de manera integrada su diferente cosa? No tiene teléfono.
+Entonces, eso es como cuando usted está en una ciudad, se va a otra ciudad y si tiene
+obviamente se podría medir. Entonces, de tal manera que esta plataforma debe estar en un
+entorno web y entorno móvil.
+Eso es como lo dijimos. ¿Qué debe permitir que los clientes puedan consultar? Los clientes
+deben en realidad consultar el catálogo que la tienda va a poder publicar cada cierto tiempo. Así
+como les dije, por ejemplo, se está terminando lo que es invierno.
+Entonces, nadie busca ropa de invierno. Ahora van a buscarnos a quién es. Ya no habla de
+invierno.
+Ropa es dedicada a lo que es la primavera, donde hace calor. Ya no quieren abrigo y todo lo
+demás. Entonces, bajo esa característica nosotros podemos observar que en ese catálogo
+ustedes seleccionan las prendas.
+Como les decía, hay personas que compran, pagan, se lo traen a su casa y no pasó nada. Pero
+--- Page 2 ---
+hay otras personas que dicen, a ver, por el medio del probador virtual, que va a permitir por su
+móvil que usted pueda medirse, quiere esta ropa color blanca, color amarilla, modelo. Entonces,
+elegimos un conjunto de prendas y le decimos tal día, a tal hora vamos a estar en el lugar.
+Entonces, de pronto llega ese día y va la persona a medirse, pero ya no va a buscar y a recorrer
+ese comercial o recorrer todo donde hay el área de ropa. Está justamente ya para querer
+comprar y ir a medirse lo que mejor le quedó. Entonces, en ese momento, si la persona llegó a la
+tienda, no necesariamente yo voy a pagar por pasarela de pago.
+Ustedes deben haber habilitado punto de caja, así como la tienda. Cuando usted llega a una
+tienda física, existen puntos de caja que usted puede pagar. Entonces, me debe permitir pagar a
+través de una pasarela, pero también si yo voy al lugar de la tienda, puedo pagar en ese punto
+de caja que existe.
+Eso, por favor, y comprenderlo para poder ver hasta dónde es el alcance. Es por eso que aquí le
+hice bien como una redacción para ver que ustedes lo puedan comprender. Entonces, el
+elemento innovador de esta plataforma es poder incorporar un vestido vestual que tenga realidad
+aumentada, donde permita visualizar a través de un móvil la prenda que quiere comprar, de tal
+forma de que lo pueda adquirir.
+Pero en otras circunstancias, como le dije, el cliente puede hacer una reserva de varias prendas.
+Pero va a haber el día y la fecha que debe ir presencialmente al lugar de la tienda. Al lugar de la
+tienda, porque si no, ¿cómo es posible? Porque a veces varía en tamaño y todas las
+características.
+No es lo mismo que todas las boleras AMV que son AMV o las camisas o las blusas, como
+ustedes quieran verlas. Entonces, ¿qué es lo que sucede? Entonces, fíjense, las compras, ya
+recibiendo aquí, se pueden realizar de dos formas. Las compras, yo puedo hacerlo de dos
+formas.
+Uno, lo puedo hacer de manera presencial porque tiene tienda física, no es que no tenga tienda
+virtual, ese es el escenario de trabajo. Si lo hago de manera presencial, el cliente selecciona la
+prenda, por medio de lo que tenía el productor virtual, y luego va a ir a probársela de manera
+física a la tienda más cercana que tenga, la ciudad o donde quiera. La segunda forma es que
+usted lo puede comprar de manera virtual, de manera digital.
+No va a ir nunca a la tienda física. Por eso aquí le dice un poquito explicado que el cliente va a
+realizar la compra desde su aplicación móvil. No se olviden que ustedes deben decirme cuáles
+son las funcionalidades para móvil y cuáles son las funcionalidades para la web.
+Por ejemplo, si yo me quiero comprar una prenda, no lo voy a hacer desde una desktop, lo voy a
+hacer desde un móvil. Entonces, esa es una funcionalidad para la parte móvil. Entonces,
+podemos aquí observar que si la compra es digital, usan alguna pasarela de pago electrónica,
+--- Page 3 ---
+Paypal, Stripe, Liberula, lo que quiera, para poder eficazmente hacer este tipo de transacciones.
+En ambos casos, el sistema debe actualizar automáticamente el inventario. Si yo quiero vender,
+debo tener un módulo de inventario. Si no, ¿cómo es posible que yo pueda vender? El módulo
+de inventario, no se olviden que hay que actualizarlo.
+Para que yo pueda actualizar, debo hacer compras. Aquí me debo comprar a uno o más
+proveedores. No todos los proveedores de repente venden la prenda que están buscando.
+Hay algunos proveedores que lo que yo busco, por ejemplo, de este estilo, lo vende el proveedor
+1, del otro estilo lo vende el proveedor 2, y así sucesivamente. Entonces, cuando vemos que
+alguna de estas prendas es lo que más necesita el cliente, es lo que debemos tener siempre
+actualizado. En un inventario, por lo general, hay un stock mínimo y un stock máximo.
+Porque si yo tengo, por ejemplo, 100 unidades de una prenda 1, y no lo estoy vendiendo, y justo
+viene un proveedor y me dice, tengo tal prenda y ahora está demasiado barato, tiene un
+descuento del 30%, lo quiere comprar, entonces parece que fuera bueno. Pero si miramos el
+escenario de que no se está vendiendo, no hay ninguna pérdida. Porque ni lo que yo tengo lo
+estoy vendiendo, así me lo vendan el 50% barato, sería una inversión estancada.
+Estaría dentro del inventario, pero no se va a poder mover. Entonces, en ese escenario, esa
+situación es lo que manejan los inventarios siempre de manera actualizada, con productos que
+tengan promedios ponderados para poder saber la inversión de la empresa. Entonces, dentro de
+esta característica, aquí hay un poquito más de explicación, para diferentes temporadas,
+primavera, verano, otoño, invierno, tal como lo hemos ido relajando hasta ahora.
+Además de los módulos que debe identificar para poder hacer la comercialización de ropa, día
+virtual o día presencial, deben incorporar guías para poder proporcionar algunas funcionalidades,
+dado que existen muchas funcionalidades que deben ser inteligentes. Entonces, dentro de estas
+características, acá hay alguna característica donde se empieza a ver que la asistencia virtual se
+puede recomendar prendas. Es como que alguien diga, estoy buscando una blusa de primavera,
+que sea de algodón, o que sea de hilo, o que sea de tanto.
+Entonces, ahí interactúa lo que diga. Entonces le dice, si usted busca esto, ahí esto, ahí esto.
+Recomendación, se lo dice.
+Entonces, tengo tal prenda, esto, esto. Entonces, la persona, en vez de estar mirando el
+catálogo que es muy grande, por la recomendación ya sectorizo. Miro lo que yo estoy buscando,
+porque me da la visualización de poder hacer este tipo de rapidez, y no estar buscando y
+mirando el catálogo por todo lo que ustedes quisieran.
+Entonces, por eso es que dice, en vez de estar navegando y mirando cada una de ellas, ya iría
+directamente a sectorizar. Como comentamos, para las herramientas de desarrollo, en la parte
+--- Page 4 ---
+de backend, Python con Appy, en la parte del front de la web, lo que es Angular, la aplicación
+móvil, Fluxer, Dart, la base Dart con Postgres, los modelos de IA, pueden tener chatbot, reportes
+generativos a través de un comando de voz, en vez de que yo esté dentro de mi dispositivo
+móvil, escribiendo, a veces la gente no tiene tiempo. Entonces, yo digo, quiero blusas que sean
+de hilo, de color amarillo.
+Entonces, ahí en ese momento, ese reporte generativo me crea la consulta y me da. Y con la
+parte de la IA que tengo como recomendación, me van a salir todo lo que yo estoy buscando, lo
+aproximado, para que yo directamente vaya y mire, y no navegue hoja por hoja lo que tiene el
+contenido del chatbot. Eso más o menos son características en las cuales se ve.
+Entonces, la inteligencia artificial es un IA integrado mediante Appy que deben utilizar justamente
+para hacer este tipo de características. La red aumentada debe ser una tecnología compatible
+con su dispositivo móvil. ¿Dónde va nuestra red aumentada? En nuestra parte de abajo.
+Los pagos están integrados a pasarela de pago, pero también pueden tener otro tipo de caja,
+como les he descrito. La metodología para el desarrollo, hacemos el seguimiento del proceso
+unificado de desarrollo de software, pero siempre deben usar esta versión de WebDN, 2.5 más,
+2.5 más para hacer su modelo. No se olviden que ustedes no son programadores, ustedes van a
+ser ingenieros.
+Significa entonces que si su aplicación corre y tenemos una mala documentación, no hay
+defensa proveniente. Aquí el documento es demasiado importante, es un plano para poder ver
+las diferentes listas y poder saber cómo está. Entonces, ¿qué dice? Como sugerencia, el
+proyecto tiene una duración de cuatro semanas, como ven aquí es remarcadito, cuatro semanas,
+por lo que los estudiantes deben priorizar las funcionalidades esenciales, las funcionalidades
+esenciales, y desarrollar un MVP.
+¿Qué significa un MVP? Producto mínimo viable. Todo lo que hemos hablado debe tener
+viabilidad en cada uno de los módulos que ustedes deben identificar para poder hacer la
+funcionalidad integrada. Eso es lo que quiere decir.
+El objetivo general, miren, es bastante extenso, pero lo que quería abarcar era todo lo que quiero
+que se logre. ¿Entienden? Para que ustedes entiendan aquí lo que queremos lograr. Vamos a
+desarrollar una plataforma inteligente de comercio electrónico para una cadena de tierra de oro.
+¿Ya? Que el objetivo general sea nuestra frontera, el INE, que integre el comercio electrónico,
+que va a estar en la web, y también está en la parte móvil. ¿Cuáles son los procesos más
+importantes? Es por eso que cuando revisamos los proyectos de ustedes, ese título debe estar
+clarito. Con leer un título de un proyecto, yo sé que es importante el contenido del trabajo.
+Entonces, le doy esa. ¿Ya? Lo mismo cuando se empieza a trabajar en varios proyectos, debe
+estar clarito lo que ustedes deben hacer. Miren, debo mencionar sucursales, inventario, punto de
+--- Page 5 ---
+venta, pagos electrónicos, vendidores virtuales, mediante realidad aumentada, a inteligencia
+artificial, lo que hablamos, que deben utilizar el proceso unificado de desarrollo de los modelos
+de comercio.
+Entonces, de todo lo que hablamos, usted se lee el objetivo general. Está en tamaño, de
+funcionalidades, de procesos que queremos trabajar dentro. Miren, si yo quiero lograr esto, aquí
+también le hice varios motivos en específico para que usted lo pueda cumplir.
+Primero, analizar y especificar los requisitos funcionales y no funcionales del sistema. A veces,
+usted no sabe cuáles son los no funcionales y no sabe cuáles son los funcionales. Entonces,
+para evitar que no lo sepan, le hice una lista de funcionales y una lista de no funcionales.
+Para que quede clarito. Y no, digamos, que ustedes me lo tienen a ver hasta donde llega.
+Estamos estableciendo las fronteras.
+Gestionar clientes, usuarios, empleados, proveedores y subusados. Entonces, si yo quiero lograr
+estos requisitos generales, eso es lo que debo hacer. Deben administrar un catálogo de prendas,
+categorías, tallas, colores, temporadas y colecciones.
+¿Ya? Deben consultar la disponibilidad de prendas por subusado. Eso es lo bonito, ¿no? Si yo,
+por ejemplo, digo, a ver, bueno, a subusar uno no está, pero usted va a subusar dos. Es más o
+menos como una recomendación para poder saber exactamente cómo se lo va a hacer.
+Continuamos. ¿Qué más queremos? Permitir al cliente reservar varias prendas a través de su
+móvil. Para que yo pueda ir a la tienda física y probarme todas aquellas que fueron queridas.
+¿Ya? Gestionar el proceso de recepción y la atención de reserva. Si es un pedido de reserva,
+¿cómo es posible que yo el sábado a las 10 de la mañana visite la tienda y no esté seleccionado
+la prenda? Entonces, previo a eso, la reserva ya debería estar totalmente hecha. Los vestidores
+virtuales, en realidad aumentada, permitir comprar en la plataforma web y aplicación móvil.
+O sea, yo puedo comprar en mi móvil, o puedo comprar, no se olviden que algunas
+funcionalidades también, otra cosita, pueden hacerle web responsiva. O sea, es verdad que las
+compras roban la web. Entonces, de manera responsiva no pueden hacerse un problema.
+Pero en la reserva, en los vestidores virtuales, es obligatorio que sí o sí efectúen. Ya esto de la
+compra, un web responsivo, igual bien, ¿no? Si quieren lo hacen así. ¿Por qué? Porque sucede
+que no estoy pidiendo necesariamente que sea híbrido, digamos.
+Que la misma funcionalidad lo hagan ustedes en la web y la misma en la parte del móvil. Puede
+ser responsiva y me voy a ir a ensayar y no quiero parar en ese punto de cambio mecánico. Y la
+pasarela de pago que ya lo hablamos, cualquiera.
+Si ustedes en sistemas no lo han hecho, no han hecho Paypal, no han hecho Stripe, ya saben
+--- Page 6 ---
+cómo manejarlo, entonces no tienen ningún problema. Deben actualizar el inventario
+automáticamente, deben instalarse los productos, deben incorporar funcionalidades, deben tener
+la capacidad 16 características de un objetivo específico que me permite desarrollar esta
+plataforma inteligente. No hay aquí donde perderse y decir hasta dónde lo voy a hacer.
+¿Quiénes serán sus actores principales? ¿Cómo van a interactuar con esta plataforma? Ustedes
+pueden ver aquí que uno de los actores que bastante va a poder es el cliente. Entonces, el
+cliente, si yo le coloco nada más ustedes van a decir ¿qué hace el cliente? Hay una lista aquí,
+¿qué es lo que puede hacer el cliente? ¿Qué hace el cliente? Otro de los actores porque alguien
+va a poder trabajar en la web con todo lo que es inventario y las compras, ese es el
+administrador. Aparte de que ese usuario lo va a poder limitar por el inicio de sesión y todo lo
+demás.
+Va a poder alimentar nueva sucursal, nuevo producto, nueva categoría y todo lo demás. Va a
+haber un encargado de sucursal, que se llama encargado de sucursal que hace algunas
+funcionalidades en el que va a decirle ¿qué va a hacer el cliente? Todo esto es lo que se sube
+en cuenta. Va a haber un cajero si yo voy a la tienda presencial va a haber un cajero que se va a
+encargar de hacer los cobros.
+Si yo tengo un inventario me debo contactar con un proveedor ¿para qué? Para poder comprar
+los sistemas de pago mediante características electrónicas. Aquí miren, servicio de inteligencia
+artificial esto es opcional, no obligatorio. Si ustedes quieren pueden implementar un chatbot pero
+si no, no es obligatorio.
+Lo que pasa es que a veces la gente personaliza yo quiero el que lo hace con chatbot mucho
+más personalizado pero lo dejo de manera opcional. Lo obligatorio es que tenga el análisis de
+preferencia la recomendación del producto y los reportes vía comando de voz los reportes
+imperativos que usted le dice quiero aprenda que tenga este modelo o esta característica y me
+salga solamente lo que nosotros buscamos lo que nosotros solicitamos. Como les dije, miren
+para que no queden en vano los requisitos funcionales y no funcionales lo mínimo que debería
+tener esta plataforma son estos requisitos funcionales.
+Entonces requisito funcional número uno permitir reentrar clientes gestionar usuarios administrar
+varias usuarias permitir diseñar productos las tallas, miren todo lo mínimo que debe tener son 25
+pero no son 25 que cada grupo personaliza puede hacer más puede hacer como mejor entienda
+mi modelo de negocio pero aquí está explícitamente cada una de las características para que no
+haya dudas ¿cuáles son los requisitos no funcionales? cada vez que usted hace una plataforma
+tiene que tener seguridad ¿qué significa seguridad? contraseñas y datos deben protegerse
+adecuadamente por eso es que las contraseñas no se guardan en tablas o en cifras ¿qué debe
+tener? rendimiento las consultas del catálogo deben responder en tiempos adecuados no en
+tiempos donde se demore o no se explica justo las características necesarias un requisito no
+funcional disponibilidad ¿qué significa disponibilidad? que el sistema deberá estar disponible
+--- Page 7 ---
+para usuarios web y móvil sin importar si es iphone o si es android sin importar por eso que
+Fluker no tiene plataforma no tiene barrera ni frontera hoy en día todo el software que se
+desarrolla debe tener escalabilidad a veces no sabemos que es escalable miren aquí dice la
+arquitectura deberá permitir incorporar nuevas sucursales hoy hago una sucursal y ya puedo
+incorporar más sucursales después porque no es que ahí se detiene, puedo seguir sacando
+mejores versiones liberando a medida que se va actualizando las nuevas funcionalidades un
+requisito no funcional usabilidad usabilidad las interfaces deben ser intuitivas y adaptables a
+diferentes dispositivos están haciendo con desktop tablet y celular de cualquier tipo sin ninguna
+barrera ya saben debe tener la mantenibilidad el mantenimiento para poder hacer los juegos la
+integración esto sobre todo que deberá proporcionar servicio mediante entonces compatibilidad
+la aplicación móvil deberá desarrollarse utilizando esto para tener la compatibilidad deberá
+proporcionar todas las operaciones de pago se utilizan mecanismos seguros eso lo que más se
+cuida dentro de las características esos son requisitos no funcionales de esta plataforma debe
+tener requisitos funcionales y los no funcionales que estarán dentro de las características que va
+a tomar en cuenta de tipo e-commerce como ser Shopify Magneto o similar lo personalice y ya
+está también utiliza eso no hay defensa por eso miren aquí tomar en cuenta todo cuando usted
+llega no es de que sabe que mi servidor no sirve está como loco a vos no hay defensa por eso
+dice toma en cuenta por favor debe estar desplegado en la luz como será su documentación no
+se olviden que ustedes no son programadores el documento es la parte de la fortaleza del
+trabajo esta es la fortaleza que documentación van a tener ustedes van a hacer un perfil pero
+este perfil tiene este perfil que va a tener una introducción el objetivo general el objetivo
+específico la definición del programa en este alcance están los requisitos funcionales y los
+requisitos no funcionales en este alcance están los módulos que ustedes necesitan desarrollar
+cada uno de ustedes debe decir que módulo lo va a incorporar el documento tiene dos partes y
+es un trabajo que debe investigarse necesita una fundamentación teórica la primera parte donde
+está dividido en dos partes en el inciso A que dice como es un electrónico que deben
+profundizarse para que ustedes puedan adquirir conocimiento como usuario detallando cada una
+de las funcionalidades de la aplicación porque a veces mirando un escenario se da una más
+cuenta para hacer el desarrollo que de repente trabajar sobre este tipo de documentación y
+como desarrollador esto es como usuario como usted sabe está dividido por Amazon y trae toda
+la trayectoria que llega obviamente desde el negocio que usted compró a lo que sigue o al lugar
+donde usted vive ahora como desarrollador esto es como usuario como desarrollador conocer
+para qué sirve qué beneficio y cómo se utiliza para crear sitios web implementando tiendas
+online eso puede ser magneto presta show para verlo para utilizarlo el segundo inciso las
+pasarelas de pago entonces me gustaría que lo vean por favor la funcionalidad es diferente que
+va a estar en el documento la forma de pago online que se hace por tarjeta de débito por tarjeta
+de crédito es como cuando usted llega a un punto de venta le dice en qué va a pagar no lo voy a
+hacer con pasarelas de pago pero voy a hacer un web así puede ser a veces no tiene efectivo
+por más que el cliente desea pertenecer al lugar en la parte ya digital o virtual cualquiera de ellos
+Paypal, Stripe o cualquiera de los que quisieran son internacionales sin embargo Viverdura es
+--- Page 8 ---
+una pasarela que integra con Facebook la mayoría de lo que cobra de manera digital la mayoría
+usa Paypal es más responsable de los Paypal quienes más lo utilizan para correr a hacer
+compras en otras ocasiones miren hasta Delivery como yo lo pedí en la tienda entonces
+contratan un Delivery y la llevan a su casa entonces vean un poquito la funcionalidad de los
+Delivery cualquiera de los que ustedes quisieran y pueden hacerlo normalmente la gente cómo
+cobra un Delivery vean la manera a veces lo hacen por influencia no es lo mismo llevar del
+primero anillo al décimo anillo a veces los anillos tienen ya un precio fijo el primero o el cuarto
+cuesta tanto ellos tienen una tarifa definida cómo se lo hacen a veces tienen también no
+solamente algo de repente es grande el encargo que nos lleva y todo lo demás entonces la
+segunda parte proceso de desarrollo como usted lo sabe viene aquí sigan los pasos que ustedes
+utilizaron en el proceso unificado qué han hecho en el proceso unificado utilizar, captura de
+requisitos análisis, diseño, implementación y prueba cuántas iteraciones va a tener cuando
+ustedes me presenten la primera presentación qué me van a presentar el perfil completo la parte
+1 de su marco teórico o comunicación teórica completo
+This file is longer than 30 minutes.
+Go Unlimited
+ at 
+https://turboscribe.ai/
+ to transcribe files up to 10 hours long.

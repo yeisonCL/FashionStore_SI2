@@ -1,0 +1,190 @@
+
+--- Page 1 ---
+Si2 25-08-2026.m4a
+Transcribed by 
+TurboScribe
+. 
+Go Unlimited
+ to remove this message.
+En este lapso van a haber tres presentaciones. Va a haber la primera presentación, la segunda y
+finalmente la última ya para llegar a la defensa. Así como ustedes han organizado ahora de dos
+personas, yo les voy a crear, igual que los proyectos, un grupo.
+Para que ustedes ahí envíen su documentación y van a estar agrupados justamente de dos
+personas. Para que ustedes puedan enviar su documentación. Insistirle o recomendarle tal vez
+de que las presentaciones de los documentos son de forma obligatoria.
+Entonces no pueden ustedes, por ejemplo, decirle que se fue internet, le pasó no sé qué cosa.
+Por favor, siempre se le da con anticipación y ustedes tienen que ser conscientes de que cuando
+uno presenta última hora, es cierto que van a pasar qué cosa. Eso es obvio.
+Entonces lo que ustedes tienen que hacer es enviarlo antes, no necesariamente en el último
+minuto. Si alguien no lo envió, no hay un día después o mi compañero no lo hizo. Por favor,
+tomar en cuenta todo eso para que no haya ningún tipo de inconveniencia ni impedimento de
+que ustedes lleguen al examen.
+Eso sería una de las recomendaciones para enviar la documentación. Segundo, la parte del
+avance en el software, porque no solo envían documentos. No olvidar siempre, por favor, enviar
+su QR, su URL al repositorio de donde ustedes lo tienen.
+Básicamente todo el avance de lo que ustedes están haciendo como la implementación. Todas
+las partes de su código, su base de datos, lo que hace en el back, lo que hace en el front. La
+aplicación van a trabajar en entorno web, en entorno móvil y rodilla.
+Tranquila. Entorno web, móvil y la parte de rodilla. Entonces esas son las características que
+ustedes van a poder trabajar.
+¿Qué tipo de herramienta van a usar? Para la parte del backend, van a utilizar Python con fast
+app. Python con fast app. Para la parte de lo que vendría a ser el frontend, van a poder usar
+Angular.
+Entonces aquí no hay de que yo lo estoy haciendo con React, no. Obligatorio todo en el parcial o
+los exámenes. Todas las herramientas son iguales.
+No puede haber uno de repente con Spring Boot y el otro con tal cosa, no. Python, fast app y
+Angular. Para la parte de móvil, con Flutter.
+Todo lo que es móvil, Flutter, da para poder hacerlo. De la parte de IA, algunos modelos que
+vamos a ir explicándolos de acuerdo a lo que va a ser el rubro de trabajo que vamos a hacer. El
+--- Page 2 ---
+rubro es único.
+Todos trabajan sobre el mismo rubro. En este caso, vamos a poder hacer una plataforma de
+comercio electrónico para tienda de ropa con vestidores virtuales que utilice realidad aumentada.
+Ese es el título del trabajo que ustedes van a hacer.
+Significa que todas las tiendas de ropa que ustedes pueden encontrar en las tiendas, en los
+comerciales, en el mercado, donde usted quiera. Hablando un poquito del caso del estudio.
+Todas las personas cuando quieren comprar ropa, tienen que caminar demasiado para poder
+encontrar la ropa que les gusta o que les agrada.
+Entonces, ¿esto qué significa? Hoy en día, ustedes pueden observar que está muy de moda
+todas las redes sociales hacer live. Entonces, ¿qué es lo que hacen las personas? Todo lo que
+viene a ser la ropa, la mercadería nueva que les llega, lo empiezan a colocar mediante estas
+redes sociales. Entonces, ¿qué sucede? Si nosotros queremos hacer un software donde nuestra
+plataforma sea la optimización del tiempo para que una persona no vaya a la tienda 1, a la tienda
+2, a la tienda 3. ¿Qué hace la persona? Va y se mide la ropa, va a un lugar, va a otro lugar.
+Hay gente que días enteros busca ropa y finalmente no se compra. Probablemente las mujeres,
+¿cierto? O sea, si los hombres van, creo que la primera ropa que encuentran, ahí se lo
+compraron y no fue la mujer. Pero ustedes acompáñenla a una chica, a su madre, a su hermana
+a comprar ropa.
+Van a ver ustedes que tardan demasiado porque no se van a conformar con la primera ropa que
+encuentran. Entonces, de ahí la necesidad de que nosotros podemos observar de que se pierde
+demasiado tiempo dentro de todo esto. Entonces, la idea aquí es que exista un catálogo, un
+catálogo de toda la ropa que tiene la tienda.
+Ustedes pueden hacerlo, si quieren, una tienda dedicada a mujeres, una tienda dedicada a
+niños. O una tienda que sea tipo unisex. O sea, lo vamos a manejar de manera libre.
+Cada grupo elige qué tienda quiere hacer. O de repente, una ropa donde se pueda evidenciar,
+de repente, para un solo sector, digamos, ¿no? Para un grupo. Es como que digan, a ver acá,
+vestidos de fiesta, o acá todas las blusas que están saliendo por temporada.
+Las blusas, los vestidos, los pantalones, todo lo que ustedes quieran, se comercializan según la
+época del año. Por ejemplo, llega la época del frío, obviamente van a empezar a ver todo lo que
+es ropa de invierno. Está llegando primavera.
+Entonces, ¿qué hace la gente? Normalmente liquida toda su mercadería. Porque ya nadie va a
+buscar chamarra, nadie va a buscar sacos. No va a buscar, ¿por qué? Porque ellos han
+cambiado de temporada.
+Entonces, estas personas, lo que hacen, cuando llega su mercadería, como trabajan con redes
+--- Page 3 ---
+sociales, le envían a todos sus clientes y hacen su live para que la gente pueda integrarse y ver.
+Inclusive, la gente ahora captura su imagen, le envía, hace su transacción. Esa es la manera que
+ellos hacen.
+Pero la situación nuestra, miren, si esto es el escenario, de manera manual, es que el catálogo,
+como es un comercio electrónico, es un e-commerce. Ustedes saben de qué. Yo tengo un
+catálogo y yo elijo, yo elijo cuáles son los que yo necesito comprar.
+Pero en esta ocasión, nosotros vamos a hacer un estilo virtual, que vamos a simular que
+estamos en la tienda, pero no estamos en la tienda. Entonces, ¿esto qué significa? La parte de
+realidad aumentada. Yo tengo un sofá y digo, a ver, quiero esta blusa de color amarillo, y lo miro
+y veo cómo me queda.
+No esta amarilla, no. A ver, esta blusa de color blanca o esta blusa con este modelo. Me puedo
+ensayar varias.
+Inclusive, hay personas todavía que dudan. O sea, no lo compran directamente. Porque ustedes
+saben que las tallas varían.
+O sea, a veces la persona es talla L, es talla M, es talla XL. Pero cuando la miran, no es la
+misma. Entonces, vamos a ver la situación en el cual diga, a ver, en esta tienda, yo quiero
+seleccionar estas cuatro o cinco blusas, por decir, en este color, en esta talla y todo lo demás.
+Y puedo marcar un horario y digo, el día viernes a las cuatro de la tarde voy a ir a su tienda
+física, por decir, y me voy a pedir estas blusas. Pero esas blusas ya están seleccionadas. Yo las
+seleccioné, hice una reserva.
+Entonces, para aquella persona que no se va a comprar y le van a traer directamente al lugar
+donde indica, va a haber un proceso de reserva. Entonces, la persona llega a la tienda, ya no
+pierde su tiempo en mirar, a ver qué blusa tené o qué modelo tené. Ellos llegan y visualizan ya o
+lo tienen lista la tienda, las blusas que ellos seleccionaron antes.
+Porque por medio de este vestidor virtual y por realidad aumentada que ustedes en el día de la
+defensa en su ciudad van a poder demostrarme con qué tipo de ropa han trabajado. Se han
+trabajado con camisas, con boleras, con blusas, con vestidos, con lo que ustedes quieran.
+Entonces, va a llegar el momento en que la persona llega a la tienda y va a ver cuál le queda
+mejor.
+Es cierto que todas eran tallas L, pero según los fabricantes, a veces uno es más chico, varían
+en centímetros. Uno un poquito más grande, otro más chico. Y eso justamente hace que no le
+pueda quedar cómodamente a la persona que está buscando, al igual que los zapatos.
+Fíjense que alguien puede decir, mi número de zapatos es número 38, pero dependiendo de
+--- Page 4 ---
+dónde lo haga, porque las formas son totalmente diferentes. Entonces, a veces el número,
+dependiendo de quién, de dónde venga, varía. Entonces, significa que en un carrito, me deben
+permitir que yo pueda seleccionar toda la ropa que nosotros deseamos comprar.
+Y no se olviden que cuando uno selecciona en un carrito, para hacer una confirmación, ustedes
+deben pagar. Entonces, la parte de pago lo van a hacer ustedes mediante una pasarela de pago.
+La parte de pago lo van a hacer como pasarela de pago.
+¿De dónde yo la voy a pagar? De mi móvil. Ustedes me tienen que seleccionar de todos los
+requisitos funcionales que tienen, cuáles son, ese sería un trabajito de ustedes, cuáles
+pertenecen al retorno móvil y cuáles pertenecen a la parte web. Por ejemplo, si yo quiero
+actualizar mi mercadería, lo voy a comprar, voy a tener los productos, voy a colocar los precios
+de cada uno de ellos y voy a lanzar mi nuevo catálogo, temporada primavera, por ejemplo.
+Entonces, una vez que esté listo, obviamente todo lo van a poder mirar, lo van a poder visualizar.
+Si hay algún interesado, utilizará un vestidor virtual para ver si le queda bien y así
+sucesivamente. Entonces, suponiendo que esta persona lo compra en su carrito, entonces va a
+tener su carrito de compra y ahí va a seleccionar todas las ropas que esté interesado para
+comprar y luego va a utilizar una pasarela de pago y obviamente luego estará el envío.
+El envío y todo lo que conlleva el despacho de lo que sería, todo lo que ha seleccionado como
+compra hacia el lugar de su destino. Entonces, estamos básicamente visualizando un inventario
+de ropa, como ustedes pueden ver. Una actualización de mercadería.
+Para eso no se manejan proveedores y todo lo demás porque no puedo trabajar yo con el
+inventario que existe. Y las ventas se pueden hacer de dos formas. Hay personas que lo compra
+directo, como les decía, y otras personas que debe hacer una reserva.
+Esa reserva consiste en que llegará al lugar del escenario o a la tienda física que tienen las
+personas para poder ensayarse todas las prendas seleccionadas. Una vez que ya ve cuál es lo
+más importante, recién procede a la compra, pero siempre lo va a hacer mediante su móvil. Así
+está en la tienda física o así lo haga desde otro lugar.
+Eso sería, a grande rasgo, lo que se está solicitando de lo que ustedes trabajarían. No pueden
+utilizar ningún comercio electrónico que ya está hecho y ya está totalmente como lo que pueden
+utilizar ya directamente que está porque ustedes lo deben crear completamente para que eso
+pueda ser un poquito más trabajado y visualizado, personalizado, como se lo está solicitando
+dentro de estas características. Entonces, de esa manera quedaría para el 22 de septiembre el
+examen y no se olviden que entre hoy y el día jueves terminamos el prenseo.
+A partir del día viernes 28, el jueves 27, ¿no? Sí, ya. Entonces, por favor, hablando un poquito ya
+del proyecto, el jueves 27 hasta el 8 de octubre, ¿cuándo quedamos para el primer? Septiembre,
+¿no? Septiembre. ¿El primer de septiembre? Ya.
+--- Page 5 ---
+Entonces, ¿qué significa? Mire, tenemos dos trabajos ahorita. No quiero yo que ustedes se
+retraen en el uno y lo retiren en el otro. Uno es que ustedes tienen un grupo de seis que están
+trabajando con la parte del primer.
+Para este primer parcial, no voy a pedir SCUM, voy a pedir proceso unificado UML de base A2-
+O3. De base A2-O3 trabajamos con proceso unificado UML, no con el SCUM, ¿ya? Para este
+primer parcial. Sin embargo, ustedes en el otro proyecto están trabajando con el SCUM.
+Ahí les tienen que demostrar, me imagino que ya lo han visto hasta ahora, día a día qué han
+hecho. Entonces, por favor, para no perderlos los días, desde el jueves 27, lo vamos a hacer
+comenzar, porque hoy no vamos a terminar de realizar el primero, porque la idea fue darle aquí
+mañana, pero lo vamos a dejar después del 27. Entonces, jueves 27 hasta... Hoy domingo me lo
+van a presentar si es 8 menos 2, 5, ¿no? Hasta el 5 de septiembre.
+Entonces, el avance de lo que están haciendo en el PRIM 1 sería del 27 hasta el 5 de
+septiembre, ¿ya? La documentación que van a presentar, por lo tanto, el domingo sería... Ya el
+lunes no presentaría el 6, hasta el 5 sería en el PRIM 1. ¿Ya? Dígame. El domingo es 6. Ah, ya,
+domingo 6. Ya, domingo 6. Hasta el domingo 6, domingo 6, entonces sería del 27, entonces
+sería 27, 28, 29, 30, 31, que es agosto, y los primeros 6 días de septiembre, ¿ya? Para que
+puedan colocar en la parte del PRIM. Eso es lo que se va a valorar.
+A partir del PRIM 1 ya van a venir días individualizados. Yo les voy a decir ya el martes 8 quién
+viene y quién viene el día jueves 10. Ahora, todavía no, porque recién estamos iniciando.
+Lo mismo, el día jueves... A ver, por favor, tomen atención. Ahorita solamente he dado el rubro,
+¿ya? Porque recién lo voy a describir, la parte de qué día van a presentar el uno, qué día el otro,
+y voy a describir un poquito más algunas funcionalidades del día jueves. El día jueves, la primera
+hora, ¿ya? Vamos a definir bien lo que es el examen.
+Y después se van a quedar algunos grupos que no se va a poder revisar ahora, ¿ya? Yo ahorita
+voy a seleccionar algunos grupos y los demás se retiran. El día jueves volvemos a hablar del
+examen, porque el día jueves yo se los voy a subir recién a la plataforma de esta actividad que
+estamos haciendo especial. Y se quedarían para poder ver lo que es el PRIM 0, los que no se
+han revisado, ¿entienden? Entonces, tienen que venir el día jueves todos.
+Por ahora todos deben venir, no es de que si venimos uno o venimos los otros, todos. Porque
+estamos avanzando primera hora y la siguiente hora venimos en trabajo, ¿ya? Entonces, a ver
+ahorita. ¿Qué horarios tenemos? Para elegir a los grupos.
+Grupo 16. Entonces, vamos. Vamos a seleccionar.
+Hoy día se queda el grupo 1. El grupo 4. El grupo 6. 7. El 9. El 10. El 12. El 13.
+--- Page 6 ---
+El grupo 14. El 15 y el 16. Los demás jóvenes se retiran.
+Como les digo, vuelven el jueves todos. El 17. El 18.
+El 19. El 20. El 21.
+El 22. El 23. El 24.
+El 25. El 26. El 27.
+El 28. El 29. El 30.
+El 31.
+Transcribed by 
+TurboScribe
+. 
+Go Unlimited
+ to remove this message.
