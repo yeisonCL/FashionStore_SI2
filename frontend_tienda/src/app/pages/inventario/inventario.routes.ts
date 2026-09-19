@@ -4,6 +4,10 @@ import { Router } from '@angular/router';
 import { CategoriaComponent } from './categoria/categoria';
 import { ProductoComponent } from './producto/producto';
 import { DetallesProductoPageComponent } from './producto/detalles-producto-page/detalles-producto-page';
+import { SucursalComponent } from './sucursal/sucursal';
+import { PromocionComponent } from './promocion/promocion';
+import { InventarioFisicoComponent } from './fisico/fisico';
+import { TraspasosComponent } from './traspaso/traspaso';
 import { PermisosService } from '../../services/permisos.service';
 import { AuthService } from '../../services/auth.service';
 
@@ -43,6 +47,26 @@ export const InventarioRoutes: Routes = [
     path: 'categorias',
     component: CategoriaComponent,
     canActivate: [canAccessWithPermiso(PermisosService.INVENTARIO_VIEW_CATEGORIA)]
+  },
+  {
+    path: 'sucursales',
+    component: SucursalComponent,
+    canActivate: [canAccessWithPermiso(PermisosService.INVENTARIO_VIEW_CATEGORIA)]
+  },
+  {
+    path: 'promociones',
+    component: PromocionComponent,
+    canActivate: [canAccessWithPermiso(PermisosService.INVENTARIO_VIEW_PRODUCTO)]
+  },
+  {
+    path: 'fisico',
+    component: InventarioFisicoComponent,
+    canActivate: [canAccessWithPermiso(PermisosService.INVENTARIO_VIEW_PRODUCTO)]
+  },
+  {
+    path: 'traspasos',
+    component: TraspasosComponent,
+    canActivate: [canAccessWithPermiso(PermisosService.INVENTARIO_VIEW_PRODUCTO)]
   },
   {
     path: 'productos',

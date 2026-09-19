@@ -252,4 +252,8 @@ export class CatalogoComponent implements OnInit, AfterViewInit, OnDestroy {
     }
     return estrellas;
   }
+
+  onImgError(event: any): void {
+    event.target.src = 'assets/images/products/product-1.png';
+  }
 }

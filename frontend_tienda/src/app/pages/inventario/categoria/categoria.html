@@ -1,75 +1,284 @@
-<div style="display: flex; gap: 16px; flex-wrap: wrap;">
-  <mat-card *ngIf="puedeVerCategoria" style="flex: 1; min-width: 300px;">
-    <mat-card-header>
-      <div class="page-header">
-        <mat-card-title>GestiÃ³n de CategorÃ­as</mat-card-title>
-        <button *ngIf="puedeCrear" mat-raised-button color="primary" (click)="crearCategoria()">
-          <mat-icon class="m-r-8">add</mat-icon>
-          Crear Nueva CategorÃ­a
-        </button>
+<mat-card class=cardWithShadow theme-card>
+  <mat-card-header class=d-flex justify-content-between align-items-center>
+    <div>
+      <mat-card-title class=m-b-4>[CU04] Parámetros de Moda y Configuración de Catálogo</mat-card-title>
+      <mat-card-subtitle>Gestión de Categorías, Tallas, Colores, Temporadas y Marcas de la plataforma</mat-card-subtitle>
+    </div>
+  </mat-card-header>
+
+  <mat-card-content class=p-16>
+    <mat-tab-group mat-stretch-tabs=false animationDuration=0ms>
+      
+      <!-- TAB 1: CATEGORÍAS -->
+      <mat-tab label=Categorías>
+        <div class=p-t-16>
+          <div class=d-flex justify-content-between align-items-center m-b-16>
+            <h3 class=m-b-0>Categorías de Prendas</h3>
+            <button *ngIf=puedeCrear mat-raised-button color=primary (click)=crearCategoria()>
+              <mat-icon class=m-r-4>add</mat-icon>
+              Nueva Categoría
+            </button>
+          </div>
+
+          <div *ngIf=isLoading class=d-flex justify-content-center p-y-24>
+            <mat-spinner diameter=36></mat-spinner>
+          </div>
+
+          <div *ngIf=!isLoading && dataSource.length > 0 class=table-responsive>
+            <table mat-table [dataSource]=dataSource class=w-100>
+              <ng-container matColumnDef=id>
+                <th mat-header-cell *matHeaderCellDef>ID</th>
+                <td mat-cell *matCellDef=let element>#{{ element.id }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef=nombre>
+                <th mat-header-cell *matHeaderCellDef>Nombre</th>
+                <td mat-cell *matCellDef=let element class=f-w-600>{{ element.nombre }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef=acciones>
+                <th mat-header-cell *matHeaderCellDef>Acciones</th>
+                <td mat-cell *matCellDef=let element>
+                  <button *ngIf=puedeEditar mat-icon-button matTooltip=Editar (click)=editarCategoria(element) color=primary>
+                    <mat-icon>edit</mat-icon>
+                  </button>
+                  <button *ngIf=puedeEliminar mat-icon-button matTooltip=Eliminar (click)=eliminarCategoria(element) color=warn>
+                    <mat-icon>delete</mat-icon>
+                  </button>
+                </td>
+              </ng-container>
+
+              <tr mat-header-row *matHeaderRowDef=displayedColumns></tr>
+              <tr mat-row *matRowDef=let row; columns: displayedColumns;></tr>
+            </table>
+          </div>
+        </div>
+      </mat-tab>
+
+      <!-- TAB 2: TALLAS -->
+      <mat-tab label=Tallas>
+        <div class=p-t-16>
+          <div class=d-flex justify-content-between align-items-center m-b-16>
+            <h3 class=m-b-0>Tallas Textiles y Calzado</h3>
+            <button mat-raised-button color=primary (click)=abrirModalTalla()>
+              <mat-icon class=m-r-4>add</mat-icon>
+              Nueva Talla
+            </button>
+          </div>
+
+          <div *ngIf=cargandoTallas class=d-flex justify-content-center p-y-24>
+            <mat-spinner diameter=36></mat-spinner>
+          </div>
+
+          <div *ngIf=!cargandoTallas && tallas.length > 0 class=table-responsive>
+            <table mat-table [dataSource]=tallas class=w-100>
+              <ng-container matColumnDef=t_id>
+                <th mat-header-cell *matHeaderCellDef>ID</th>
+                <td mat-cell *matCellDef=let t>#{{ t.id }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef=t_medida>
+                <th mat-header-cell *matHeaderCellDef>Medida / Código</th>
+                <td mat-cell *matCellDef=let t>
+                  <span class=badge bg-light-primary text-primary f-s-14 f-w-700 p-x-12 p-y-4 rounded>{{ t.medida }}</span>
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef=t_tipo>
+                <th mat-header-cell *matHeaderCellDef>Tipo</th>
+                <td mat-cell *matCellDef=let t>{{ t.tipo || 'TEXTIL' }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef=t_guia>
+                <th mat-header-cell *matHeaderCellDef>Guía de Medidas</th>
+                <td mat-cell *matCellDef=let t>{{ t.guia_medida || 'Estándar' }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef=t_acciones>
+                <th mat-header-cell *matHeaderCellDef>Acciones</th>
+                <td mat-cell *matCellDef=let t>
+                  <button mat-icon-button color=warn (click)=eliminarTalla(t) matTooltip=Eliminar>
+                    <mat-icon>delete</mat-icon>
+                  </button>
+                </td>
+              </ng-container>
+
+              <tr mat-header-row *matHeaderRowDef=['t_id', 't_medida', 't_tipo', 't_guia', 't_acciones']></tr>
+              <tr mat-row *matRowDef=let row; columns: ['t_id', 't_medida', 't_tipo', 't_guia', 't_acciones'];></tr>
+            </table>
+          </div>
+        </div>
+      </mat-tab>
+
+      <!-- TAB 3: COLORES -->
+      <mat-tab label=Colores>
+        <div class=p-t-16>
+          <div class=d-flex justify-content-between align-items-center m-b-16>
+            <h3 class=m-b-0>Colores y Muestras Hexadecimales</h3>
+            <button mat-raised-button color=primary (click)=abrirModalColor()>
+              <mat-icon class=m-r-4>palette</mat-icon>
+              Nuevo Color
+            </button>
+          </div>
+
+          <div *ngIf=cargandoColores class=d-flex justify-content-center p-y-24>
+            <mat-spinner diameter=36></mat-spinner>
+          </div>
+
+          <div *ngIf=!cargandoColores && colores.length > 0 class=table-responsive>
+            <table mat-table [dataSource]=colores class=w-100>
+              <ng-container matColumnDef=c_id>
+                <th mat-header-cell *matHeaderCellDef>ID</th>
+                <td mat-cell *matCellDef=let c>#{{ c.id }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef=c_nombre>
+                <th mat-header-cell *matHeaderCellDef>Nombre del Color</th>
+                <td mat-cell *matCellDef=let c class=f-w-600>{{ c.nombre }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef=c_muestra>
+                <th mat-header-cell *matHeaderCellDef>Muestra Visual</th>
+                <td mat-cell *matCellDef=let c>
+                  <div class=d-flex align-items-center gap-8>
+                    <span class=color-dot [style.backgroundColor]=c.codigo_hex || '#000'></span>
+                    <code>{{ c.codigo_hex || '#000000' }}</code>
+                  </div>
+                </td>
+              </ng-container>
+
+              <ng-container matColumnDef=c_acciones>
+                <th mat-header-cell *matHeaderCellDef>Acciones</th>
+                <td mat-cell *matCellDef=let c>
+                  <button mat-icon-button color=warn (click)=eliminarColor(c) matTooltip=Eliminar>
+                    <mat-icon>delete</mat-icon>
+                  </button>
+                </td>
+              </ng-container>
+
+              <tr mat-header-row *matHeaderRowDef=['c_id', 'c_nombre', 'c_muestra', 'c_acciones']></tr>
+              <tr mat-row *matRowDef=let row; columns: ['c_id', 'c_nombre', 'c_muestra', 'c_acciones'];></tr>
+            </table>
+          </div>
+        </div>
+      </mat-tab>
+
+      <!-- TAB 4: TEMPORADAS -->
+      <mat-tab label=Temporadas>
+        <div class=p-t-16>
+          <div class=d-flex justify-content-between align-items-center m-b-16>
+            <h3 class=m-b-0>Temporadas Comerciales</h3>
+            <button mat-raised-button color=primary (click)=abrirModalTemporada()>
+              <mat-icon class=m-r-4>event</mat-icon>
+              Nueva Temporada
+            </button>
+          </div>
+
+          <div *ngIf=cargandoTemporadas class=d-flex justify-content-center p-y-24>
+            <mat-spinner diameter=36></mat-spinner>
+          </div>
+
+          <div *ngIf=!cargandoTemporadas && temporadas.length > 0 class=table-responsive>
+            <table mat-table [dataSource]=temporadas class=w-100>
+              <ng-container matColumnDef=temp_id>
+                <th mat-header-cell *matHeaderCellDef>ID</th>
+                <td mat-cell *matCellDef=let tp>#{{ tp.id }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef=temp_nombre>
+                <th mat-header-cell *matHeaderCellDef>Temporada</th>
+                <td mat-cell *matCellDef=let tp class=f-w-600>{{ tp.nombre }}</td>
+              </ng-container>
+
+              <ng-container matColumnDef=temp_acciones>
+                <th mat-header-cell *matHeaderCellDef>Acciones</th>
+                <td mat-cell *matCellDef=let tp>
+                  <button mat-icon-button color=warn (click)=eliminarTemporada(tp) matTooltip=Eliminar>
+                    <mat-icon>delete</mat-icon>
+                  </button>
+                </td>
+              </ng-container>
+
+              <tr mat-header-row *matHeaderRowDef=['temp_id', 'temp_nombre', 'temp_acciones']></tr>
+              <tr mat-row *matRowDef=let row; columns: ['temp_id', 'temp_nombre', 'temp_acciones'];></tr>
+            </table>
+          </div>
+        </div>
+      </mat-tab>
+
+      <!-- TAB 5: MARCAS / COLECCIONES -->
+      <mat-tab label=Marcas / Colecciones>
+        <div class=p-t-16>
+          <app-marca />
+        </div>
+      </mat-tab>
+
+    </mat-tab-group>
+  </mat-card-content>
+</mat-card>
+
+<!-- MODAL TALLA -->
+<div *ngIf=mostrarModalTalla class=modal-backdrop (click)=mostrarModalTalla = false>
+  <div class=modal-content-card (click)=.stopPropagation()>
+    <h3 class=m-b-16>Registrar Nueva Talla</h3>
+    <form (ngSubmit)=guardarTalla()>
+      <mat-form-field appearance=outline class=w-100 m-b-8>
+        <mat-label>Medida / Talla (Ej: S, M, L, XL, 38, 42)</mat-label>
+        <input matInput [(ngModel)]=formTalla.medida name=medida required>
+      </mat-form-field>
+      <mat-form-field appearance=outline class=w-100 m-b-8>
+        <mat-label>Tipo</mat-label>
+        <mat-select [(ngModel)]=formTalla.tipo name=tipo>
+          <mat-option value=TEXTIL>Textil (Prendas superiores / inferiores)</mat-option>
+          <mat-option value=CALZADO>Calzado</mat-option>
+          <mat-option value=ACCESORIO>Accesorio</mat-option>
+        </mat-select>
+      </mat-form-field>
+      <div class=d-flex justify-content-end gap-8 m-t-16>
+        <button type=button mat-stroked-button (click)=mostrarModalTalla = false>Cancelar</button>
+        <button type=submit mat-raised-button color=primary>Guardar Talla</button>
       </div>
-    </mat-card-header>
+    </form>
+  </div>
+</div>
 
-    <mat-card-content>
-      <div *ngIf="isLoading" class="d-flex justify-content-center p-y-40">
-        <mat-spinner diameter="50"></mat-spinner>
+<!-- MODAL COLOR -->
+<div *ngIf=mostrarModalColor class=modal-backdrop (click)=mostrarModalColor = false>
+  <div class=modal-content-card (click)=.stopPropagation()>
+    <h3 class=m-b-16>Registrar Nuevo Color</h3>
+    <form (ngSubmit)=guardarColor()>
+      <mat-form-field appearance=outline class=w-100 m-b-8>
+        <mat-label>Nombre del Color (Ej: Azul Marino, Rojo Carmín)</mat-label>
+        <input matInput [(ngModel)]=formColor.nombre name=nombre_color required>
+      </mat-form-field>
+      <div class=d-flex align-items-center gap-8 m-b-16>
+        <input type=color [(ngModel)]=formColor.codigo_hex name=hex_color style=width: 50px; height: 40px; cursor: pointer;>
+        <mat-form-field appearance=outline class=w-100>
+          <mat-label>Código Hexadecimal</mat-label>
+          <input matInput [(ngModel)]=formColor.codigo_hex name=hex_txt>
+        </mat-form-field>
       </div>
-
-      <div *ngIf="!isLoading && dataSource.length > 0" class="table-responsive">
-        <table mat-table [dataSource]="dataSource" class="w-full">
-          <ng-container matColumnDef="id">
-            <th mat-header-cell *matHeaderCellDef>ID</th>
-            <td mat-cell *matCellDef="let element">{{ element.id }}</td>
-          </ng-container>
-
-          <ng-container matColumnDef="nombre">
-            <th mat-header-cell *matHeaderCellDef>Nombre</th>
-            <td mat-cell *matCellDef="let element">{{ element.nombre }}</td>
-          </ng-container>
-
-          <ng-container matColumnDef="acciones">
-            <th mat-header-cell *matHeaderCellDef>Acciones</th>
-            <td mat-cell *matCellDef="let element">
-              <button
-                *ngIf="puedeEditar"
-                mat-icon-button
-                matTooltip="Editar"
-                (click)="editarCategoria(element)"
-                color="primary">
-                <mat-icon>edit</mat-icon>
-              </button>
-              <button
-                *ngIf="puedeEliminar"
-                mat-icon-button
-                matTooltip="Eliminar"
-                (click)="eliminarCategoria(element)"
-                color="warn">
-                <mat-icon>delete</mat-icon>
-              </button>
-            </td>
-          </ng-container>
-
-          <tr mat-header-row *matHeaderRowDef="displayedColumns; sticky: true"></tr>
-          <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-        </table>
+      <div class=d-flex justify-content-end gap-8>
+        <button type=button mat-stroked-button (click)=mostrarModalColor = false>Cancelar</button>
+        <button type=submit mat-raised-button color=primary>Guardar Color</button>
       </div>
+    </form>
+  </div>
+</div>
 
-      <div *ngIf="!isLoading && dataSource.length === 0" class="empty-state">
-        <mat-icon class="empty-icon">info</mat-icon>
-        <p class="empty-text">No hay categorÃ­as disponibles</p>
+<!-- MODAL TEMPORADA -->
+<div *ngIf=mostrarModalTemporada class=modal-backdrop (click)=mostrarModalTemporada = false>
+  <div class=modal-content-card (click)=.stopPropagation()>
+    <h3 class=m-b-16>Registrar Nueva Temporada</h3>
+    <form (ngSubmit)=guardarTemporada()>
+      <mat-form-field appearance=outline class=w-100 m-b-16>
+        <mat-label>Nombre de Temporada (Ej: Primavera-Verano 2026, Escolar)</mat-label>
+        <input matInput [(ngModel)]=formTemporada.nombre name=nombre_temp required>
+      </mat-form-field>
+      <div class=d-flex justify-content-end gap-8>
+        <button type=button mat-stroked-button (click)=mostrarModalTemporada = false>Cancelar</button>
+        <button type=submit mat-raised-button color=primary>Guardar Temporada</button>
       </div>
-
-      <mat-paginator
-        *ngIf="dataSource.length > 0"
-        [length]="totalItems"
-        [pageSize]="pageSize"
-        hidePageSize="true"
-        (page)="onPageChange($event)">
-      </mat-paginator>
-    </mat-card-content>
-  </mat-card>
-
-  <mat-card *ngIf="puedeVerMarca" style="flex: 1; min-width: 300px;">
-    <app-marca />
-  </mat-card>
+    </form>
+  </div>
 </div>

@@ -37,8 +37,8 @@
   <div class="products-grid" *ngIf="!cargando && productos.length > 0">
     <mat-card class="product-card" *ngFor="let prod of productos" (click)="verDetalles(prod.id)" [style.cursor]="puedeVerDetalle ? 'pointer' : 'default'">
       <div class="image-wrapper">
-        <img [src]="prod.imagen_principal || 'assets/images/products/placeholder.jpg'" [alt]="prod.nombre"
-          class="product-image">
+        <img [src]="prod.imagen_principal || 'assets/images/products/product-1.png'" [alt]="prod.nombre"
+          (error)="onImgError($event)" class="product-image">
         <div class="category-badge">{{ prod.categoria_nombre }}</div>
         <button class="fav-btn" mat-icon-button (click)="$event.stopPropagation(); toggleFavorito(prod)"
           [matTooltip]="esFavorito(prod.id) ? 'Quitar de favoritos' : 'Agregar a favoritos'">

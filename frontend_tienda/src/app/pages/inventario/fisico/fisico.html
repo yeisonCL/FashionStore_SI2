@@ -1,0 +1,187 @@
+<mat-card class=cardWithShadow theme-card>
+  <mat-card-header class=d-flex justify-content-between align-items-center>
+    <div>
+      <mat-card-title class=m-b-4>[CU09] Inventario Físico Local por Sucursal</mat-card-title>
+      <mat-card-subtitle>Control de existencias reales (Stock Físico, Reservado y Disponible) y recepción de nueva mercadería</mat-card-subtitle>
+    </div>
+    <div class=d-flex gap-8 align-items-center>
+      <mat-form-field appearance=outline class=hide-hint style=min-width: 220px;>
+        <mat-label>Sucursal</mat-label>
+        <mat-select [(ngModel)]=sucursalSeleccionadaId (selectionChange)=cambiarSucursal()>
+          <mat-option *ngFor=let s of sucursales [value]=s.id>
+            {{ s.nombre }} ({{ s.ciudad }})
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <button mat-raised-button color=primary (click)=abrirModalEntrada()>
+        <mat-icon class=m-r-4>add_box</mat-icon>
+        Registrar Entrada
+      </button>
+    </div>
+  </mat-card-header>
+
+  <mat-card-content class=p-24>
+    <!-- CARDS DE RESUMEN -->
+    <div *ngIf=resumen class=row m-b-24>
+      <div class=col-md-3 col-sm-6 m-b-16>
+        <div class=p-16 rounded bg-light-primary text-primary d-flex align-items-center justify-content-between>
+          <div>
+            <div class=f-s-12 text-muted>Total SKUs</div>
+            <div class=f-s-24 f-w-700>{{ resumen.total_skus }}</div>
+          </div>
+          <mat-icon style=font-size: 32px; height: 32px; width: 32px;>qr_code</mat-icon>
+        </div>
+      </div>
+      <div class=col-md-3 col-sm-6 m-b-16>
+        <div class=p-16 rounded bg-light-success text-success d-flex align-items-center justify-content-between>
+          <div>
+            <div class=f-s-12 text-muted>Stock Físico en Tienda</div>
+            <div class=f-s-24 f-w-700>{{ resumen.total_unidades_fisicas }} u.</div>
+          </div>
+          <mat-icon style=font-size: 32px; height: 32px; width: 32px;>inventory</mat-icon>
+        </div>
+      </div>
+      <div class=col-md-3 col-sm-6 m-b-16>
+        <div class=p-16 rounded bg-light-warning text-warning d-flex align-items-center justify-content-between>
+          <div>
+            <div class=f-s-12 text-muted>Apartados / Reservados</div>
+            <div class=f-s-24 f-w-700>{{ resumen.total_unidades_reservadas }} u.</div>
+          </div>
+          <mat-icon style=font-size: 32px; height: 32px; width: 32px;>schedule</mat-icon>
+        </div>
+      </div>
+      <div class=col-md-3 col-sm-6 m-b-16>
+        <div class=p-16 rounded bg-light-secondary text-secondary d-flex align-items-center justify-content-between>
+          <div>
+            <div class=f-s-12 text-muted>Stock Disponible Venta</div>
+            <div class=f-s-24 f-w-700>{{ resumen.total_unidades_disponibles }} u.</div>
+          </div>
+          <mat-icon style=font-size: 32px; height: 32px; width: 32px;>shopping_cart</mat-icon>
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf=cargando class=d-flex justify-content-center p-y-40>
+      <mat-spinner diameter=40></mat-spinner>
+    </div>
+
+    <!-- TABLA DE EXISTENCIAS DETALLADA -->
+    <div *ngIf=!cargando && items.length > 0 class=table-responsive>
+      <table mat-table [dataSource]=items class=w-100>
+        <ng-container matColumnDef=prenda>
+          <th mat-header-cell *matHeaderCellDef> Prenda / Categoría </th>
+          <td mat-cell *matCellDef=let it>
+            <div class=f-w-600>{{ it.ropa_nombre }}</div>
+            <small class=text-muted>{{ it.categoria_nombre }}</small>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef=sku>
+          <th mat-header-cell *matHeaderCellDef> SKU / Código Barra </th>
+          <td mat-cell *matCellDef=let it>
+            <code>{{ it.sku || it.cod_barra }}</code>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef=talla_color>
+          <th mat-header-cell *matHeaderCellDef> Talla & Color </th>
+          <td mat-cell *matCellDef=let it>
+            <span class=badge bg-light text-dark m-r-4>{{ it.talla }}</span>
+            <span class=badge [style.backgroundColor]=it.color_hex || '#ddd' [style.color]='#fff'>
+              {{ it.color }}
+            </span>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef=stock_fisico>
+          <th mat-header-cell *matHeaderCellDef> Físico </th>
+          <td mat-cell *matCellDef=let it class=f-w-700> {{ it.stock_fisico }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef=stock_reservado>
+          <th mat-header-cell *matHeaderCellDef> Reservado </th>
+          <td mat-cell *matCellDef=let it class=text-warning f-w-600> {{ it.stock_reservado }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef=stock_disponible>
+          <th mat-header-cell *matHeaderCellDef> Disponible </th>
+          <td mat-cell *matCellDef=let it>
+            <span class=f-s-16 f-w-700 text-success>{{ it.stock_disponible }}</span>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef=estado>
+          <th mat-header-cell *matHeaderCellDef> Estado Stock </th>
+          <td mat-cell *matCellDef=let it>
+            <span class=badge [ngClass]={
+ 'bg-light-success text-success': it.estado_stock === 'DISPONIBLE',
+ 'bg-light-warning text-warning': it.estado_stock === 'BAJO_STOCK',
+ 'bg-light-danger text-danger': it.estado_stock === 'AGOTADO'
+ }>
+              {{ it.estado_stock }}
+            </span>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef=columnas></tr>
+        <tr mat-row *matRowDef=let row; columns: columnas;></tr>
+      </table>
+    </div>
+
+    <div *ngIf=!cargando && items.length === 0 class=p-48 text-center>
+      <mat-icon style=font-size: 48px; height: 48px; width: 48px; color: #ccc;>inventory_2</mat-icon>
+      <h3 class=m-t-16>Sin registros de inventario</h3>
+      <p class=text-muted>Utiliza el botón 'Registrar Entrada' para cargar existencias a esta sucursal.</p>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+<!-- MODAL REGISTRAR ENTRADA DE MERCADERÍA -->
+<div *ngIf=mostrarModalEntrada class=modal-backdrop (click)=cerrarModalEntrada()>
+  <div class=modal-content-card (click)=.stopPropagation()>
+    <h3 class=m-b-16>Registrar Entrada de Mercadería</h3>
+    <form (ngSubmit)=guardarEntrada()>
+      <mat-form-field appearance=outline class=w-100 m-b-8>
+        <mat-label>Variante de Prenda (SKU / Talla / Color)</mat-label>
+        <mat-select [(ngModel)]=formularioEntrada.variante_id name=variante_id required>
+          <mat-option *ngFor=let it of items [value]=it.variante_id>
+            {{ it.ropa_nombre }} - Talla: {{ it.talla }} - Color: {{ it.color }} (SKU: {{ it.sku }})
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+
+      <div class=row>
+        <div class=col-6>
+          <mat-form-field appearance=outline class=w-100 m-b-8>
+            <mat-label>Cantidad a Ingresar</mat-label>
+            <input matInput type=number min=1 [(ngModel)]=formularioEntrada.cantidad name=cantidad required>
+          </mat-form-field>
+        </div>
+        <div class=col-6>
+          <mat-form-field appearance=outline class=w-100 m-b-8>
+            <mat-label>Costo Unitario (Bs.)</mat-label>
+            <input matInput type=number min=0 step=0.5 [(ngModel)]=formularioEntrada.costo_unitario name=costo>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <mat-form-field appearance=outline class=w-100 m-b-8>
+        <mat-label>Nro. de Factura / Remisión de Proveedor</mat-label>
+        <input matInput [(ngModel)]=formularioEntrada.nro_documento name=doc placeholder=Ej: REM-2026-0045>
+      </mat-form-field>
+
+      <mat-form-field appearance=outline class=w-100 m-b-16>
+        <mat-label>Motivo u Observación</mat-label>
+        <input matInput [(ngModel)]=formularioEntrada.motivo name=motivo>
+      </mat-form-field>
+
+      <div class=d-flex justify-content-end gap-8>
+        <button type=button mat-stroked-button (click)=cerrarModalEntrada()>Cancelar</button>
+        <button type=submit mat-raised-button color=primary [disabled]=guardandoEntrada>
+          {{ guardandoEntrada ? 'Procesando...' : 'Confirmar Ingreso' }}
+        </button>
+      </div>
+    </form>
+  </div>
+</div>

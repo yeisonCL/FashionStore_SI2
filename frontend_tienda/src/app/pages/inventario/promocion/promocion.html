@@ -1,0 +1,133 @@
+<mat-card class=cardWithShadow theme-card>
+  <mat-card-header class=d-flex justify-content-between align-items-center>
+    <div>
+      <mat-card-title class=m-b-4>[CU08] Gestión de Promociones y Descuentos</mat-card-title>
+      <mat-card-subtitle>Configuración de campañas temporales, porcentajes de descuento y asignación a prendas del catálogo</mat-card-subtitle>
+    </div>
+    <button mat-raised-button color=primary (click)=abrirModalCrear()>
+      <mat-icon class=m-r-4>loyalty</mat-icon>
+      Nueva Promoción
+    </button>
+  </mat-card-header>
+
+  <mat-card-content class=p-24>
+    <div *ngIf=cargando class=d-flex justify-content-center p-y-40>
+      <mat-spinner diameter=40></mat-spinner>
+    </div>
+
+    <div *ngIf=!cargando && promociones.length > 0 class=table-responsive>
+      <table mat-table [dataSource]=promociones class=w-100>
+        <ng-container matColumnDef=id>
+          <th mat-header-cell *matHeaderCellDef> ID </th>
+          <td mat-cell *matCellDef=let p> #{{ p.id }} </td>
+        </ng-container>
+
+        <ng-container matColumnDef=nombre>
+          <th mat-header-cell *matHeaderCellDef> Campaña / Promoción </th>
+          <td mat-cell *matCellDef=let p>
+            <div class=f-w-600>{{ p.nombre }}</div>
+            <small class=text-muted>{{ p.descripcion || 'Sin descripción' }}</small>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef=descuento>
+          <th mat-header-cell *matHeaderCellDef> % Descuento </th>
+          <td mat-cell *matCellDef=let p>
+            <span class=badge bg-light-primary text-primary f-s-14 f-w-700 p-x-12 p-y-4 rounded>
+              -{{ p.porcentaje_descuento }}% OFF
+            </span>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef=vigencia>
+          <th mat-header-cell *matHeaderCellDef> Vigencia Temporal </th>
+          <td mat-cell *matCellDef=let p>
+            <div><strong>Desde:</strong> {{ p.fecha_inicio | date:'dd/MM/yyyy' }}</div>
+            <div><strong>Hasta:</strong> {{ p.fecha_fin | date:'dd/MM/yyyy' }}</div>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef=prendas>
+          <th mat-header-cell *matHeaderCellDef> Prendas Asociadas </th>
+          <td mat-cell *matCellDef=let p>
+            <span class=badge bg-light-secondary text-secondary p-x-8 p-y-4 rounded>
+              {{ p.total_prendas_asociadas || (p.prendas ? p.prendas.length : 0) }} prendas
+            </span>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef=estado>
+          <th mat-header-cell *matHeaderCellDef> Estado </th>
+          <td mat-cell *matCellDef=let p>
+            <span class=badge [ngClass]=p.estado_calculado === 'ACTIVA' || p.esta_vigente ? 'bg-light-success text-success' : 'bg-light-danger text-danger'>
+              {{ p.estado_calculado || (p.activo ? 'ACTIVA' : 'INACTIVA') }}
+            </span>
+          </td>
+        </ng-container>
+
+        <ng-container matColumnDef=acciones>
+          <th mat-header-cell *matHeaderCellDef> Acciones </th>
+          <td mat-cell *matCellDef=let p>
+            <button mat-icon-button color=warn (click)=eliminarPromocion(p) matTooltip=Eliminar>
+              <mat-icon>delete</mat-icon>
+            </button>
+          </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef=columnas></tr>
+        <tr mat-row *matRowDef=let row; columns: columnas;></tr>
+      </table>
+    </div>
+
+    <div *ngIf=!cargando && promociones.length === 0 class=p-48 text-center>
+      <mat-icon style=font-size: 48px; height: 48px; width: 48px; color: #ccc;>local_offer</mat-icon>
+      <h3 class=m-t-16>No hay promociones registradas</h3>
+      <p class=text-muted>Crea promociones y descuentos especiales para impulsar las ventas en el catálogo.</p>
+    </div>
+  </mat-card-content>
+</mat-card>
+
+<!-- MODAL CREAR PROMOCIÓN -->
+<div *ngIf=mostrarModal class=modal-backdrop (click)=cerrarModal()>
+  <div class=modal-content-card (click)=.stopPropagation()>
+    <h3 class=m-b-16>Nueva Campaña de Promoción</h3>
+    <form (ngSubmit)=guardarPromocion()>
+      <mat-form-field appearance=outline class=w-100 m-b-8>
+        <mat-label>Nombre de la Promoción</mat-label>
+        <input matInput [(ngModel)]=formulario.nombre name=nombre required placeholder=Ej: Black Friday 30% Off>
+      </mat-form-field>
+
+      <mat-form-field appearance=outline class=w-100 m-b-8>
+        <mat-label>Descripción</mat-label>
+        <input matInput [(ngModel)]=formulario.descripcion name=descripcion placeholder=Ej: Descuento aplicable a chaquetas y poleras>
+      </mat-form-field>
+
+      <mat-form-field appearance=outline class=w-100 m-b-8>
+        <mat-label>Porcentaje de Descuento (%)</mat-label>
+        <input matInput type=number min=1 max=99 [(ngModel)]=formulario.porcentaje_descuento name=descuento required placeholder=Ej: 20>
+      </mat-form-field>
+
+      <div class=row>
+        <div class=col-6>
+          <mat-form-field appearance=outline class=w-100 m-b-8>
+            <mat-label>Fecha de Inicio</mat-label>
+            <input matInput type=date [(ngModel)]=formulario.fecha_inicio name=fecha_inicio required>
+          </mat-form-field>
+        </div>
+        <div class=col-6>
+          <mat-form-field appearance=outline class=w-100 m-b-8>
+            <mat-label>Fecha de Fin</mat-label>
+            <input matInput type=date [(ngModel)]=formulario.fecha_fin name=fecha_fin required>
+          </mat-form-field>
+        </div>
+      </div>
+
+      <div class=d-flex justify-content-end gap-8 m-t-16>
+        <button type=button mat-stroked-button (click)=cerrarModal()>Cancelar</button>
+        <button type=submit mat-raised-button color=primary [disabled]=guardando>
+          {{ guardando ? 'Guardando...' : 'Crear Promoción' }}
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
